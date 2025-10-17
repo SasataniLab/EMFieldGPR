@@ -1,3 +1,5 @@
+[![DOI](https://zenodo.org/badge/1078181051.svg)](https://doi.org/10.5281/zenodo.17378263)
+
 # EMFieldGPR
 *Gaussian process regression-based magnetic field estimation for wireless power design*
 
