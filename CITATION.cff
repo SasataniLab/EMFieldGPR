@@ -1,0 +1,38 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite the accompanying paper."
+title: "EMFieldGPR"
+authors:
+  - family-names: "Honjo"
+    given-names: "Yuichi"
+    email: "honjo@akg.t.u-tokyo.ac.jp"
+  - family-names: "Caremel"
+    given-names: "Cedric"
+  - family-names: "Takaki"
+    given-names: "Ken"
+  - family-names: "Noma"
+    given-names: "Yuta"
+  - family-names: "Kawahara"
+    given-names: "Yoshihiro"
+  - family-names: "Sasatani"
+    given-names: "Takuya"
+    email: "sasatani@g.ecc.u-tokyo.ac.jp"
+repository-code: "https://github.com/SasataniLab/EMFieldGPR"
+preferred-citation:
+  type: article
+  title: "Magnetic field estimation using Gaussian process regression for interactive wireless power system design"
+  authors:
+    - family-names: "Honjo"
+      given-names: "Yuichi"
+    - family-names: "Caremel"
+      given-names: "Cedric"
+    - family-names: "Takaki"
+      given-names: "Ken"
+    - family-names: "Noma"
+      given-names: "Yuta"
+    - family-names: "Kawahara"
+      given-names: "Yoshihiro"
+    - family-names: "Sasatani"
+      given-names: "Takuya"
+  # journal: "" add later
+  year: 2025
+  # doi: "10.XXXX/XXXXX" add later

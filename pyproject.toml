@@ -1,0 +1,151 @@
+[tool.poetry]
+name = "EMFieldML"
+version = "0.1.0"
+description = "Electromagnetic Field Machine Learning toolkit for shield design optimization"
+authors = ["SasataniLab"]
+readme = "README.md"
+packages = [
+    { include = "EMFieldML"}
+]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+numpy = "^2.2.0"
+scikit-rf = "^1.5.0"
+coloredlogs = "^15.0.1"
+numpy-stl = "^3.2.0"
+gpytorch = "^1.14"
+polyscope = "2.2.1"
+matplotlib = "^3.10.0"
+python-dotenv = "^1.0.1"
+ipykernel = "^6.29.5"
+cmake = "^4.1.0"
+click = "^8.1.0"
+gdown = "^5.0.0"
+seaborn = "^0.13.0"
+pandas = "^2.0.0"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.3.4"
+sphinx = "^7.1.2"
+sphinx-book-theme = "^1.0.1"
+myst-parser = "^2.0.0"
+ruff = "^0.12.12"
+black = "^25.1.0"
+isort = "^6.0.1"
+mypy = "^1.17.1"
+sphinx-click = "^6.0.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+make_shield_coordinate = 'EMFieldML.ShieldModeler:ShieldModeler.make_shield_coordinate'
+emml = 'EMFieldML.cli.main:cli'
+
+# Ruff configuration
+[tool.ruff]
+target-version = "py311"
+line-length = 88
+
+[tool.ruff.lint]
+select = [
+    "E",
+    "F",
+    "W",
+    "C",
+    "D",
+    "N",  # pep8-naming (PEP 8 naming conventions)
+]
+ignore = [
+    "E501",  # Ignore line length errors, handled by Black
+    "D200",  # Ignore One-line docstring should be in one line
+    "D205",  # Ignore blank line required between summary line and description
+    "D212",  # Ignore multi-line docstring summary should start at the first line
+    "D213",  # Ignore multi-line docstring summary should start at the second line
+    "C901",  # Ignore function is too complex, to be removed in the future
+    "D203",  # Ignore 1 blank line required before class docstring
+    # Scientific computing naming conventions
+    "N803",  # Allow uppercase argument names (X_train, K_inv_Y_train for ML)
+    "N806",  # Allow uppercase variable names (K, K_inv for matrices)
+    "N801",  # Allow underscore class names (Point_outside, Edge_outside)
+    "N802",  # Allow scientific function names (BVH, calculateTrilinearWeight)
+    "N999",  # Allow module names (scientific modules often use descriptive names)
+]
+
+[tool.ruff.lint.isort]
+known-first-party = ["EMFieldML"]
+
+# Black configuration
+[tool.black]
+line-length = 88
+target-version = ['py311']
+include = '\.pyi?$'
+extend-exclude = '''
+/(
+  # directories
+  \.eggs
+  | \.git
+  | \.hg
+  | \.mypy_cache
+  | \.tox
+  | \.venv
+  | build
+  | dist
+)/
+'''
+
+# isort configuration
+[tool.isort]
+profile = "black"
+line_length = 88
+multi_line_output = 3
+include_trailing_comma = true
+
+# MyPy configuration
+[tool.mypy]
+python_version = "3.11"
+warn_return_any = true
+warn_unused_configs = true
+disallow_untyped_defs = true
+disallow_incomplete_defs = true
+check_untyped_defs = true
+disallow_untyped_decorators = true
+no_implicit_optional = true
+warn_redundant_casts = true
+warn_unused_ignores = true
+warn_no_return = true
+warn_unreachable = true
+strict_equality = true
+show_error_codes = true
+
+[[tool.mypy.overrides]]
+module = [
+    "numpy.*",
+    "matplotlib.*",
+    "scipy.*",
+    "sklearn.*",
+    "torch.*",
+    "gpytorch.*",
+    "polyscope.*",
+    "open3d.*",
+    "pyvista.*",
+    "numpy_stl.*",
+    "scikit_rf.*",
+    "coloredlogs.*",
+    "python_dotenv.*",
+    "click.*",
+    "gdown.*",
+    "cmake.*",
+    "seaborn.*",
+    "pandas.*",
+]
+ignore_missing_imports = true
+
+# Pytest configuration
+[tool.pytest.ini_options]
+markers = [
+    "slow: marks tests as slow (deselect with '-m \"not slow\"')",
+]
+addopts = "-m \"not slow\""

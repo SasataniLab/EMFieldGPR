@@ -1,0 +1,84 @@
+/* Custom CSS for EMFieldML documentation */
+
+/* Custom styling for code blocks */
+.highlight {
+    border-radius: 6px;
+}
+
+/* Custom styling for admonitions */
+.admonition {
+    border-radius: 6px;
+}
+
+/* Custom styling for API documentation */
+.py.class {
+    border-left: 4px solid #007acc;
+    padding-left: 1rem;
+}
+
+.py.function {
+    border-left: 4px solid #28a745;
+    padding-left: 1rem;
+}
+
+/* Custom styling for method signatures */
+.sig {
+    font-family: 'Consolas', 'Monaco', 'Courier New', monospace;
+}
+
+/* Custom styling for parameter lists */
+.field-list dt {
+    font-weight: 600;
+    color: #007acc;
+}
+
+/* Custom styling for toctree */
+.toctree-wrapper {
+    margin: 1rem 0;
+}
+
+/* Custom styling for navigation */
+.navbar-brand {
+    font-weight: 700;
+}
+
+/* Custom styling for buttons */
+.btn {
+    border-radius: 4px;
+}
+
+/* Custom styling for tables */
+table.docutils {
+    border-collapse: collapse;
+    border-spacing: 0;
+    border: 1px solid #ddd;
+}
+
+table.docutils th {
+    background-color: #f8f9fa;
+    font-weight: 600;
+}
+
+table.docutils td, table.docutils th {
+    border: 1px solid #ddd;
+    padding: 8px 12px;
+}
+
+/* Custom styling for code examples */
+.code-block {
+    background-color: #f8f9fa;
+    border: 1px solid #e9ecef;
+    border-radius: 6px;
+    padding: 1rem;
+}
+
+/* Custom styling for API reference */
+.py.class .descname {
+    color: #007acc;
+    font-weight: 600;
+}
+
+.py.function .descname {
+    color: #28a745;
+    font-weight: 600;
+}

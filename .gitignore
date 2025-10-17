@@ -1,0 +1,57 @@
+**/__pycache__/**
+/data/**
+/data_all/**
+/test_data/**
+.DS_Store
+log/**
+example/log/**
+!example/log/.gitkeep
+.python-version
+/data_zip/**
+test_data.zip
+/venv/**
+tests/log/**
+/demo_data/**
+demo_data.zip
+
+# Build artifacts
+**/_build/**
+**/build/**
+**/dist/**
+**/*.egg-info/**
+
+# Documentation build
+docs/_build/**
+
+# IDE and editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS generated files
+Thumbs.db
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+
+# Temporary files
+*.tmp
+*.temp
+*.log
+*.part
+
+# Large data files
+*.zip
+*.tar.gz
+*.tar.bz2
+*.7z
+*.rar
+
+# UI configuration files (user-specific preferences)
+.polyscope.ini
+imgui.ini
