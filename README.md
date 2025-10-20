@@ -1,4 +1,5 @@
 [![DOI](https://zenodo.org/badge/1078181051.svg)](https://doi.org/10.5281/zenodo.17378263)
+[![License](https://img.shields.io/badge/License-Apache_2.0-red.svg)](https://opensource.org/licenses/Apache-2.0)
 
 # EMFieldGPR
 *Gaussian process regression-based magnetic field estimation for wireless power design*
@@ -65,7 +66,9 @@ The EMFieldML code uses a modular configuration system:
 
 ## Full Dataset (Optional)
 
-For complete data: https://drive.google.com/drive/folders/1b-hS27wJ5fWXkaZAQSoklPTP_BTxa0lY
+For complete data:
+- **Zenodo**: https://doi.org/10.5281/zenodo.17397941
+- **Google Drive**: https://drive.google.com/drive/folders/1b-hS27wJ5fWXkaZAQSoklPTP_BTxa0lY
 
 Extract `data` and `test_data` to the repository root. Please note that large downloads (over 100 GB) are required.
 
