@@ -1,5 +1,7 @@
-[![DOI](https://zenodo.org/badge/1078181051.svg)](https://doi.org/10.5281/zenodo.17378263)
-[![License](https://img.shields.io/badge/License-Apache_2.0-red.svg)](https://opensource.org/licenses/Apache-2.0)
+[![arXiv](https://img.shields.io/badge/arXiv-2510.19277-red.svg)](https://arxiv.org/abs/2510.19277)
+[![DOI](https://img.shields.io/badge/DOI%20(software)-10.5281/zenodo.17378263-blue.svg)](https://doi.org/10.5281/zenodo.17378263)
+[![DOI](https://img.shields.io/badge/DOI%20(dataset)-10.5281/zenodo.17397940-green.svg)](https://doi.org/10.5281/zenodo.17397940)
+[![License](https://img.shields.io/badge/License-Apache_2.0-purple.svg)](https://opensource.org/licenses/Apache-2.0)
 
 # EMFieldGPR
 *Gaussian process regression-based magnetic field estimation for wireless power design*
@@ -8,8 +10,8 @@ This repository provides code for the following preprint.
 
 - **Title:** Magnetic field estimation using Gaussian process regression for interactive wireless power system design
 - **Authors:** *Yuichi Honjo, Cedric Caremel, Ken Takaki, Yuta Noma, Yoshihiro Kawahara, *Takuya Sasatani
-    - (Correspondence: honjo@akg.t.u-tokyo.ac.jp, sasatani@g.ecc.u-tokyo.ac.jp)
-- **DOI (preprint):** _Coming soon (to be added when available)_
+    - *Correspondence: honjo@akg.t.u-tokyo.ac.jp, sasatani@g.ecc.u-tokyo.ac.jp
+- **DOI:** [10.48550/arXiv.2510.19277](https://doi.org/10.48550/arXiv.2510.19277)
 
 **Documentation**: https://sasatanilab.github.io/EMFieldGPR/
 
@@ -68,9 +70,8 @@ The EMFieldML code uses a modular configuration system:
 
 For complete data:
 - **Zenodo**: https://doi.org/10.5281/zenodo.17397941
-- **Google Drive**: https://drive.google.com/drive/folders/1b-hS27wJ5fWXkaZAQSoklPTP_BTxa0lY
 
-Extract `data` and `test_data` to the repository root. Please note that large downloads (over 100 GB) are required.
+Extract `all_data` and `test_data` to the repository root. Please note that large downloads (over 30 GB) are required.
 
 ## Visual Overview
 
@@ -83,17 +84,6 @@ Extract `data` and `test_data` to the repository root. Please note that large do
 ### PolyCube Mesh Generation
 ![PolyCube Mesh Visualization](./assets/images/PolyCubeMesh.jpg)
 
-## Technical Details
-
-### Edge Alignment Process
-![Edge Alignment Guide](./assets/images/Supplementary_how_to_align_edge.jpg)
-
-### 27-Point Split Method
-![27-Point Split Visualization](./assets/images/Supplementary_split_27.jpg)
-
-### Coordinate Transformation
-![Coordinate Transformation](./assets/images/Supplementary_transformation.jpg)
-
 ## Development (Internal)
 We **do not guarantee** responses to issues or pull requests.
 The contributor instructions below are for **internal use only**.
@@ -101,17 +91,11 @@ The contributor instructions below are for **internal use only**.
 ### Contributor setup
 
 ```bash
-# Install Poetry
-curl -sSL https://install.python-poetry.org | python3 -
-
 # Install dependencies
 poetry install
 
 # Run demo
 poetry run emml demo
-
-# Run tests
-make test
 ```
 
 ### Code Quality
@@ -119,6 +103,10 @@ make test
 All code must pass these checks before merging. CI runs these on pull requests.
 
 ```bash
+# run tests
+make test
+
+# run linters (ruff, black, isort)
 make format
 ```
 

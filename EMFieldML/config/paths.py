@@ -19,7 +19,7 @@ class EMFieldMLPaths(BaseConfig):
 
         # Core directories
         self.LUA_DIR = self.BASE_DIR / "EMFieldML" / "FEKO" / "Lua"
-        self.DATA_DIR = self.BASE_DIR / "data"
+        self.DATA_DIR = self.BASE_DIR / "all_data"
         self.TEST_DATA_DIR = self.BASE_DIR / "test_data"
         self.CI_TEST_DATA_DIR = self.BASE_DIR / "tests" / "data"
 
