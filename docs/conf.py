@@ -9,7 +9,7 @@
 project = "EMFieldML"
 #copyright = "2024, Takuya Sasatani"
 #author = "Takuya Sasatani"
-release = "0.1.0"
+release = "0.1.4"
 
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
