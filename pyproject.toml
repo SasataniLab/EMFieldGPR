@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "EMFieldML"
-version = "0.1.0"
+version = "0.1.4"
 description = "Electromagnetic Field Machine Learning toolkit for shield design optimization"
 authors = ["SasataniLab"]
 readme = "README.md"
