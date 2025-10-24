@@ -18,7 +18,7 @@ from EMFieldML.config import config, get_logger, paths, template
 logger = get_logger(__name__)
 
 # Constants
-DEFAULT_INITIAL_NOISE = 1.0 / np.sqrt(2)
+DEFAULT_INITIAL_NOISE = 1.0 / 2**0.5  # Equivalent to 1.0 / sqrt(2)
 
 
 class FieldGPRegressor:
