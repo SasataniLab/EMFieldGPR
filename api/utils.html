@@ -131,6 +131,10 @@ document.write(`
   
 
   
+    <button class="pst-navbar-icon sidebar-toggle secondary-toggle" aria-label="On this page">
+      <span class="fa-solid fa-outdent"></span>
+    </button>
+  
 </div>
 
     </header>
@@ -417,7 +421,9 @@ document.write(`
   </button>
 `);
 </script>
-
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
 </div></div>
       
     </div>
@@ -433,6 +439,43 @@ document.write(`
     <div id="print-main-content">
         <div id="jb-print-toc">
             
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Utils.DataSelect.DataSelect"><code class="docutils literal notranslate"><span class="pre">DataSelect</span></code></a><ul class="visible nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Utils.DataSelect.DataSelect.select_init_data"><code class="docutils literal notranslate"><span class="pre">DataSelect.select_init_data()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Utils.DataSelect.DataSelect.generate_x_train_init"><code class="docutils literal notranslate"><span class="pre">DataSelect.generate_x_train_init()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Utils.DataSelect.DataSelect.generate_x_test_init"><code class="docutils literal notranslate"><span class="pre">DataSelect.generate_x_test_init()</span></code></a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Utils.FloatAssert.FloatAssert"><code class="docutils literal notranslate"><span class="pre">FloatAssert</span></code></a><ul class="visible nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Utils.FloatAssert.FloatAssert.__init__"><code class="docutils literal notranslate"><span class="pre">FloatAssert.__init__()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Utils.FloatAssert.FloatAssert.read_floats_from_file"><code class="docutils literal notranslate"><span class="pre">FloatAssert.read_floats_from_file()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Utils.FloatAssert.FloatAssert.compare_files"><code class="docutils literal notranslate"><span class="pre">FloatAssert.compare_files()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Utils.FloatAssert.FloatAssert.compare_float_arrays"><code class="docutils literal notranslate"><span class="pre">FloatAssert.compare_float_arrays()</span></code></a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Utils.logger.Logger"><code class="docutils literal notranslate"><span class="pre">Logger</span></code></a><ul class="visible nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Utils.logger.Logger.level"><code class="docutils literal notranslate"><span class="pre">Logger.level</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Utils.logger.Logger.fmt"><code class="docutils literal notranslate"><span class="pre">Logger.fmt</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Utils.logger.Logger.log_file"><code class="docutils literal notranslate"><span class="pre">Logger.log_file</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Utils.logger.Logger.log_dir"><code class="docutils literal notranslate"><span class="pre">Logger.log_dir</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Utils.logger.Logger.__init__"><code class="docutils literal notranslate"><span class="pre">Logger.__init__()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Utils.logger.Logger.LineNumberFilter"><code class="docutils literal notranslate"><span class="pre">Logger.LineNumberFilter</span></code></a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Utils.logger.Logger.LineNumberFilter.filter"><code class="docutils literal notranslate"><span class="pre">Logger.LineNumberFilter.filter()</span></code></a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Utils.logger.Logger.get_logger"><code class="docutils literal notranslate"><span class="pre">Logger.get_logger()</span></code></a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Utils.ShieldModeler.ShieldModeler"><code class="docutils literal notranslate"><span class="pre">ShieldModeler</span></code></a><ul class="visible nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Utils.ShieldModeler.ShieldModeler.make_shield_coordinate"><code class="docutils literal notranslate"><span class="pre">ShieldModeler.make_shield_coordinate()</span></code></a></li>
+</ul>
+</li>
+</ul>
+            </nav>
         </div>
     </div>
 </div>
@@ -445,6 +488,209 @@ document.write(`
   <section id="utilities-module">
 <h1>Utilities Module<a class="headerlink" href="#utilities-module" title="Link to this heading">#</a></h1>
 <p>The utilities module contains helper functions and utilities.</p>
+<p id="module-EMFieldML.Utils.DataSelect">Data selection utilities for electromagnetic field training.</p>
+<p>This module provides functionality to select initial training data
+from the available dataset. Selected data are output to X_train_new.txt.</p>
+<dl class="py class">
+<dt class="sig sig-object py" id="EMFieldML.Utils.DataSelect.DataSelect">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">EMFieldML.Utils.DataSelect.</span></span><span class="sig-name descname"><span class="pre">DataSelect</span></span><a class="headerlink" href="#EMFieldML.Utils.DataSelect.DataSelect" title="Link to this definition">#</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.14)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<p>Select and manage initial training data for electromagnetic field models.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="EMFieldML.Utils.DataSelect.DataSelect.select_init_data">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">select_init_data</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">n_total_shapes</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.14)"><span class="pre">int</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">372</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.14)"><span class="pre">list</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.14)"><span class="pre">int</span></a><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#EMFieldML.Utils.DataSelect.DataSelect.select_init_data" title="Link to this definition">#</a></dt>
+<dd><p>Select initial training data using a systematic sampling pattern.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="EMFieldML.Utils.DataSelect.DataSelect.generate_x_train_init">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">generate_x_train_init</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">output_path_init</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/pathlib.html#pathlib.Path" title="(in Python v3.14)"><span class="pre">Path</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">output_path</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/pathlib.html#pathlib.Path" title="(in Python v3.14)"><span class="pre">Path</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.14)"><span class="pre">None</span></a></span></span><a class="headerlink" href="#EMFieldML.Utils.DataSelect.DataSelect.generate_x_train_init" title="Link to this definition">#</a></dt>
+<dd><p>Generate initial training data files from selected data indices.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="EMFieldML.Utils.DataSelect.DataSelect.generate_x_test_init">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">generate_x_test_init</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_path</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/pathlib.html#pathlib.Path" title="(in Python v3.14)"><span class="pre">Path</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">output_path_init</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/pathlib.html#pathlib.Path" title="(in Python v3.14)"><span class="pre">Path</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">output_path</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/pathlib.html#pathlib.Path" title="(in Python v3.14)"><span class="pre">Path</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.14)"><span class="pre">None</span></a></span></span><a class="headerlink" href="#EMFieldML.Utils.DataSelect.DataSelect.generate_x_test_init" title="Link to this definition">#</a></dt>
+<dd><p>Generate test data files from training data indices.</p>
+</dd></dl>
+
+</dd></dl>
+
+<p id="module-EMFieldML.Utils.FloatAssert">Float comparison utilities for electromagnetic field validation.</p>
+<p>This module provides a class for comparing lists of floats within a specified precision.</p>
+<dl class="py class">
+<dt class="sig sig-object py" id="EMFieldML.Utils.FloatAssert.FloatAssert">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">EMFieldML.Utils.FloatAssert.</span></span><span class="sig-name descname"><span class="pre">FloatAssert</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">precision</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.14)"><span class="pre">float</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">1e-07</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#EMFieldML.Utils.FloatAssert.FloatAssert" title="Link to this definition">#</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.14)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<p>Float comparison utility for electromagnetic field validation.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="EMFieldML.Utils.FloatAssert.FloatAssert.__init__">
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">precision</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.14)"><span class="pre">float</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">1e-07</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#EMFieldML.Utils.FloatAssert.FloatAssert.__init__" title="Link to this definition">#</a></dt>
+<dd><p>Initialize the validator with a specified precision.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>precision</strong> – The precision threshold for float comparisons.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="EMFieldML.Utils.FloatAssert.FloatAssert.read_floats_from_file">
+<span class="sig-name descname"><span class="pre">read_floats_from_file</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">file_path</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/pathlib.html#pathlib.Path" title="(in Python v3.14)"><span class="pre">Path</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v2.3)"><span class="pre">numpy.ndarray</span></a></span></span><a class="headerlink" href="#EMFieldML.Utils.FloatAssert.FloatAssert.read_floats_from_file" title="Link to this definition">#</a></dt>
+<dd><p>Read a list of floats from a specified file, assuming space-separated values in each line.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>file_path</strong> – Path to the file to read.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>A NumPy array of floats read from the file.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="EMFieldML.Utils.FloatAssert.FloatAssert.compare_files">
+<span class="sig-name descname"><span class="pre">compare_files</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">file1</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/pathlib.html#pathlib.Path" title="(in Python v3.14)"><span class="pre">Path</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">file2</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/pathlib.html#pathlib.Path" title="(in Python v3.14)"><span class="pre">Path</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.14)"><span class="pre">bool</span></a></span></span><a class="headerlink" href="#EMFieldML.Utils.FloatAssert.FloatAssert.compare_files" title="Link to this definition">#</a></dt>
+<dd><p>Compare two files containing lists of floats.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>file1</strong> – Path to the first file.</p></li>
+<li><p><strong>file2</strong> – Path to the second file.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>True if the files are equivalent within the specified precision, False otherwise.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="EMFieldML.Utils.FloatAssert.FloatAssert.compare_float_arrays">
+<span class="sig-name descname"><span class="pre">compare_float_arrays</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">array1</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v2.3)"><span class="pre">numpy.ndarray</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">array2</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v2.3)"><span class="pre">numpy.ndarray</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.14)"><span class="pre">bool</span></a></span></span><a class="headerlink" href="#EMFieldML.Utils.FloatAssert.FloatAssert.compare_float_arrays" title="Link to this definition">#</a></dt>
+<dd><p>Compare two arrays of floats within the specified precision.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>array1</strong> – The first array of floats.</p></li>
+<li><p><strong>array2</strong> – The second array of floats.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>True if the arrays are equivalent within the precision, False otherwise.</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<p id="module-EMFieldML.Utils.logger">Custom logger class to add line numbers to log messages with a level of WARNING or higher.</p>
+<dl class="py class">
+<dt class="sig sig-object py" id="EMFieldML.Utils.logger.Logger">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">EMFieldML.Utils.logger.</span></span><span class="sig-name descname"><span class="pre">Logger</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">level</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">20</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fmt</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">log_file</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">log_dir</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'log'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#EMFieldML.Utils.logger.Logger" title="Link to this definition">#</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.14)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<p>Custom logger class to add line
+numbers to log messages with a level
+of WARNING or higher.</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="EMFieldML.Utils.logger.Logger.level">
+<span class="sig-name descname"><span class="pre">level</span></span><a class="headerlink" href="#EMFieldML.Utils.logger.Logger.level" title="Link to this definition">#</a></dt>
+<dd><p>The logging level for the logger.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.14)">str</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="EMFieldML.Utils.logger.Logger.fmt">
+<span class="sig-name descname"><span class="pre">fmt</span></span><a class="headerlink" href="#EMFieldML.Utils.logger.Logger.fmt" title="Link to this definition">#</a></dt>
+<dd><p>The format for the log messages.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.14)">str</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="EMFieldML.Utils.logger.Logger.log_file">
+<span class="sig-name descname"><span class="pre">log_file</span></span><a class="headerlink" href="#EMFieldML.Utils.logger.Logger.log_file" title="Link to this definition">#</a></dt>
+<dd><p>The log file to write the log messages to.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.14)">str</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="EMFieldML.Utils.logger.Logger.log_dir">
+<span class="sig-name descname"><span class="pre">log_dir</span></span><a class="headerlink" href="#EMFieldML.Utils.logger.Logger.log_dir" title="Link to this definition">#</a></dt>
+<dd><p>The directory to store the log files.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.14)">str</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="EMFieldML.Utils.logger.Logger.__init__">
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">level</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">20</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fmt</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">log_file</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">log_dir</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'log'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#EMFieldML.Utils.logger.Logger.__init__" title="Link to this definition">#</a></dt>
+<dd><p>Initialize the CustomLogger class.</p>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="EMFieldML.Utils.logger.Logger.LineNumberFilter">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">LineNumberFilter</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#EMFieldML.Utils.logger.Logger.LineNumberFilter" title="Link to this definition">#</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/logging.html#logging.Filter" title="(in Python v3.14)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Filter</span></code></a></p>
+<p>Custom filter class to add line numbers.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="EMFieldML.Utils.logger.Logger.LineNumberFilter.filter">
+<span class="sig-name descname"><span class="pre">filter</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">record</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#EMFieldML.Utils.logger.Logger.LineNumberFilter.filter" title="Link to this definition">#</a></dt>
+<dd><p>Filter log records to add line number information.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="EMFieldML.Utils.logger.Logger.get_logger">
+<span class="sig-name descname"><span class="pre">get_logger</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#EMFieldML.Utils.logger.Logger.get_logger" title="Link to this definition">#</a></dt>
+<dd><p>Create and configure a logger with the provided name.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>name</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.14)"><em>str</em></a>) – The name for the logger, typically use __name__ from the calling module.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Configured logger instance.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/logging.html#logging.Logger" title="(in Python v3.14)">logging.Logger</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<p id="module-EMFieldML.Utils.ShieldModeler">Ferrite shield modeling and parameter generation.</p>
+<p>Create parameters for the ferrite shield.
+372 types of ferrite shield shapes are created.
+By preparing 169 positions for these, a total of 62,868 pieces of data are created.</p>
+<dl class="py class">
+<dt class="sig sig-object py" id="EMFieldML.Utils.ShieldModeler.ShieldModeler">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">EMFieldML.Utils.ShieldModeler.</span></span><span class="sig-name descname"><span class="pre">ShieldModeler</span></span><a class="headerlink" href="#EMFieldML.Utils.ShieldModeler.ShieldModeler" title="Link to this definition">#</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.14)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<p>Generate ferrite shield shapes and parameters for electromagnetic field modeling.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="EMFieldML.Utils.ShieldModeler.ShieldModeler.make_shield_coordinate">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">make_shield_coordinate</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.14)"><span class="pre">None</span></a></span></span><a class="headerlink" href="#EMFieldML.Utils.ShieldModeler.ShieldModeler.make_shield_coordinate" title="Link to this definition">#</a></dt>
+<dd><p>Create parameters for the ferrite shield.</p>
+</dd></dl>
+
+</dd></dl>
+
 </section>
 
 
@@ -482,6 +728,50 @@ document.write(`
             </div>
             
             
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Utils.DataSelect.DataSelect"><code class="docutils literal notranslate"><span class="pre">DataSelect</span></code></a><ul class="visible nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Utils.DataSelect.DataSelect.select_init_data"><code class="docutils literal notranslate"><span class="pre">DataSelect.select_init_data()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Utils.DataSelect.DataSelect.generate_x_train_init"><code class="docutils literal notranslate"><span class="pre">DataSelect.generate_x_train_init()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Utils.DataSelect.DataSelect.generate_x_test_init"><code class="docutils literal notranslate"><span class="pre">DataSelect.generate_x_test_init()</span></code></a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Utils.FloatAssert.FloatAssert"><code class="docutils literal notranslate"><span class="pre">FloatAssert</span></code></a><ul class="visible nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Utils.FloatAssert.FloatAssert.__init__"><code class="docutils literal notranslate"><span class="pre">FloatAssert.__init__()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Utils.FloatAssert.FloatAssert.read_floats_from_file"><code class="docutils literal notranslate"><span class="pre">FloatAssert.read_floats_from_file()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Utils.FloatAssert.FloatAssert.compare_files"><code class="docutils literal notranslate"><span class="pre">FloatAssert.compare_files()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Utils.FloatAssert.FloatAssert.compare_float_arrays"><code class="docutils literal notranslate"><span class="pre">FloatAssert.compare_float_arrays()</span></code></a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Utils.logger.Logger"><code class="docutils literal notranslate"><span class="pre">Logger</span></code></a><ul class="visible nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Utils.logger.Logger.level"><code class="docutils literal notranslate"><span class="pre">Logger.level</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Utils.logger.Logger.fmt"><code class="docutils literal notranslate"><span class="pre">Logger.fmt</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Utils.logger.Logger.log_file"><code class="docutils literal notranslate"><span class="pre">Logger.log_file</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Utils.logger.Logger.log_dir"><code class="docutils literal notranslate"><span class="pre">Logger.log_dir</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Utils.logger.Logger.__init__"><code class="docutils literal notranslate"><span class="pre">Logger.__init__()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Utils.logger.Logger.LineNumberFilter"><code class="docutils literal notranslate"><span class="pre">Logger.LineNumberFilter</span></code></a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Utils.logger.Logger.LineNumberFilter.filter"><code class="docutils literal notranslate"><span class="pre">Logger.LineNumberFilter.filter()</span></code></a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Utils.logger.Logger.get_logger"><code class="docutils literal notranslate"><span class="pre">Logger.get_logger()</span></code></a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Utils.ShieldModeler.ShieldModeler"><code class="docutils literal notranslate"><span class="pre">ShieldModeler</span></code></a><ul class="visible nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Utils.ShieldModeler.ShieldModeler.make_shield_coordinate"><code class="docutils literal notranslate"><span class="pre">ShieldModeler.make_shield_coordinate()</span></code></a></li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+</div></div>
               
             
           </div>

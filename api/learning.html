@@ -445,8 +445,33 @@ document.write(`
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#classes">Classes</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#fieldgpregressor">FieldGPRegressor</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#targetdatabuilder">TargetDataBuilder</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#fieldgpregressor">FieldGPRegressor</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Learning.Learning.FieldGPRegressor"><code class="docutils literal notranslate"><span class="pre">FieldGPRegressor</span></code></a><ul class="nav section-nav flex-column">
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Learning.Learning.FieldGPRegressor.make_x_train_data"><code class="docutils literal notranslate"><span class="pre">FieldGPRegressor.make_x_train_data()</span></code></a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Learning.Learning.FieldGPRegressor.make_y_train_data"><code class="docutils literal notranslate"><span class="pre">FieldGPRegressor.make_y_train_data()</span></code></a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Learning.Learning.FieldGPRegressor.prepare_model"><code class="docutils literal notranslate"><span class="pre">FieldGPRegressor.prepare_model()</span></code></a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Learning.Learning.FieldGPRegressor.calculate_deviation"><code class="docutils literal notranslate"><span class="pre">FieldGPRegressor.calculate_deviation()</span></code></a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Learning.Learning.FieldGPRegressor.learning_magneticfield"><code class="docutils literal notranslate"><span class="pre">FieldGPRegressor.learning_magneticfield()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#targetdatabuilder">TargetDataBuilder</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Learning.YDataMaker.TargetDataBuilder"><code class="docutils literal notranslate"><span class="pre">TargetDataBuilder</span></code></a><ul class="nav section-nav flex-column">
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Learning.YDataMaker.TargetDataBuilder.bisect"><code class="docutils literal notranslate"><span class="pre">TargetDataBuilder.bisect()</span></code></a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Learning.YDataMaker.TargetDataBuilder.calculate_magnitude"><code class="docutils literal notranslate"><span class="pre">TargetDataBuilder.calculate_magnitude()</span></code></a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Learning.YDataMaker.TargetDataBuilder.write_data"><code class="docutils literal notranslate"><span class="pre">TargetDataBuilder.write_data()</span></code></a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Learning.YDataMaker.TargetDataBuilder.make_new_ydatafile"><code class="docutils literal notranslate"><span class="pre">TargetDataBuilder.make_new_ydatafile()</span></code></a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Learning.YDataMaker.TargetDataBuilder.calculate_vector"><code class="docutils literal notranslate"><span class="pre">TargetDataBuilder.calculate_vector()</span></code></a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Learning.YDataMaker.TargetDataBuilder.write_data_vector"><code class="docutils literal notranslate"><span class="pre">TargetDataBuilder.write_data_vector()</span></code></a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Learning.YDataMaker.TargetDataBuilder.calculateTrilinearWeight"><code class="docutils literal notranslate"><span class="pre">TargetDataBuilder.calculateTrilinearWeight()</span></code></a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Learning.YDataMaker.TargetDataBuilder.make_new_ydatafile_vector"><code class="docutils literal notranslate"><span class="pre">TargetDataBuilder.make_new_ydatafile_vector()</span></code></a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Learning.YDataMaker.TargetDataBuilder.write_data_efficiency"><code class="docutils literal notranslate"><span class="pre">TargetDataBuilder.write_data_efficiency()</span></code></a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Learning.YDataMaker.TargetDataBuilder.make_new_ydatafile_efficiency"><code class="docutils literal notranslate"><span class="pre">TargetDataBuilder.make_new_ydatafile_efficiency()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -472,9 +497,317 @@ Some modules may not be fully documented due to import dependencies.</p>
 <h2>Classes<a class="headerlink" href="#classes" title="Link to this heading">#</a></h2>
 <section id="fieldgpregressor">
 <h3>FieldGPRegressor<a class="headerlink" href="#fieldgpregressor" title="Link to this heading">#</a></h3>
+<dl class="py class">
+<dt class="sig sig-object py" id="EMFieldML.Learning.Learning.FieldGPRegressor">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">EMFieldML.Learning.Learning.</span></span><span class="sig-name descname"><span class="pre">FieldGPRegressor</span></span><a class="headerlink" href="#EMFieldML.Learning.Learning.FieldGPRegressor" title="Link to this definition">#</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.14)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<p>Gaussian Process regression for electromagnetic field prediction.</p>
+<p>This class handles the complete ML pipeline for predicting electromagnetic
+field magnitudes using GPyTorch. It includes data loading, model training,
+and prediction capabilities for ferrite shield optimization.</p>
+<p>In Gaussian Process Regression, we first create a prior distribution using
+a kernel function. We assume that the prediction follows this distribution.
+Then, the parameters of the kernel function are optimized to fit the training data.</p>
+<p>Its key characteristic is the ability to achieve accurate learning with a
+small amount of data and a short training time.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="EMFieldML.Learning.Learning.FieldGPRegressor.make_x_train_data">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">make_x_train_data</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_path_train_list</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/pathlib.html#pathlib.Path" title="(in Python v3.14)"><span class="pre">Path</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">input_path_circle</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.14)"><span class="pre">str</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.14)"><span class="pre">None</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v2.3)"><span class="pre">numpy.ndarray</span></a></span></span><a class="headerlink" href="#EMFieldML.Learning.Learning.FieldGPRegressor.make_x_train_data" title="Link to this definition">#</a></dt>
+<dd><p>Load and prepare training input data from FEKO simulation files.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>input_path_train_list</strong> – Path to file containing list of training data indices</p></li>
+<li><p><strong>input_path_circle</strong> – Template path for circle move data files</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>numpy array of shape (n_samples, config.dimension_x) containing training features</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="EMFieldML.Learning.Learning.FieldGPRegressor.make_y_train_data">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">make_y_train_data</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_path_y_data</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.14)"><span class="pre">str</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">postprocessing_value</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.14)"><span class="pre">float</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">1.0</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#EMFieldML.Learning.Learning.FieldGPRegressor.make_y_train_data" title="Link to this definition">#</a></dt>
+<dd><p>Create Y training data with postprocessing.</p>
+<p>This is the power transformation.
+This transformation helps make skewed data more closely resemble a normal distribution.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This transformation corresponds to Figure 7 of the paper.</p>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="EMFieldML.Learning.Learning.FieldGPRegressor.prepare_model">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">prepare_model</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_path_y_data</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/pathlib.html#pathlib.Path" title="(in Python v3.14)"><span class="pre">Path</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">x_train_data</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v2.3)"><span class="pre">numpy.ndarray</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#tuple" title="(in Python v3.14)"><span class="pre">tuple</span></a></span></span><a class="headerlink" href="#EMFieldML.Learning.Learning.FieldGPRegressor.prepare_model" title="Link to this definition">#</a></dt>
+<dd><p>Prepare machine learning model for training.</p>
+<p>The prepared model is RBF kernel-based Gaussian Process Regression.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="EMFieldML.Learning.Learning.FieldGPRegressor.calculate_deviation">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">calculate_deviation</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_path_circle</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/pathlib.html#pathlib.Path" title="(in Python v3.14)"><span class="pre">Path</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">model</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">likelihood</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">gpytorch.likelihoods.GaussianLikelihood</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.14)"><span class="pre">float</span></a></span></span><a class="headerlink" href="#EMFieldML.Learning.Learning.FieldGPRegressor.calculate_deviation" title="Link to this definition">#</a></dt>
+<dd><p>Calculate deviation using Gaussian Process model.</p>
+<p>The predictive variance, which quantifies the uncertainty of the prediction,
+is calculated simultaneously with the prediction itself in Gaussian Process Regression.
+This is done according to Equation (9) of the paper.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="EMFieldML.Learning.Learning.FieldGPRegressor.learning_magneticfield">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">learning_magneticfield</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_path_y_data</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/pathlib.html#pathlib.Path" title="(in Python v3.14)"><span class="pre">Path</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">output_path</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/pathlib.html#pathlib.Path" title="(in Python v3.14)"><span class="pre">Path</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">x_train_data</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v2.3)"><span class="pre">numpy.ndarray</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">lr_record</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.14)"><span class="pre">float</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0.02</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">iter_record</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.14)"><span class="pre">int</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">1500</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">inter_record</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.14)"><span class="pre">int</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">600</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">small_record</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.14)"><span class="pre">float</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">5.0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">initial_noise</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.14)"><span class="pre">float</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0.7071067811865475</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#EMFieldML.Learning.Learning.FieldGPRegressor.learning_magneticfield" title="Link to this definition">#</a></dt>
+<dd><p>Train magnetic field learning model.</p>
+<p>The training algorithm is based on maximizing the likelihood method.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>input_path_y_data</strong> – Path to training target data</p></li>
+<li><p><strong>output_path</strong> – Path to save the trained model</p></li>
+<li><p><strong>x_train_data</strong> – Training input data</p></li>
+<li><p><strong>lr_record</strong> – Learning rate for optimizer</p></li>
+<li><p><strong>iter_record</strong> – Number of training iterations</p></li>
+<li><p><strong>inter_record</strong> – Interval for learning rate adjustment</p></li>
+<li><p><strong>small_record</strong> – Factor for learning rate reduction</p></li>
+<li><p><strong>initial_noise</strong> – Initial noise level for Gaussian likelihood</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
 </section>
 <section id="targetdatabuilder">
 <h3>TargetDataBuilder<a class="headerlink" href="#targetdatabuilder" title="Link to this heading">#</a></h3>
+<dl class="py class">
+<dt class="sig sig-object py" id="EMFieldML.Learning.YDataMaker.TargetDataBuilder">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">EMFieldML.Learning.YDataMaker.</span></span><span class="sig-name descname"><span class="pre">TargetDataBuilder</span></span><a class="headerlink" href="#EMFieldML.Learning.YDataMaker.TargetDataBuilder" title="Link to this definition">#</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.14)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<p>Class for creating Y data for machine learning models.</p>
+<p>The ground truth data is created for machine learning.
+The ground truth data here consists of the magnetic field magnitude,
+vector direction, and efficiency at each point.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="EMFieldML.Learning.YDataMaker.TargetDataBuilder.bisect">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">bisect</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">point_data_list</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.14)"><span class="pre">list</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.14)"><span class="pre">int</span></a><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">point</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.14)"><span class="pre">float</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.14)"><span class="pre">int</span></a></span></span><a class="headerlink" href="#EMFieldML.Learning.YDataMaker.TargetDataBuilder.bisect" title="Link to this definition">#</a></dt>
+<dd><p>Search for the position of the value within the list.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>point_data_list</strong> – List of data points to search through</p></li>
+<li><p><strong>point</strong> – The value to search for in the vicinity</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Index of the closest lower value in the list</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.14)">int</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="EMFieldML.Learning.YDataMaker.TargetDataBuilder.calculate_magnitude">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">calculate_magnitude</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">Hx</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.14)"><span class="pre">float</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">Hx_theta</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.14)"><span class="pre">float</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">Hy</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.14)"><span class="pre">float</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">Hy_theta</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.14)"><span class="pre">float</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">Hz</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.14)"><span class="pre">float</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">Hz_theta</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.14)"><span class="pre">float</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.14)"><span class="pre">float</span></a></span></span><a class="headerlink" href="#EMFieldML.Learning.YDataMaker.TargetDataBuilder.calculate_magnitude" title="Link to this definition">#</a></dt>
+<dd><p>Calculate magnitude from field components.</p>
+<p>The magnetic field calculated by the FEKO simulator consists of
+a magnitude and a phase for each of the x, y, and z components.
+The magnetic field is therefore represented by an equation similar
+to the one below:</p>
+<p>MagneticField = Hx * cos(theta + Hx_theta) + Hy * cos(theta + Hy_theta) + Hz * cos(theta + Hz_theta)</p>
+<p>From this, the maximum value of the magnetic field is calculated
+over the theta.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>Hx</strong> – Magnitude of the x-component of the magnetic field</p></li>
+<li><p><strong>Hx_theta</strong> – Phase of the x-component of the magnetic field (degrees)</p></li>
+<li><p><strong>Hy</strong> – Magnitude of the y-component of the magnetic field</p></li>
+<li><p><strong>Hy_theta</strong> – Phase of the y-component of the magnetic field (degrees)</p></li>
+<li><p><strong>Hz</strong> – Magnitude of the z-component of the magnetic field</p></li>
+<li><p><strong>Hz_theta</strong> – Phase of the z-component of the magnetic field (degrees)</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Maximum magnitude of the magnetic field</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.14)">float</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="EMFieldML.Learning.YDataMaker.TargetDataBuilder.write_data">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">write_data</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.14)"><span class="pre">list</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.14)"><span class="pre">list</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.14)"><span class="pre">float</span></a><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">input_path_raw_data</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/pathlib.html#pathlib.Path" title="(in Python v3.14)"><span class="pre">Path</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">input_path_prediction_point</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/pathlib.html#pathlib.Path" title="(in Python v3.14)"><span class="pre">Path</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">prediction_point_list</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.14)"><span class="pre">list</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.14)"><span class="pre">int</span></a><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.14)"><span class="pre">list</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.14)"><span class="pre">list</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.14)"><span class="pre">float</span></a><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#EMFieldML.Learning.YDataMaker.TargetDataBuilder.write_data" title="Link to this definition">#</a></dt>
+<dd><p>Write data to files with prediction point processing.</p>
+<p>FEKO can calculate the magnetic field only at fixed points.
+To apply this to points between those fixed points, it’s possible
+to use trilinear interpolation, a 3D linear interpolation method.
+It’s based on a linear interpolation of the distances from each vertex of a cube.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>data</strong> – List to store the calculated data</p></li>
+<li><p><strong>input_path_raw_data</strong> – Path to the FEKO output file</p></li>
+<li><p><strong>input_path_prediction_point</strong> – Path to the file containing prediction points</p></li>
+<li><p><strong>prediction_point_list</strong> – List of indices for prediction points to process</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Updated data list with calculated values</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.14)">list</a>[<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.14)">list</a>[<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.14)">float</a>]]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="EMFieldML.Learning.YDataMaker.TargetDataBuilder.make_new_ydatafile">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">make_new_ydatafile</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x_train_list</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.14)"><span class="pre">list</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.14)"><span class="pre">int</span></a><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">output_dir</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/pathlib.html#pathlib.Path" title="(in Python v3.14)"><span class="pre">Path</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">input_path_raw_data_dir</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/pathlib.html#pathlib.Path" title="(in Python v3.14)"><span class="pre">Path</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">EMFieldML.config.paths.CIRCLE_FEKO_RAW_DIR</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">input_path_prediction_point_dir</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/pathlib.html#pathlib.Path" title="(in Python v3.14)"><span class="pre">Path</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">EMFieldML.config.paths.CIRCLE_PREDICTION_POINT_DIR</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">input_path_prediction_point_file</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.14)"><span class="pre">str</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">EMFieldML.config.template.circle_prediction_point_move</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">output_file</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.14)"><span class="pre">str</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">EMFieldML.config.template.y_data_magnitude</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">prediction_point_list</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.14)"><span class="pre">list</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">n_prediction_points</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.14)"><span class="pre">int</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.14)"><span class="pre">None</span></a></span></span><a class="headerlink" href="#EMFieldML.Learning.YDataMaker.TargetDataBuilder.make_new_ydatafile" title="Link to this definition">#</a></dt>
+<dd><p>Create new Y data file for training.</p>
+<p>The data generation method employs a linear interpolation
+of the distances from each vertex of a cube.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>x_train_list</strong> – List of training data indices</p></li>
+<li><p><strong>output_dir</strong> – Directory to save the output file</p></li>
+<li><p><strong>input_path_raw_data_dir</strong> – Directory containing raw FEKO data files</p></li>
+<li><p><strong>input_path_prediction_point_dir</strong> – Directory containing prediction point files</p></li>
+<li><p><strong>input_path_prediction_point_file</strong> – File name containing prediction point positions</p></li>
+<li><p><strong>output_file</strong> – output file names</p></li>
+<li><p><strong>prediction_point_list</strong> – List of indices for prediction points to process</p></li>
+<li><p><strong>n_prediction_points</strong> – Total number of prediction points</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="EMFieldML.Learning.YDataMaker.TargetDataBuilder.calculate_vector">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">calculate_vector</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">Hx</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Hx_theta</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Hy</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Hy_theta</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Hz</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Hz_theta</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#EMFieldML.Learning.YDataMaker.TargetDataBuilder.calculate_vector" title="Link to this definition">#</a></dt>
+<dd><p>Calculate vector components from field data.</p>
+<p>The magnetic field calculated by the FEKO simulator consists of
+a magnitude and a phase for each of the x, y, and z components.
+The magnetic field is therefore represented by an equation similar
+to the one below:</p>
+<p>MagneticField = Hx * cos(theta + Hx_theta) + Hy * cos(theta + Hy_theta) + Hz * cos(theta + Hz_theta)</p>
+<p>The vector’s direction is calculated based on this equation.
+However, theta can be any arbitrary value, and in this case,
+the theta = -140 has been selected as the theta at which
+the vector at the center of the coil becomes maximal.</p>
+<p>The vector is converted into a polar coordinate system.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>Hx</strong> – Magnitude of the x-component of the magnetic field</p></li>
+<li><p><strong>Hx_theta</strong> – Phase of the x-component of the magnetic field (degrees)</p></li>
+<li><p><strong>Hy</strong> – Magnitude of the y-component of the magnetic field</p></li>
+<li><p><strong>Hy_theta</strong> – Phase of the y-component of the magnetic field (degrees)</p></li>
+<li><p><strong>Hz</strong> – Magnitude of the z-component of the magnetic field</p></li>
+<li><p><strong>Hz_theta</strong> – Phase of the z-component of the magnetic field (degrees)</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>(theta, phi) angles in radians representing the vector direction</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#tuple" title="(in Python v3.14)">tuple</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="EMFieldML.Learning.YDataMaker.TargetDataBuilder.write_data_vector">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">write_data_vector</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data_theta</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.14)"><span class="pre">list</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.14)"><span class="pre">list</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.14)"><span class="pre">float</span></a><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">data_phi</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.14)"><span class="pre">list</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.14)"><span class="pre">list</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.14)"><span class="pre">float</span></a><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">input_path_raw_data</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/pathlib.html#pathlib.Path" title="(in Python v3.14)"><span class="pre">Path</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">input_path_prediction_point</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/pathlib.html#pathlib.Path" title="(in Python v3.14)"><span class="pre">Path</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">prediction_point_list</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.14)"><span class="pre">list</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.14)"><span class="pre">int</span></a><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#EMFieldML.Learning.YDataMaker.TargetDataBuilder.write_data_vector" title="Link to this definition">#</a></dt>
+<dd><p>Write vector data to files.
+Three-dimensional linear interpolation from each vertex
+of a cube is also applied to the vectors.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>data_theta</strong> – List to store theta components of the vector</p></li>
+<li><p><strong>data_phi</strong> – List to store phi components of the vector</p></li>
+<li><p><strong>input_path_raw_data</strong> – Path to the FEKO output file</p></li>
+<li><p><strong>input_path_prediction_point</strong> – Path to the file containing prediction point positions</p></li>
+<li><p><strong>prediction_point_list</strong> – List of indices for prediction points to process</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Updated data_theta and data_phi lists with calculated values</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#tuple" title="(in Python v3.14)">tuple</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="EMFieldML.Learning.YDataMaker.TargetDataBuilder.calculateTrilinearWeight">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">calculateTrilinearWeight</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">prePoint</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.14)"><span class="pre">list</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.14)"><span class="pre">float</span></a><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">nowPoint</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.14)"><span class="pre">list</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.14)"><span class="pre">float</span></a><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">basedPointA</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.14)"><span class="pre">list</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.14)"><span class="pre">float</span></a><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">basedPointB</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.14)"><span class="pre">list</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.14)"><span class="pre">float</span></a><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.14)"><span class="pre">float</span></a></span></span><a class="headerlink" href="#EMFieldML.Learning.YDataMaker.TargetDataBuilder.calculateTrilinearWeight" title="Link to this definition">#</a></dt>
+<dd><p>Calculate the trilinear weight for the given point.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="EMFieldML.Learning.YDataMaker.TargetDataBuilder.make_new_ydatafile_vector">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">make_new_ydatafile_vector</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x_train_list</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.14)"><span class="pre">list</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.14)"><span class="pre">int</span></a><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">output_dir</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/pathlib.html#pathlib.Path" title="(in Python v3.14)"><span class="pre">Path</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">input_path_raw_data_dir</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">EMFieldML.config.paths.CIRCLE_FEKO_RAW_DIR</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">input_path_prediction_point_dir</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">EMFieldML.config.paths.CIRCLE_PREDICTION_POINT_DIR</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">input_path_prediction_point_file</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">EMFieldML.config.template.circle_prediction_point_move</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">output_file_theta</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.14)"><span class="pre">str</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">EMFieldML.config.template.y_data_vector_theta</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">output_file_phi</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.14)"><span class="pre">str</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">EMFieldML.config.template.y_data_vector_phi</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">prediction_point_list</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">n_prediction_points</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.14)"><span class="pre">int</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#EMFieldML.Learning.YDataMaker.TargetDataBuilder.make_new_ydatafile_vector" title="Link to this definition">#</a></dt>
+<dd><p>Create new Y data file for vector training.
+Three-dimensional linear interpolation from each vertex
+of a cube is also applied to the vectors.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>x_train_list</strong> – List of training data indices</p></li>
+<li><p><strong>output_dir</strong> – Directory to save the output file</p></li>
+<li><p><strong>input_path_raw_data_dir</strong> – Directory containing raw FEKO data files</p></li>
+<li><p><strong>input_path_prediction_point_dir</strong> – Directory containing prediction point files</p></li>
+<li><p><strong>input_path_prediction_point_file</strong> – File name containing prediction point positions</p></li>
+<li><p><strong>output_file_theta</strong> – output file names for theta component</p></li>
+<li><p><strong>output_file_phi</strong> – output file names for phi component</p></li>
+<li><p><strong>prediction_point_list</strong> – List of indices for prediction points to process</p></li>
+<li><p><strong>n_prediction_points</strong> – Total number of prediction points</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="EMFieldML.Learning.YDataMaker.TargetDataBuilder.write_data_efficiency">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">write_data_efficiency</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.14)"><span class="pre">list</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.14)"><span class="pre">list</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.14)"><span class="pre">float</span></a><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">input_path_raw_data</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/pathlib.html#pathlib.Path" title="(in Python v3.14)"><span class="pre">Path</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.14)"><span class="pre">list</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.14)"><span class="pre">float</span></a><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#EMFieldML.Learning.YDataMaker.TargetDataBuilder.write_data_efficiency" title="Link to this definition">#</a></dt>
+<dd><p>Calculate the efficiency from the received out file and store it in the data.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="EMFieldML.Learning.YDataMaker.TargetDataBuilder.make_new_ydatafile_efficiency">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">make_new_ydatafile_efficiency</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x_train_list</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.14)"><span class="pre">list</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.14)"><span class="pre">int</span></a><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">output_dir</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/pathlib.html#pathlib.Path" title="(in Python v3.14)"><span class="pre">Path</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">input_path_raw_data_dir</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">EMFieldML.config.paths.CIRCLE_FEKO_RAW_DIR</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#EMFieldML.Learning.YDataMaker.TargetDataBuilder.make_new_ydatafile_efficiency" title="Link to this definition">#</a></dt>
+<dd><p>Execute the write_data_efficiency function for the out file corresponding to the given X_train, store the results in data, and collectively output them to a file.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>x_train_list</strong> – List of training data indices</p></li>
+<li><p><strong>output_dir</strong> – Directory to save the output file</p></li>
+<li><p><strong>input_path_raw_data_dir</strong> – Directory containing raw FEKO data files</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
 </section>
 </section>
 </section>
@@ -525,8 +858,33 @@ Some modules may not be fully documented due to import dependencies.</p>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#classes">Classes</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#fieldgpregressor">FieldGPRegressor</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#targetdatabuilder">TargetDataBuilder</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#fieldgpregressor">FieldGPRegressor</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Learning.Learning.FieldGPRegressor"><code class="docutils literal notranslate"><span class="pre">FieldGPRegressor</span></code></a><ul class="nav section-nav flex-column">
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Learning.Learning.FieldGPRegressor.make_x_train_data"><code class="docutils literal notranslate"><span class="pre">FieldGPRegressor.make_x_train_data()</span></code></a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Learning.Learning.FieldGPRegressor.make_y_train_data"><code class="docutils literal notranslate"><span class="pre">FieldGPRegressor.make_y_train_data()</span></code></a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Learning.Learning.FieldGPRegressor.prepare_model"><code class="docutils literal notranslate"><span class="pre">FieldGPRegressor.prepare_model()</span></code></a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Learning.Learning.FieldGPRegressor.calculate_deviation"><code class="docutils literal notranslate"><span class="pre">FieldGPRegressor.calculate_deviation()</span></code></a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Learning.Learning.FieldGPRegressor.learning_magneticfield"><code class="docutils literal notranslate"><span class="pre">FieldGPRegressor.learning_magneticfield()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#targetdatabuilder">TargetDataBuilder</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Learning.YDataMaker.TargetDataBuilder"><code class="docutils literal notranslate"><span class="pre">TargetDataBuilder</span></code></a><ul class="nav section-nav flex-column">
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Learning.YDataMaker.TargetDataBuilder.bisect"><code class="docutils literal notranslate"><span class="pre">TargetDataBuilder.bisect()</span></code></a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Learning.YDataMaker.TargetDataBuilder.calculate_magnitude"><code class="docutils literal notranslate"><span class="pre">TargetDataBuilder.calculate_magnitude()</span></code></a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Learning.YDataMaker.TargetDataBuilder.write_data"><code class="docutils literal notranslate"><span class="pre">TargetDataBuilder.write_data()</span></code></a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Learning.YDataMaker.TargetDataBuilder.make_new_ydatafile"><code class="docutils literal notranslate"><span class="pre">TargetDataBuilder.make_new_ydatafile()</span></code></a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Learning.YDataMaker.TargetDataBuilder.calculate_vector"><code class="docutils literal notranslate"><span class="pre">TargetDataBuilder.calculate_vector()</span></code></a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Learning.YDataMaker.TargetDataBuilder.write_data_vector"><code class="docutils literal notranslate"><span class="pre">TargetDataBuilder.write_data_vector()</span></code></a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Learning.YDataMaker.TargetDataBuilder.calculateTrilinearWeight"><code class="docutils literal notranslate"><span class="pre">TargetDataBuilder.calculateTrilinearWeight()</span></code></a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Learning.YDataMaker.TargetDataBuilder.make_new_ydatafile_vector"><code class="docutils literal notranslate"><span class="pre">TargetDataBuilder.make_new_ydatafile_vector()</span></code></a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Learning.YDataMaker.TargetDataBuilder.write_data_efficiency"><code class="docutils literal notranslate"><span class="pre">TargetDataBuilder.write_data_efficiency()</span></code></a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Learning.YDataMaker.TargetDataBuilder.make_new_ydatafile_efficiency"><code class="docutils literal notranslate"><span class="pre">TargetDataBuilder.make_new_ydatafile_efficiency()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>

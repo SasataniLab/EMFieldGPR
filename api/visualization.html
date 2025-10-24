@@ -131,6 +131,10 @@ document.write(`
   
 
   
+    <button class="pst-navbar-icon sidebar-toggle secondary-toggle" aria-label="On this page">
+      <span class="fa-solid fa-outdent"></span>
+    </button>
+  
 </div>
 
     </header>
@@ -417,7 +421,9 @@ document.write(`
   </button>
 `);
 </script>
-
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
 </div></div>
       
     </div>
@@ -433,6 +439,153 @@ document.write(`
     <div id="print-main-content">
         <div id="jb-print-toc">
             
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Visualize.Visualize.VisualizationConstants"><code class="docutils literal notranslate"><span class="pre">VisualizationConstants</span></code></a><ul class="visible nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Visualize.Visualize.VisualizationConstants.POINT_SIZE_MIN"><code class="docutils literal notranslate"><span class="pre">VisualizationConstants.POINT_SIZE_MIN</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Visualize.Visualize.VisualizationConstants.POINT_SIZE_MAX"><code class="docutils literal notranslate"><span class="pre">VisualizationConstants.POINT_SIZE_MAX</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Visualize.Visualize.VisualizationConstants.DEFAULT_POINT_SIZE"><code class="docutils literal notranslate"><span class="pre">VisualizationConstants.DEFAULT_POINT_SIZE</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Visualize.Visualize.VisualizationConstants.POSITION_MIN"><code class="docutils literal notranslate"><span class="pre">VisualizationConstants.POSITION_MIN</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Visualize.Visualize.VisualizationConstants.POSITION_MAX"><code class="docutils literal notranslate"><span class="pre">VisualizationConstants.POSITION_MAX</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Visualize.Visualize.VisualizationConstants.H1_MIN"><code class="docutils literal notranslate"><span class="pre">VisualizationConstants.H1_MIN</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Visualize.Visualize.VisualizationConstants.H1_MAX"><code class="docutils literal notranslate"><span class="pre">VisualizationConstants.H1_MAX</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Visualize.Visualize.VisualizationConstants.H2_MIN"><code class="docutils literal notranslate"><span class="pre">VisualizationConstants.H2_MIN</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Visualize.Visualize.VisualizationConstants.H2_MAX"><code class="docutils literal notranslate"><span class="pre">VisualizationConstants.H2_MAX</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Visualize.Visualize.VisualizationConstants.H3_MIN"><code class="docutils literal notranslate"><span class="pre">VisualizationConstants.H3_MIN</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Visualize.Visualize.VisualizationConstants.H3_MAX"><code class="docutils literal notranslate"><span class="pre">VisualizationConstants.H3_MAX</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Visualize.Visualize.VisualizationConstants.R1_MIN"><code class="docutils literal notranslate"><span class="pre">VisualizationConstants.R1_MIN</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Visualize.Visualize.VisualizationConstants.R1_MAX"><code class="docutils literal notranslate"><span class="pre">VisualizationConstants.R1_MAX</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Visualize.Visualize.VisualizationConstants.R2_MIN"><code class="docutils literal notranslate"><span class="pre">VisualizationConstants.R2_MIN</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Visualize.Visualize.VisualizationConstants.R3_MIN"><code class="docutils literal notranslate"><span class="pre">VisualizationConstants.R3_MIN</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Visualize.Visualize.VisualizationConstants.R4_MIN"><code class="docutils literal notranslate"><span class="pre">VisualizationConstants.R4_MIN</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Visualize.Visualize.VisualizationConstants.R4_MAX"><code class="docutils literal notranslate"><span class="pre">VisualizationConstants.R4_MAX</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Visualize.Visualize.VisualizationConstants.R2_R3_MIN_GAP"><code class="docutils literal notranslate"><span class="pre">VisualizationConstants.R2_R3_MIN_GAP</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Visualize.Visualize.VisualizationConstants.MESH_COLOR_MIN"><code class="docutils literal notranslate"><span class="pre">VisualizationConstants.MESH_COLOR_MIN</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Visualize.Visualize.VisualizationConstants.MESH_COLOR_MAX"><code class="docutils literal notranslate"><span class="pre">VisualizationConstants.MESH_COLOR_MAX</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Visualize.Visualize.VisualizationConstants.DEFAULT_TRANSPARENCY"><code class="docutils literal notranslate"><span class="pre">VisualizationConstants.DEFAULT_TRANSPARENCY</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Visualize.Visualize.VisualizationConstants.DEFAULT_COLORMAP"><code class="docutils literal notranslate"><span class="pre">VisualizationConstants.DEFAULT_COLORMAP</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Visualize.Visualize.VisualizationConstants.SMALL_RADIUS"><code class="docutils literal notranslate"><span class="pre">VisualizationConstants.SMALL_RADIUS</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Visualize.Visualize.VisualizationConstants.MEDIUM_RADIUS"><code class="docutils literal notranslate"><span class="pre">VisualizationConstants.MEDIUM_RADIUS</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Visualize.Visualize.VisualizationConstants.STL_Z_OFFSET"><code class="docutils literal notranslate"><span class="pre">VisualizationConstants.STL_Z_OFFSET</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Visualize.Visualize.VisualizationConstants.COLOR_BLACK"><code class="docutils literal notranslate"><span class="pre">VisualizationConstants.COLOR_BLACK</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Visualize.Visualize.VisualizationConstants.COLOR_GREEN"><code class="docutils literal notranslate"><span class="pre">VisualizationConstants.COLOR_GREEN</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Visualize.Visualize.VisualizationConstants.COLOR_LIGHT_BLUE"><code class="docutils literal notranslate"><span class="pre">VisualizationConstants.COLOR_LIGHT_BLUE</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Visualize.Visualize.VisualizationConstants.COLOR_DARK_BLUE"><code class="docutils literal notranslate"><span class="pre">VisualizationConstants.COLOR_DARK_BLUE</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Visualize.Visualize.VisualizationConstants.COLOR_ORANGE"><code class="docutils literal notranslate"><span class="pre">VisualizationConstants.COLOR_ORANGE</span></code></a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Visualize.Visualize.VisualizationUI"><code class="docutils literal notranslate"><span class="pre">VisualizationUI</span></code></a><ul class="visible nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Visualize.Visualize.VisualizationUI.__init__"><code class="docutils literal notranslate"><span class="pre">VisualizationUI.__init__()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Visualize.Visualize.VisualizationUI.render_controls"><code class="docutils literal notranslate"><span class="pre">VisualizationUI.render_controls()</span></code></a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Visualize.Visualize.Visualize"><code class="docutils literal notranslate"><span class="pre">Visualize</span></code></a><ul class="visible nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Visualize.Visualize.Visualize.number"><code class="docutils literal notranslate"><span class="pre">Visualize.number</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Visualize.Visualize.Visualize.ui"><code class="docutils literal notranslate"><span class="pre">Visualize.ui</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Visualize.Visualize.Visualize.point_size"><code class="docutils literal notranslate"><span class="pre">Visualize.point_size</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Visualize.Visualize.Visualize.efficiency"><code class="docutils literal notranslate"><span class="pre">Visualize.efficiency</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Visualize.Visualize.Visualize.values"><code class="docutils literal notranslate"><span class="pre">Visualize.values</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Visualize.Visualize.Visualize.magnetic_vector"><code class="docutils literal notranslate"><span class="pre">Visualize.magnetic_vector</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Visualize.Visualize.Visualize.__init__"><code class="docutils literal notranslate"><span class="pre">Visualize.__init__()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Visualize.Visualize.Visualize.visualize"><code class="docutils literal notranslate"><span class="pre">Visualize.visualize()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Visualize.Visualize.Visualize.callback"><code class="docutils literal notranslate"><span class="pre">Visualize.callback()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Visualize.Visualize.Visualize.make_modeling_visualization"><code class="docutils literal notranslate"><span class="pre">Visualize.make_modeling_visualization()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Visualize.Visualize.Visualize.linearblendskining"><code class="docutils literal notranslate"><span class="pre">Visualize.linearblendskining()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Visualize.Visualize.Visualize.calculate_weight"><code class="docutils literal notranslate"><span class="pre">Visualize.calculate_weight()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Visualize.Visualize.Visualize.make_tetra"><code class="docutils literal notranslate"><span class="pre">Visualize.make_tetra()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Visualize.Visualize.Visualize.convert_to_db"><code class="docutils literal notranslate"><span class="pre">Visualize.convert_to_db()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Visualize.Visualize.Visualize.measure_finish_time"><code class="docutils literal notranslate"><span class="pre">Visualize.measure_finish_time()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Visualize.Visualize.Visualize.update_window"><code class="docutils literal notranslate"><span class="pre">Visualize.update_window()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Visualize.Visualize.Visualize.make_prediction_structure"><code class="docutils literal notranslate"><span class="pre">Visualize.make_prediction_structure()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Visualize.Visualize.Visualize.make_ferrite_shield"><code class="docutils literal notranslate"><span class="pre">Visualize.make_ferrite_shield()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Visualize.Visualize.Visualize.prediction_prepare"><code class="docutils literal notranslate"><span class="pre">Visualize.prediction_prepare()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Visualize.Visualize.Visualize.visualization_prepare"><code class="docutils literal notranslate"><span class="pre">Visualize.visualization_prepare()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Visualize.Visualize.Visualize.update_values_for_move"><code class="docutils literal notranslate"><span class="pre">Visualize.update_values_for_move()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Visualize.Visualize.Visualize.update_values_for_shape"><code class="docutils literal notranslate"><span class="pre">Visualize.update_values_for_shape()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Visualize.Visualize.Visualize.get_values"><code class="docutils literal notranslate"><span class="pre">Visualize.get_values()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Visualize.Visualize.Visualize.get_efficiency"><code class="docutils literal notranslate"><span class="pre">Visualize.get_efficiency()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Visualize.Visualize.Visualize.get_prediction_points"><code class="docutils literal notranslate"><span class="pre">Visualize.get_prediction_points()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Visualize.Visualize.Visualize.test_setup"><code class="docutils literal notranslate"><span class="pre">Visualize.test_setup()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Visualize.Visualize.Visualize.test_predictions"><code class="docutils literal notranslate"><span class="pre">Visualize.test_predictions()</span></code></a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Visualize.Prediction.rbf_kernel"><code class="docutils literal notranslate"><span class="pre">rbf_kernel()</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Visualize.Prediction.mean_function"><code class="docutils literal notranslate"><span class="pre">mean_function()</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Visualize.Prediction.mean_function_one"><code class="docutils literal notranslate"><span class="pre">mean_function_one()</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Visualize.Prediction.calculate_mu_star"><code class="docutils literal notranslate"><span class="pre">calculate_mu_star()</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Visualize.Prediction.calculate_mu_star_one"><code class="docutils literal notranslate"><span class="pre">calculate_mu_star_one()</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Visualize.Prediction.make_y_data"><code class="docutils literal notranslate"><span class="pre">make_y_data()</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Visualize.Prediction.calculate_K_inv_Y_train"><code class="docutils literal notranslate"><span class="pre">calculate_K_inv_Y_train()</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Visualize.Prediction.prediction_prepare"><code class="docutils literal notranslate"><span class="pre">prediction_prepare()</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Visualize.Prediction.prediction_prepare_efficiency"><code class="docutils literal notranslate"><span class="pre">prediction_prepare_efficiency()</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Visualize.Prediction.mu_star"><code class="docutils literal notranslate"><span class="pre">mu_star()</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Visualize.Prediction.mu_star_one"><code class="docutils literal notranslate"><span class="pre">mu_star_one()</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Visualize.Prediction.mu_star_efficiency"><code class="docutils literal notranslate"><span class="pre">mu_star_efficiency()</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Visualize.Prediction.vector"><code class="docutils literal notranslate"><span class="pre">vector()</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Visualize.Prediction.vector_one"><code class="docutils literal notranslate"><span class="pre">vector_one()</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Visualize.Prediction.calculate_error_no_devide"><code class="docutils literal notranslate"><span class="pre">calculate_error_no_devide()</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Visualize.Prediction.calculate_error"><code class="docutils literal notranslate"><span class="pre">calculate_error()</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Visualize.Prediction.calculate_error_square"><code class="docutils literal notranslate"><span class="pre">calculate_error_square()</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Visualize.Prediction.pre_magneticfield"><code class="docutils literal notranslate"><span class="pre">pre_magneticfield()</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Visualize.Prediction.pre_vector"><code class="docutils literal notranslate"><span class="pre">pre_vector()</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Visualize.Deformation.change_X_test"><code class="docutils literal notranslate"><span class="pre">change_X_test()</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Visualize.Deformation.change_h1"><code class="docutils literal notranslate"><span class="pre">change_h1()</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Visualize.Deformation.change_h2"><code class="docutils literal notranslate"><span class="pre">change_h2()</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Visualize.Deformation.change_h3"><code class="docutils literal notranslate"><span class="pre">change_h3()</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Visualize.Deformation.change_r1"><code class="docutils literal notranslate"><span class="pre">change_r1()</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Visualize.Deformation.change_r2"><code class="docutils literal notranslate"><span class="pre">change_r2()</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Visualize.Deformation.change_r3"><code class="docutils literal notranslate"><span class="pre">change_r3()</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Visualize.Deformation.change_r4"><code class="docutils literal notranslate"><span class="pre">change_r4()</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Visualize.Deformation.set_points"><code class="docutils literal notranslate"><span class="pre">set_points()</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Visualize.Deformation.prepare_ferrite_move"><code class="docutils literal notranslate"><span class="pre">prepare_ferrite_move()</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Visualize.Deformation.move_out_points"><code class="docutils literal notranslate"><span class="pre">move_out_points()</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Visualize.Deformation.calculate_change"><code class="docutils literal notranslate"><span class="pre">calculate_change()</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Visualize.make_first_grid.Point_outside"><code class="docutils literal notranslate"><span class="pre">Point_outside</span></code></a><ul class="visible nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Visualize.make_first_grid.Point_outside.xyz"><code class="docutils literal notranslate"><span class="pre">Point_outside.xyz</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Visualize.make_first_grid.Point_outside.index"><code class="docutils literal notranslate"><span class="pre">Point_outside.index</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Visualize.make_first_grid.Point_outside.mode"><code class="docutils literal notranslate"><span class="pre">Point_outside.mode</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Visualize.make_first_grid.Point_outside.default_point"><code class="docutils literal notranslate"><span class="pre">Point_outside.default_point</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Visualize.make_first_grid.Point_outside.weight"><code class="docutils literal notranslate"><span class="pre">Point_outside.weight</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Visualize.make_first_grid.Point_outside.parent"><code class="docutils literal notranslate"><span class="pre">Point_outside.parent</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Visualize.make_first_grid.Point_outside.edges"><code class="docutils literal notranslate"><span class="pre">Point_outside.edges</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Visualize.make_first_grid.Point_outside.planes"><code class="docutils literal notranslate"><span class="pre">Point_outside.planes</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Visualize.make_first_grid.Point_outside.__init__"><code class="docutils literal notranslate"><span class="pre">Point_outside.__init__()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Visualize.make_first_grid.Point_outside.calculate_weight"><code class="docutils literal notranslate"><span class="pre">Point_outside.calculate_weight()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Visualize.make_first_grid.Point_outside.calculate_nextpoint"><code class="docutils literal notranslate"><span class="pre">Point_outside.calculate_nextpoint()</span></code></a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Visualize.make_first_grid.Edge"><code class="docutils literal notranslate"><span class="pre">Edge</span></code></a><ul class="visible nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Visualize.make_first_grid.Edge.__init__"><code class="docutils literal notranslate"><span class="pre">Edge.__init__()</span></code></a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Visualize.make_first_grid.Edge_outside"><code class="docutils literal notranslate"><span class="pre">Edge_outside</span></code></a><ul class="visible nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Visualize.make_first_grid.Edge_outside.__init__"><code class="docutils literal notranslate"><span class="pre">Edge_outside.__init__()</span></code></a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Visualize.make_first_grid.Plane"><code class="docutils literal notranslate"><span class="pre">Plane</span></code></a><ul class="visible nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Visualize.make_first_grid.Plane.__init__"><code class="docutils literal notranslate"><span class="pre">Plane.__init__()</span></code></a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Visualize.make_first_grid.Plane_outside"><code class="docutils literal notranslate"><span class="pre">Plane_outside</span></code></a><ul class="visible nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Visualize.make_first_grid.Plane_outside.__init__"><code class="docutils literal notranslate"><span class="pre">Plane_outside.__init__()</span></code></a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Visualize.make_first_grid.Box"><code class="docutils literal notranslate"><span class="pre">Box</span></code></a><ul class="visible nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Visualize.make_first_grid.Box.__init__"><code class="docutils literal notranslate"><span class="pre">Box.__init__()</span></code></a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Visualize.make_first_grid.initial_point"><code class="docutils literal notranslate"><span class="pre">initial_point()</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Visualize.make_first_grid.initial_plane_point"><code class="docutils literal notranslate"><span class="pre">initial_plane_point()</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Visualize.make_first_grid.make_first_point_edge_plane"><code class="docutils literal notranslate"><span class="pre">make_first_point_edge_plane()</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Visualize.make_first_grid.make_first_out_points"><code class="docutils literal notranslate"><span class="pre">make_first_out_points()</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Visualize.make_second_grid.set_boxes"><code class="docutils literal notranslate"><span class="pre">set_boxes()</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Visualize.make_second_grid.make_second_grid"><code class="docutils literal notranslate"><span class="pre">make_second_grid()</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Visualize.make_second_grid.make_second_out_points"><code class="docutils literal notranslate"><span class="pre">make_second_out_points()</span></code></a></li>
+</ul>
+            </nav>
         </div>
     </div>
 </div>
@@ -445,6 +598,1145 @@ document.write(`
   <section id="visualization-module">
 <h1>Visualization Module<a class="headerlink" href="#visualization-module" title="Link to this heading">#</a></h1>
 <p>The visualization module contains 3D visualization and plotting components.</p>
+<p id="module-EMFieldML.Visualize.Visualize">3D electromagnetic field visualization system for ferrite shield design optimization.</p>
+<p>This module provides interactive 3D visualization of electromagnetic field predictions
+using machine learning models. It handles visualization of ferrite shields, coils,
+prediction points, and real-time updates based on geometric parameters.</p>
+<p>Key components:
+- VisualizationConstants: Configuration constants for the visualization system
+- VisualizationUI: User interface controls and interactions
+- Visualize: Main visualization class with ML-based field predictions</p>
+<p>The system uses Polyscope for 3D rendering and supports real-time updates of:
+- Ferrite shield geometry and positioning
+- Electromagnetic field magnitude and vector visualization
+- Efficiency calculations and predictions
+- Interactive parameter adjustment through UI controls</p>
+<dl class="py class">
+<dt class="sig sig-object py" id="EMFieldML.Visualize.Visualize.VisualizationConstants">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">EMFieldML.Visualize.Visualize.</span></span><span class="sig-name descname"><span class="pre">VisualizationConstants</span></span><a class="headerlink" href="#EMFieldML.Visualize.Visualize.VisualizationConstants" title="Link to this definition">#</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.14)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<p>Constants used throughout the visualization system.</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="EMFieldML.Visualize.Visualize.VisualizationConstants.POINT_SIZE_MIN">
+<span class="sig-name descname"><span class="pre">POINT_SIZE_MIN</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0.0</span></em><a class="headerlink" href="#EMFieldML.Visualize.Visualize.VisualizationConstants.POINT_SIZE_MIN" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="EMFieldML.Visualize.Visualize.VisualizationConstants.POINT_SIZE_MAX">
+<span class="sig-name descname"><span class="pre">POINT_SIZE_MAX</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">10.0</span></em><a class="headerlink" href="#EMFieldML.Visualize.Visualize.VisualizationConstants.POINT_SIZE_MAX" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="EMFieldML.Visualize.Visualize.VisualizationConstants.DEFAULT_POINT_SIZE">
+<span class="sig-name descname"><span class="pre">DEFAULT_POINT_SIZE</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">2.0</span></em><a class="headerlink" href="#EMFieldML.Visualize.Visualize.VisualizationConstants.DEFAULT_POINT_SIZE" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="EMFieldML.Visualize.Visualize.VisualizationConstants.POSITION_MIN">
+<span class="sig-name descname"><span class="pre">POSITION_MIN</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0.0</span></em><a class="headerlink" href="#EMFieldML.Visualize.Visualize.VisualizationConstants.POSITION_MIN" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="EMFieldML.Visualize.Visualize.VisualizationConstants.POSITION_MAX">
+<span class="sig-name descname"><span class="pre">POSITION_MAX</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">24.0</span></em><a class="headerlink" href="#EMFieldML.Visualize.Visualize.VisualizationConstants.POSITION_MAX" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="EMFieldML.Visualize.Visualize.VisualizationConstants.H1_MIN">
+<span class="sig-name descname"><span class="pre">H1_MIN</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0.5</span></em><a class="headerlink" href="#EMFieldML.Visualize.Visualize.VisualizationConstants.H1_MIN" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="EMFieldML.Visualize.Visualize.VisualizationConstants.H1_MAX">
+<span class="sig-name descname"><span class="pre">H1_MAX</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">4.0</span></em><a class="headerlink" href="#EMFieldML.Visualize.Visualize.VisualizationConstants.H1_MAX" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="EMFieldML.Visualize.Visualize.VisualizationConstants.H2_MIN">
+<span class="sig-name descname"><span class="pre">H2_MIN</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0.0</span></em><a class="headerlink" href="#EMFieldML.Visualize.Visualize.VisualizationConstants.H2_MIN" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="EMFieldML.Visualize.Visualize.VisualizationConstants.H2_MAX">
+<span class="sig-name descname"><span class="pre">H2_MAX</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">4.0</span></em><a class="headerlink" href="#EMFieldML.Visualize.Visualize.VisualizationConstants.H2_MAX" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="EMFieldML.Visualize.Visualize.VisualizationConstants.H3_MIN">
+<span class="sig-name descname"><span class="pre">H3_MIN</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0.0</span></em><a class="headerlink" href="#EMFieldML.Visualize.Visualize.VisualizationConstants.H3_MIN" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="EMFieldML.Visualize.Visualize.VisualizationConstants.H3_MAX">
+<span class="sig-name descname"><span class="pre">H3_MAX</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">4.0</span></em><a class="headerlink" href="#EMFieldML.Visualize.Visualize.VisualizationConstants.H3_MAX" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="EMFieldML.Visualize.Visualize.VisualizationConstants.R1_MIN">
+<span class="sig-name descname"><span class="pre">R1_MIN</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">12.0</span></em><a class="headerlink" href="#EMFieldML.Visualize.Visualize.VisualizationConstants.R1_MIN" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="EMFieldML.Visualize.Visualize.VisualizationConstants.R1_MAX">
+<span class="sig-name descname"><span class="pre">R1_MAX</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">24.0</span></em><a class="headerlink" href="#EMFieldML.Visualize.Visualize.VisualizationConstants.R1_MAX" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="EMFieldML.Visualize.Visualize.VisualizationConstants.R2_MIN">
+<span class="sig-name descname"><span class="pre">R2_MIN</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">12.1</span></em><a class="headerlink" href="#EMFieldML.Visualize.Visualize.VisualizationConstants.R2_MIN" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="EMFieldML.Visualize.Visualize.VisualizationConstants.R3_MIN">
+<span class="sig-name descname"><span class="pre">R3_MIN</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">12.0</span></em><a class="headerlink" href="#EMFieldML.Visualize.Visualize.VisualizationConstants.R3_MIN" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="EMFieldML.Visualize.Visualize.VisualizationConstants.R4_MIN">
+<span class="sig-name descname"><span class="pre">R4_MIN</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1.0</span></em><a class="headerlink" href="#EMFieldML.Visualize.Visualize.VisualizationConstants.R4_MIN" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="EMFieldML.Visualize.Visualize.VisualizationConstants.R4_MAX">
+<span class="sig-name descname"><span class="pre">R4_MAX</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">7.0</span></em><a class="headerlink" href="#EMFieldML.Visualize.Visualize.VisualizationConstants.R4_MAX" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="EMFieldML.Visualize.Visualize.VisualizationConstants.R2_R3_MIN_GAP">
+<span class="sig-name descname"><span class="pre">R2_R3_MIN_GAP</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0.1</span></em><a class="headerlink" href="#EMFieldML.Visualize.Visualize.VisualizationConstants.R2_R3_MIN_GAP" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="EMFieldML.Visualize.Visualize.VisualizationConstants.MESH_COLOR_MIN">
+<span class="sig-name descname"><span class="pre">MESH_COLOR_MIN</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">108.0</span></em><a class="headerlink" href="#EMFieldML.Visualize.Visualize.VisualizationConstants.MESH_COLOR_MIN" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="EMFieldML.Visualize.Visualize.VisualizationConstants.MESH_COLOR_MAX">
+<span class="sig-name descname"><span class="pre">MESH_COLOR_MAX</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">140.0</span></em><a class="headerlink" href="#EMFieldML.Visualize.Visualize.VisualizationConstants.MESH_COLOR_MAX" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="EMFieldML.Visualize.Visualize.VisualizationConstants.DEFAULT_TRANSPARENCY">
+<span class="sig-name descname"><span class="pre">DEFAULT_TRANSPARENCY</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0.408</span></em><a class="headerlink" href="#EMFieldML.Visualize.Visualize.VisualizationConstants.DEFAULT_TRANSPARENCY" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="EMFieldML.Visualize.Visualize.VisualizationConstants.DEFAULT_COLORMAP">
+<span class="sig-name descname"><span class="pre">DEFAULT_COLORMAP</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'rainbow'</span></em><a class="headerlink" href="#EMFieldML.Visualize.Visualize.VisualizationConstants.DEFAULT_COLORMAP" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="EMFieldML.Visualize.Visualize.VisualizationConstants.SMALL_RADIUS">
+<span class="sig-name descname"><span class="pre">SMALL_RADIUS</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0.0001</span></em><a class="headerlink" href="#EMFieldML.Visualize.Visualize.VisualizationConstants.SMALL_RADIUS" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="EMFieldML.Visualize.Visualize.VisualizationConstants.MEDIUM_RADIUS">
+<span class="sig-name descname"><span class="pre">MEDIUM_RADIUS</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0.0003</span></em><a class="headerlink" href="#EMFieldML.Visualize.Visualize.VisualizationConstants.MEDIUM_RADIUS" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="EMFieldML.Visualize.Visualize.VisualizationConstants.STL_Z_OFFSET">
+<span class="sig-name descname"><span class="pre">STL_Z_OFFSET</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0.0001</span></em><a class="headerlink" href="#EMFieldML.Visualize.Visualize.VisualizationConstants.STL_Z_OFFSET" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="EMFieldML.Visualize.Visualize.VisualizationConstants.COLOR_BLACK">
+<span class="sig-name descname"><span class="pre">COLOR_BLACK</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">(0,</span> <span class="pre">0,</span> <span class="pre">0)</span></em><a class="headerlink" href="#EMFieldML.Visualize.Visualize.VisualizationConstants.COLOR_BLACK" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="EMFieldML.Visualize.Visualize.VisualizationConstants.COLOR_GREEN">
+<span class="sig-name descname"><span class="pre">COLOR_GREEN</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">(0.0,</span> <span class="pre">0.47843137254901963,</span> <span class="pre">0.28627450980392155)</span></em><a class="headerlink" href="#EMFieldML.Visualize.Visualize.VisualizationConstants.COLOR_GREEN" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="EMFieldML.Visualize.Visualize.VisualizationConstants.COLOR_LIGHT_BLUE">
+<span class="sig-name descname"><span class="pre">COLOR_LIGHT_BLUE</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">(0.615686274509804,</span> <span class="pre">0.8,</span> <span class="pre">0.8784313725490196)</span></em><a class="headerlink" href="#EMFieldML.Visualize.Visualize.VisualizationConstants.COLOR_LIGHT_BLUE" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="EMFieldML.Visualize.Visualize.VisualizationConstants.COLOR_DARK_BLUE">
+<span class="sig-name descname"><span class="pre">COLOR_DARK_BLUE</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">(0.34509803921568627,</span> <span class="pre">0.3764705882352941,</span> <span class="pre">0.5607843137254902)</span></em><a class="headerlink" href="#EMFieldML.Visualize.Visualize.VisualizationConstants.COLOR_DARK_BLUE" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="EMFieldML.Visualize.Visualize.VisualizationConstants.COLOR_ORANGE">
+<span class="sig-name descname"><span class="pre">COLOR_ORANGE</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">(0.918,</span> <span class="pre">0.545,</span> <span class="pre">0.075)</span></em><a class="headerlink" href="#EMFieldML.Visualize.Visualize.VisualizationConstants.COLOR_ORANGE" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="EMFieldML.Visualize.Visualize.VisualizationUI">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">EMFieldML.Visualize.Visualize.</span></span><span class="sig-name descname"><span class="pre">VisualizationUI</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">visualizer</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#EMFieldML.Visualize.Visualize.VisualizationUI" title="Link to this definition">#</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.14)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<p>Handles the user interface elements for the visualization.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="EMFieldML.Visualize.Visualize.VisualizationUI.__init__">
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">visualizer</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.14)"><span class="pre">None</span></a></span></span><a class="headerlink" href="#EMFieldML.Visualize.Visualize.VisualizationUI.__init__" title="Link to this definition">#</a></dt>
+<dd><p>Initialize the UI handler with reference to the main visualizer.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>visualizer</strong> – Reference to the main Visualize instance for accessing data and parameters.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="EMFieldML.Visualize.Visualize.VisualizationUI.render_controls">
+<span class="sig-name descname"><span class="pre">render_controls</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.14)"><span class="pre">dict</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.14)"><span class="pre">str</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.14)"><span class="pre">bool</span></a><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#EMFieldML.Visualize.Visualize.VisualizationUI.render_controls" title="Link to this definition">#</a></dt>
+<dd><p>Render all UI controls and return changed parameters.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="EMFieldML.Visualize.Visualize.Visualize">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">EMFieldML.Visualize.Visualize.</span></span><span class="sig-name descname"><span class="pre">Visualize</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">number</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.14)"><span class="pre">int</span></a></span></em><span class="sig-paren">)</span><a class="headerlink" href="#EMFieldML.Visualize.Visualize.Visualize" title="Link to this definition">#</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.14)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<p>Interactive 3D visualization system for electromagnetic field prediction and ferrite shield optimization.</p>
+<p>This class provides a complete visualization pipeline that combines:
+- 3D geometric modeling of ferrite shields and coils
+- Machine learning-based electromagnetic field predictions
+- Real-time interactive parameter adjustment
+- Performance monitoring and measurement capabilities</p>
+<p>The system uses Gaussian Process models to predict electromagnetic field magnitude,
+direction (theta, phi), and power transfer efficiency based on shield geometry
+and positioning parameters.</p>
+<p>Key features:
+- Interactive 3D visualization using Polyscope
+- Real-time updates when geometry parameters change
+- Linear blend skinning for smooth deformation visualization
+- Color-mapped field magnitude and vector visualization
+- Performance timing and measurement tools</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>number</strong> – Shield configuration number to load from the dataset</p>
+</dd>
+</dl>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="EMFieldML.Visualize.Visualize.Visualize.number">
+<span class="sig-name descname"><span class="pre">number</span></span><a class="headerlink" href="#EMFieldML.Visualize.Visualize.Visualize.number" title="Link to this definition">#</a></dt>
+<dd><p>Shield configuration identifier</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="EMFieldML.Visualize.Visualize.Visualize.ui">
+<span class="sig-name descname"><span class="pre">ui</span></span><a class="headerlink" href="#EMFieldML.Visualize.Visualize.Visualize.ui" title="Link to this definition">#</a></dt>
+<dd><p>User interface handler instance</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="EMFieldML.Visualize.Visualize.Visualize.point_size">
+<span class="sig-name descname"><span class="pre">point_size</span></span><a class="headerlink" href="#EMFieldML.Visualize.Visualize.Visualize.point_size" title="Link to this definition">#</a></dt>
+<dd><p>Size of rendered points in 3D view</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">y_move,</span> <span class="pre">z_move</span></span></dt>
+<dd><p>RX coil displacement parameters</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="EMFieldML.Visualize.Visualize.Visualize.efficiency">
+<span class="sig-name descname"><span class="pre">efficiency</span></span><a class="headerlink" href="#EMFieldML.Visualize.Visualize.Visualize.efficiency" title="Link to this definition">#</a></dt>
+<dd><p>Predicted power transfer efficiency</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="EMFieldML.Visualize.Visualize.Visualize.values">
+<span class="sig-name descname"><span class="pre">values</span></span><a class="headerlink" href="#EMFieldML.Visualize.Visualize.Visualize.values" title="Link to this definition">#</a></dt>
+<dd><p>Predicted electromagnetic field magnitudes</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="EMFieldML.Visualize.Visualize.Visualize.magnetic_vector">
+<span class="sig-name descname"><span class="pre">magnetic_vector</span></span><a class="headerlink" href="#EMFieldML.Visualize.Visualize.Visualize.magnetic_vector" title="Link to this definition">#</a></dt>
+<dd><p>Predicted field direction vectors</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="EMFieldML.Visualize.Visualize.Visualize.__init__">
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">number</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.14)"><span class="pre">int</span></a></span></em><span class="sig-paren">)</span><a class="headerlink" href="#EMFieldML.Visualize.Visualize.Visualize.__init__" title="Link to this definition">#</a></dt>
+<dd><p>Initialize the visualization system.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="EMFieldML.Visualize.Visualize.Visualize.visualize">
+<span class="sig-name descname"><span class="pre">visualize</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">measure_time_mode</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.14)"><span class="pre">bool</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">timeout_seconds</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.14)"><span class="pre">int</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.14)"><span class="pre">None</span></a></span></span><a class="headerlink" href="#EMFieldML.Visualize.Visualize.Visualize.visualize" title="Link to this definition">#</a></dt>
+<dd><p>Launch the interactive 3D visualization window.</p>
+<p>Initialize Polyscope 3D viewer and display the electromagnetic field visualization
+with interactive controls. The visualization includes ferrite shields, coils,
+prediction points, and real-time field magnitude/vector displays.</p>
+<p>The right window allows you to edit the coil’s position and shape while viewing the magnetic field strength and power transfer efficiency in real time. For more detailed instructions, please refer to the Readme.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>measure_time_mode</strong> – If True, collect and save timing measurements for
+performance analysis to time_Level2.txt file.</p></li>
+<li><p><strong>timeout_seconds</strong> – If &gt; 0, automatically close window after specified seconds.
+If 0, window stays open until manually closed.</p></li>
+</ul>
+</dd>
+</dl>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This function corresponds to Figure 1a and Table 1 in the paper.</p>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="EMFieldML.Visualize.Visualize.Visualize.callback">
+<span class="sig-name descname"><span class="pre">callback</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#EMFieldML.Visualize.Visualize.Visualize.callback" title="Link to this definition">#</a></dt>
+<dd><p>Handle all user interactions in the main UI callback function.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="EMFieldML.Visualize.Visualize.Visualize.make_modeling_visualization">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">make_modeling_visualization</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_path</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/pathlib.html#pathlib.Path" title="(in Python v3.14)"><span class="pre">Path</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">y_move</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.14)"><span class="pre">float</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">z_move</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.14)"><span class="pre">float</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#tuple" title="(in Python v3.14)"><span class="pre">tuple</span></a></span></span><a class="headerlink" href="#EMFieldML.Visualize.Visualize.Visualize.make_modeling_visualization" title="Link to this definition">#</a></dt>
+<dd><p>Generate 3D geometric data structures for visualization of ferrite shield system.</p>
+<p>Create hierarchical grid structures for TX/RX coils and prediction points using
+multi-level refinement. Generates points, edges, planes, and tetrahedral elements
+for 3D visualization and electromagnetic field prediction.</p>
+<p>When expressing a shape, a grid structure starts with a coarse grid and is refined in stages.
+In addition, the prediction points are created to match the shape’s grid, and these too are
+refined to align with the points on the surface. While a finer grid allows for a better
+representation of the shape, it increases computation time, which can compromise real-time prediction.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>input_path</strong> – Path to input data file containing initial grid configuration</p></li>
+<li><p><strong>y_move</strong> – Y-axis displacement of RX coil relative to TX coil (cm)</p></li>
+<li><p><strong>z_move</strong> – Z-axis displacement of RX coil relative to TX coil (cm)</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p><dl class="simple">
+<dt>Contains 8 elements:</dt><dd><ul class="simple">
+<li><p>points_for_3D_TX: TX coil point coordinates</p></li>
+<li><p>lines_for_3D_TX: TX coil edge connectivity</p></li>
+<li><p>planes_for_3D_TX: TX coil surface triangulation</p></li>
+<li><p>points_for_3D_RX: RX coil point coordinates (displaced)</p></li>
+<li><p>points_for_3D_prediction_move: Prediction points after linear blend skinning</p></li>
+<li><p>points_for_3D_prediction: Original prediction point positions</p></li>
+<li><p>out_points: Grid output points with mode information</p></li>
+<li><p>boxes_for_3D_prediction: Tetrahedral boxes for color mapping</p></li>
+</ul>
+</dd>
+</dl>
+</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#tuple" title="(in Python v3.14)">tuple</a></p>
+</dd>
+</dl>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Uses 3-level hierarchical refinement (level1 -&gt; level2 -&gt; level3) for
+improved geometric accuracy and prediction point density.
+This function corresponds to Figure 2, Figure 3, Figure 4, Supplementary Figure 2, Supplementary Figure 5, Supplementary Figure 6, and Supplementary Figure 7 in the paper.</p>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="EMFieldML.Visualize.Visualize.Visualize.linearblendskining">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">linearblendskining</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">tx_points</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">numpy.array</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">rx_points</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">numpy.array</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">prediction_points</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">numpy.array</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">numpy.array</span></span></span><a class="headerlink" href="#EMFieldML.Visualize.Visualize.Visualize.linearblendskining" title="Link to this definition">#</a></dt>
+<dd><p>Apply linear blend skinning deformation to prediction points based on coil movement.</p>
+<p>Deform prediction points based on the transformation between TX and RX coil positions
+using linear blend skinning algorithm. Each prediction point is weighted by its distance
+to ferrite shield control points.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>tx_points</strong> – Control points on TX (transmitter) ferrite shield</p></li>
+<li><p><strong>rx_points</strong> – Control points on RX (receiver) ferrite shield (displaced)</p></li>
+<li><p><strong>prediction_points</strong> – Original prediction point positions to be deformed</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Deformed prediction points after linear blend skinning transformation</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>np.array</p>
+</dd>
+</dl>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Uses distance-based weighting with configurable power parameter (LBS_w_move).
+This function corresponds to Figure 2 and Figure 3 in the paper.</p>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="EMFieldML.Visualize.Visualize.Visualize.calculate_weight">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">calculate_weight</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">tx_points</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">prediction_points</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#EMFieldML.Visualize.Visualize.Visualize.calculate_weight" title="Link to this definition">#</a></dt>
+<dd><p>Calculate linear blend skinning weights for prediction points based on distance to control points.</p>
+<p>Compute normalized weights for each prediction point relative to TX and RX ferrite
+shield control points. Weights are inversely proportional to distance raised to
+a configurable power (LBS_w_move).</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>tx_points</strong> – Control points on TX ferrite shield (n_initial_points x 3)</p></li>
+<li><p><strong>prediction_points</strong> – Points to calculate weights for (N x 3)</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p><dl class="simple">
+<dt>(weight, rx_ferrite_point) where:</dt><dd><ul class="simple">
+<li><p>weight: Normalized weights array (N x 2*n_initial_points)</p></li>
+<li><p>rx_ferrite_point: Original RX control point positions before displacement</p></li>
+</ul>
+</dd>
+</dl>
+</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#tuple" title="(in Python v3.14)">tuple</a></p>
+</dd>
+</dl>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Uses config.LBS_w_move for distance weighting power and config.n_initial_points
+for the number of control points (typically 72 points per shield).
+This function corresponds to Figure 3 in the paper.</p>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="EMFieldML.Visualize.Visualize.Visualize.make_tetra">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">make_tetra</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">boxes</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#EMFieldML.Visualize.Visualize.Visualize.make_tetra" title="Link to this definition">#</a></dt>
+<dd><p>Convert hexahedral boxes to tetrahedral elements for volume mesh visualization.</p>
+<p>Decompose each hexahedral box into 6 tetrahedral elements for use in Polyscope
+volume mesh visualization. Each box is split using a consistent pattern to
+maintain mesh continuity.</p>
+<p>Using this, the visualization tool can visualize the magnetic field distribution on a plane.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>boxes</strong> – List of box objects with node indices defining hexahedral elements</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p><dl class="simple">
+<dt>Tetrahedral connectivity array (N*6 x 4) where each row contains</dt><dd><p>4 node indices defining a tetrahedron</p>
+</dd>
+</dl>
+</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>np.array</p>
+</dd>
+</dl>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>tetrahedralization pattern used for consistency verification.</p>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="EMFieldML.Visualize.Visualize.Visualize.convert_to_db">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">convert_to_db</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">values</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#EMFieldML.Visualize.Visualize.Visualize.convert_to_db" title="Link to this definition">#</a></dt>
+<dd><p>Convert magnetic field values to decibel scale (dBµA/m).</p>
+<p>Transform mu_star values to decibel microamperes per meter for visualization
+and analysis purposes.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>values</strong> – Magnetic field values in original units</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Converted values in dBµA/m scale</p>
+</dd>
+</dl>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>of mu_star and the conversion formula derivation.</p>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="EMFieldML.Visualize.Visualize.Visualize.measure_finish_time">
+<span class="sig-name descname"><span class="pre">measure_finish_time</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">start</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#EMFieldML.Visualize.Visualize.Visualize.measure_finish_time" title="Link to this definition">#</a></dt>
+<dd><p>Use _measure_finish_time instead (deprecated method).</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="EMFieldML.Visualize.Visualize.Visualize.update_window">
+<span class="sig-name descname"><span class="pre">update_window</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#EMFieldML.Visualize.Visualize.Visualize.update_window" title="Link to this definition">#</a></dt>
+<dd><p>Update the 3D visualization window with current prediction values and color mapping.</p>
+<p>Refresh the Polyscope visualization by updating prediction point positions and
+scalar field values. Creates new volume mesh with current dB values and applies
+color mapping within specified min/max bounds.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>and add error handling for visualization updates.</p>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="EMFieldML.Visualize.Visualize.Visualize.make_prediction_structure">
+<span class="sig-name descname"><span class="pre">make_prediction_structure</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#EMFieldML.Visualize.Visualize.Visualize.make_prediction_structure" title="Link to this definition">#</a></dt>
+<dd><p>Initialize 3D geometric structures for electromagnetic field prediction.</p>
+<p>Create the complete 3D modeling framework including TX/RX coil geometries,
+prediction point grids, and linear blend skinning weights. Loads data from
+the circle_move_x dataset and sets up all geometric relationships needed
+for field prediction and visualization.</p>
+<dl class="simple">
+<dt>Sets up:</dt><dd><ul class="simple">
+<li><p>TX/RX coil point coordinates, edges, and planes</p></li>
+<li><p>Prediction point grid with linear blend skinning weights</p></li>
+<li><p>Tetrahedral boxes for volume mesh color mapping</p></li>
+</ul>
+</dd>
+</dl>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>focused methods for better maintainability.</p>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="EMFieldML.Visualize.Visualize.Visualize.make_ferrite_shield">
+<span class="sig-name descname"><span class="pre">make_ferrite_shield</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#EMFieldML.Visualize.Visualize.Visualize.make_ferrite_shield" title="Link to this definition">#</a></dt>
+<dd><p>Initialize ferrite shield geometric parameters and constraints.</p>
+<p>Set up all ferrite shield dimensional parameters (h1, h2, h3, r1, r2, r3, r4)
+and their allowable ranges for optimization. Uses the Deformation module to
+prepare ferrite shield movement and deformation capabilities.</p>
+<dl class="simple">
+<dt>Initializes:</dt><dd><ul class="simple">
+<li><p>Shield height parameters (h1, h2, h3) and their ranges</p></li>
+<li><p>Shield radius parameters (r1, r2, r3, r4) and constraints</p></li>
+<li><p>Parameter lists for UI controls and optimization bounds</p></li>
+</ul>
+</dd>
+</dl>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>meaning of each parameter (h1=inner height, r1=outer radius, etc.).
+This function corresponds to Supplementary Figure 1 in the paper.</p>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="EMFieldML.Visualize.Visualize.Visualize.prediction_prepare">
+<span class="sig-name descname"><span class="pre">prediction_prepare</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#EMFieldML.Visualize.Visualize.Visualize.prediction_prepare" title="Link to this definition">#</a></dt>
+<dd><p>Prepare ML models and initial predictions with comprehensive error handling.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="EMFieldML.Visualize.Visualize.Visualize.visualization_prepare">
+<span class="sig-name descname"><span class="pre">visualization_prepare</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#EMFieldML.Visualize.Visualize.Visualize.visualization_prepare" title="Link to this definition">#</a></dt>
+<dd><p>Prepare all Polyscope visualization objects with error handling.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="EMFieldML.Visualize.Visualize.Visualize.update_values_for_move">
+<span class="sig-name descname"><span class="pre">update_values_for_move</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#EMFieldML.Visualize.Visualize.Visualize.update_values_for_move" title="Link to this definition">#</a></dt>
+<dd><p>Update prediction values when position changes.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="EMFieldML.Visualize.Visualize.Visualize.update_values_for_shape">
+<span class="sig-name descname"><span class="pre">update_values_for_shape</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">changed_h1</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.14)"><span class="pre">bool</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">changed_h2</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.14)"><span class="pre">bool</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">changed_h3</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.14)"><span class="pre">bool</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">changed_r1</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.14)"><span class="pre">bool</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">changed_r2</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.14)"><span class="pre">bool</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">changed_r3</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.14)"><span class="pre">bool</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">changed_r4</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.14)"><span class="pre">bool</span></a></span></em><span class="sig-paren">)</span><a class="headerlink" href="#EMFieldML.Visualize.Visualize.Visualize.update_values_for_shape" title="Link to this definition">#</a></dt>
+<dd><p>Update ferrite shield geometry based on changed shape parameters.</p>
+<p>Modify the 3D geometry of TX and RX ferrite shields when dimensional parameters
+change. Updates both point positions and mesh geometry, then triggers prediction
+recalculation and visualization refresh.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>changed_h1</strong> – Whether h1 (height parameter 1) has changed</p></li>
+<li><p><strong>changed_h2</strong> – Whether h2 (height parameter 2) has changed</p></li>
+<li><p><strong>changed_h3</strong> – Whether h3 (height parameter 3) has changed</p></li>
+<li><p><strong>changed_r1</strong> – Whether r1 (radius parameter 1) has changed</p></li>
+<li><p><strong>changed_r2</strong> – Whether r2 (radius parameter 2) has changed</p></li>
+<li><p><strong>changed_r3</strong> – Whether r3 (radius parameter 3) has changed</p></li>
+<li><p><strong>changed_r4</strong> – Whether r4 (radius parameter 4) has changed</p></li>
+</ul>
+</dd>
+</dl>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>multiple boolean flags for better maintainability.</p>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="EMFieldML.Visualize.Visualize.Visualize.get_values">
+<span class="sig-name descname"><span class="pre">get_values</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#EMFieldML.Visualize.Visualize.Visualize.get_values" title="Link to this definition">#</a></dt>
+<dd><p>Get current electromagnetic field magnitude prediction values.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Current predicted field magnitude values at all prediction points</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="EMFieldML.Visualize.Visualize.Visualize.get_efficiency">
+<span class="sig-name descname"><span class="pre">get_efficiency</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#EMFieldML.Visualize.Visualize.Visualize.get_efficiency" title="Link to this definition">#</a></dt>
+<dd><p>Get current power transfer efficiency prediction.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Current predicted efficiency value with uncertainty bounds</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="EMFieldML.Visualize.Visualize.Visualize.get_prediction_points">
+<span class="sig-name descname"><span class="pre">get_prediction_points</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#EMFieldML.Visualize.Visualize.Visualize.get_prediction_points" title="Link to this definition">#</a></dt>
+<dd><p>Get current prediction point coordinates after deformation.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>3D coordinates of prediction points after linear blend skinning deformation</p>
+</dd>
+</dl>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>for clarity about the coordinate system.</p>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="EMFieldML.Visualize.Visualize.Visualize.test_setup">
+<span class="sig-name descname"><span class="pre">test_setup</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.14)"><span class="pre">bool</span></a></span></span><a class="headerlink" href="#EMFieldML.Visualize.Visualize.Visualize.test_setup" title="Link to this definition">#</a></dt>
+<dd><p>Test visualization setup for pytest.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="EMFieldML.Visualize.Visualize.Visualize.test_predictions">
+<span class="sig-name descname"><span class="pre">test_predictions</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.14)"><span class="pre">bool</span></a></span></span><a class="headerlink" href="#EMFieldML.Visualize.Visualize.Visualize.test_predictions" title="Link to this definition">#</a></dt>
+<dd><p>Test prediction pipeline for pytest.</p>
+</dd></dl>
+
+</dd></dl>
+
+<p id="module-EMFieldML.Visualize.Prediction">Gaussian Process prediction utilities for electromagnetic field analysis.</p>
+<p>This module provides functions for Gaussian Process regression and prediction
+in electromagnetic field modeling and visualization.</p>
+<dl class="py function">
+<dt class="sig sig-object py" id="EMFieldML.Visualize.Prediction.rbf_kernel">
+<span class="sig-prename descclassname"><span class="pre">EMFieldML.Visualize.Prediction.</span></span><span class="sig-name descname"><span class="pre">rbf_kernel</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">X1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">X2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">lengthscale</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">scale</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#EMFieldML.Visualize.Prediction.rbf_kernel" title="Link to this definition">#</a></dt>
+<dd><p>Calculate RBF kernel matrix for Gaussian Process regression.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="EMFieldML.Visualize.Prediction.mean_function">
+<span class="sig-prename descclassname"><span class="pre">EMFieldML.Visualize.Prediction.</span></span><span class="sig-name descname"><span class="pre">mean_function</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">mean_constant</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">X</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#EMFieldML.Visualize.Prediction.mean_function" title="Link to this definition">#</a></dt>
+<dd><p>Calculate mean function for Gaussian Process regression.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="EMFieldML.Visualize.Prediction.mean_function_one">
+<span class="sig-prename descclassname"><span class="pre">EMFieldML.Visualize.Prediction.</span></span><span class="sig-name descname"><span class="pre">mean_function_one</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">mean_constant</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">X</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#EMFieldML.Visualize.Prediction.mean_function_one" title="Link to this definition">#</a></dt>
+<dd><p>Calculate mean function for single point prediction.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="EMFieldML.Visualize.Prediction.calculate_mu_star">
+<span class="sig-prename descclassname"><span class="pre">EMFieldML.Visualize.Prediction.</span></span><span class="sig-name descname"><span class="pre">calculate_mu_star</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">X_test</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">k_star</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">K_inv_Y_train</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">mean_constant</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#EMFieldML.Visualize.Prediction.calculate_mu_star" title="Link to this definition">#</a></dt>
+<dd><p>Calculate mu_star for Gaussian Process prediction.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="EMFieldML.Visualize.Prediction.calculate_mu_star_one">
+<span class="sig-prename descclassname"><span class="pre">EMFieldML.Visualize.Prediction.</span></span><span class="sig-name descname"><span class="pre">calculate_mu_star_one</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">k_star</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">K_inv_Y_train</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">mean_constant</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#EMFieldML.Visualize.Prediction.calculate_mu_star_one" title="Link to this definition">#</a></dt>
+<dd><p>Calculate mu_star for single point prediction.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="EMFieldML.Visualize.Prediction.make_y_data">
+<span class="sig-prename descclassname"><span class="pre">EMFieldML.Visualize.Prediction.</span></span><span class="sig-name descname"><span class="pre">make_y_data</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">Y_train</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">input_path</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">preprocessing_value</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#EMFieldML.Visualize.Prediction.make_y_data" title="Link to this definition">#</a></dt>
+<dd><p>Load and preprocess Y training data from CSV file.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>Y_train</strong> – Training data array (unused parameter -</p></li>
+<li><p><strong>input_path</strong> – Path to CSV file containing target values</p></li>
+<li><p><strong>preprocessing_value</strong> – Value used for power transformation (1/preprocessing_value)</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Preprocessed training data with shape (n_samples, 1)</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference external" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v2.3)">numpy.ndarray</a></p>
+</dd>
+</dl>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Please verify if this is the correct preprocessing approach for the target values.</p>
+</div>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="EMFieldML.Visualize.Prediction.calculate_K_inv_Y_train">
+<span class="sig-prename descclassname"><span class="pre">EMFieldML.Visualize.Prediction.</span></span><span class="sig-name descname"><span class="pre">calculate_K_inv_Y_train</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">Y_train</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">K_inv</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">mean_constant</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">x_train_data</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#EMFieldML.Visualize.Prediction.calculate_K_inv_Y_train" title="Link to this definition">#</a></dt>
+<dd><p>Calculate K_inv_Y_train for Gaussian Process regression.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="EMFieldML.Visualize.Prediction.prediction_prepare">
+<span class="sig-prename descclassname"><span class="pre">EMFieldML.Visualize.Prediction.</span></span><span class="sig-name descname"><span class="pre">prediction_prepare</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">prediction_point_number</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.14)"><span class="pre">int</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">EMFieldML.config.config.n_prediction_points_level2</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#EMFieldML.Visualize.Prediction.prediction_prepare" title="Link to this definition">#</a></dt>
+<dd><p>Prepare data for Gaussian Process prediction.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="EMFieldML.Visualize.Prediction.prediction_prepare_efficiency">
+<span class="sig-prename descclassname"><span class="pre">EMFieldML.Visualize.Prediction.</span></span><span class="sig-name descname"><span class="pre">prediction_prepare_efficiency</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#EMFieldML.Visualize.Prediction.prediction_prepare_efficiency" title="Link to this definition">#</a></dt>
+<dd><p>Prepare data for efficiency prediction.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="EMFieldML.Visualize.Prediction.mu_star">
+<span class="sig-prename descclassname"><span class="pre">EMFieldML.Visualize.Prediction.</span></span><span class="sig-name descname"><span class="pre">mu_star</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">X_train</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">X_test</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">K_inv_Y_train</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">lengthscale</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">scale</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">mean_constant</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#EMFieldML.Visualize.Prediction.mu_star" title="Link to this definition">#</a></dt>
+<dd><p>Calculate mu_star for Gaussian Process prediction.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="EMFieldML.Visualize.Prediction.mu_star_one">
+<span class="sig-prename descclassname"><span class="pre">EMFieldML.Visualize.Prediction.</span></span><span class="sig-name descname"><span class="pre">mu_star_one</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">X_train</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">X_test</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">K_inv_Y_train</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">lengthscale</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">scale</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">mean_constant</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">preprocessing_value</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#EMFieldML.Visualize.Prediction.mu_star_one" title="Link to this definition">#</a></dt>
+<dd><p>Calculate mu_star for single point prediction.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="EMFieldML.Visualize.Prediction.mu_star_efficiency">
+<span class="sig-prename descclassname"><span class="pre">EMFieldML.Visualize.Prediction.</span></span><span class="sig-name descname"><span class="pre">mu_star_efficiency</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">X_train</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">X_test</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">K_inv_Y_train</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">lengthscale</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">scale</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">K_inv</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">mean_constant</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">noise</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#EMFieldML.Visualize.Prediction.mu_star_efficiency" title="Link to this definition">#</a></dt>
+<dd><p>Calculate mu_star for efficiency prediction.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="EMFieldML.Visualize.Prediction.vector">
+<span class="sig-prename descclassname"><span class="pre">EMFieldML.Visualize.Prediction.</span></span><span class="sig-name descname"><span class="pre">vector</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">X_train</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">X_test</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">K_inv_Y_train_theta</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">K_inv_Y_train_phi</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">lengthscale</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">scale</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">mean_constant_theta</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">mean_constant_phi</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#EMFieldML.Visualize.Prediction.vector" title="Link to this definition">#</a></dt>
+<dd><p>Calculate vector field for electromagnetic field prediction.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="EMFieldML.Visualize.Prediction.vector_one">
+<span class="sig-prename descclassname"><span class="pre">EMFieldML.Visualize.Prediction.</span></span><span class="sig-name descname"><span class="pre">vector_one</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">phi</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">theta</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#EMFieldML.Visualize.Prediction.vector_one" title="Link to this definition">#</a></dt>
+<dd><p>Convert spherical coordinates to Cartesian coordinates for single values.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>phi</strong> – Azimuthal angle in radians</p></li>
+<li><p><strong>theta</strong> – Polar angle in radians</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Cartesian coordinates [x, y, z]</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference external" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v2.3)">numpy.ndarray</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="EMFieldML.Visualize.Prediction.calculate_error_no_devide">
+<span class="sig-prename descclassname"><span class="pre">EMFieldML.Visualize.Prediction.</span></span><span class="sig-name descname"><span class="pre">calculate_error_no_devide</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">a</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">b</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#EMFieldML.Visualize.Prediction.calculate_error_no_devide" title="Link to this definition">#</a></dt>
+<dd><p>Calculate simple difference between two values.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>a</strong> – First value</p></li>
+<li><p><strong>b</strong> – Second value</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Difference <code class="docutils literal notranslate"><span class="pre">(a</span> <span class="pre">-</span> <span class="pre">b)</span></code></p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.14)">float</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="EMFieldML.Visualize.Prediction.calculate_error">
+<span class="sig-prename descclassname"><span class="pre">EMFieldML.Visualize.Prediction.</span></span><span class="sig-name descname"><span class="pre">calculate_error</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">a</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">b</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#EMFieldML.Visualize.Prediction.calculate_error" title="Link to this definition">#</a></dt>
+<dd><p>Calculate relative error between two values.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>a</strong> – Predicted value</p></li>
+<li><p><strong>b</strong> – True value</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Relative error <code class="docutils literal notranslate"><span class="pre">|a</span> <span class="pre">-</span> <span class="pre">b|</span> <span class="pre">/</span> <span class="pre">|b|</span></code></p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.14)">float</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="EMFieldML.Visualize.Prediction.calculate_error_square">
+<span class="sig-prename descclassname"><span class="pre">EMFieldML.Visualize.Prediction.</span></span><span class="sig-name descname"><span class="pre">calculate_error_square</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">a</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">b</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#EMFieldML.Visualize.Prediction.calculate_error_square" title="Link to this definition">#</a></dt>
+<dd><p>Calculate squared error between two values.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>a</strong> – Predicted value</p></li>
+<li><p><strong>b</strong> – True value</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Squared error <code class="docutils literal notranslate"><span class="pre">(a</span> <span class="pre">-</span> <span class="pre">b)²</span></code></p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.14)">float</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="EMFieldML.Visualize.Prediction.pre_magneticfield">
+<span class="sig-prename descclassname"><span class="pre">EMFieldML.Visualize.Prediction.</span></span><span class="sig-name descname"><span class="pre">pre_magneticfield</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">model_path</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/pathlib.html#pathlib.Path" title="(in Python v3.14)"><span class="pre">Path</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">input_path_train_list</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/pathlib.html#pathlib.Path" title="(in Python v3.14)"><span class="pre">Path</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">input_path_test_list</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/pathlib.html#pathlib.Path" title="(in Python v3.14)"><span class="pre">Path</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">input_path_y_train_data</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.14)"><span class="pre">str</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">input_path_y_test_data</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.14)"><span class="pre">str</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">output_path</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/pathlib.html#pathlib.Path" title="(in Python v3.14)"><span class="pre">Path</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">func_calculate_error</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/collections.abc.html#collections.abc.Callable" title="(in Python v3.14)"><span class="pre">Callable</span></a><span class="p"><span class="pre">[</span></span><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.14)"><span class="pre">float</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.14)"><span class="pre">float</span></a><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.14)"><span class="pre">float</span></a><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">n_point</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.14)"><span class="pre">int</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">input_path_circle</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.14)"><span class="pre">str</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">input_path_circle_test</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.14)"><span class="pre">str</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">preprocessing_value</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.14)"><span class="pre">float</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">1.0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">noise_scale_change</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.14)"><span class="pre">bool</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#EMFieldML.Visualize.Prediction.pre_magneticfield" title="Link to this definition">#</a></dt>
+<dd><p>Predict magnetic field using Gaussian Process regression.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="EMFieldML.Visualize.Prediction.pre_vector">
+<span class="sig-prename descclassname"><span class="pre">EMFieldML.Visualize.Prediction.</span></span><span class="sig-name descname"><span class="pre">pre_vector</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">model_path</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/pathlib.html#pathlib.Path" title="(in Python v3.14)"><span class="pre">Path</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">input_path_train_list</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/pathlib.html#pathlib.Path" title="(in Python v3.14)"><span class="pre">Path</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">input_path_test_list</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/pathlib.html#pathlib.Path" title="(in Python v3.14)"><span class="pre">Path</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">input_path_y_train_data_phi</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.14)"><span class="pre">str</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">input_path_y_train_data_theta</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.14)"><span class="pre">str</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">input_path_y_test_data_phi</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.14)"><span class="pre">str</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">input_path_y_test_data_theta</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.14)"><span class="pre">str</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">output_path</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/pathlib.html#pathlib.Path" title="(in Python v3.14)"><span class="pre">Path</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">n_point</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.14)"><span class="pre">int</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">input_path_circle</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.14)"><span class="pre">str</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">input_path_circle_test</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.14)"><span class="pre">str</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">preprocessing_value</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.14)"><span class="pre">float</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">1.0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">noise_scale_change</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.14)"><span class="pre">bool</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#EMFieldML.Visualize.Prediction.pre_vector" title="Link to this definition">#</a></dt>
+<dd><p>Predict vector field using Gaussian Process regression.</p>
+</dd></dl>
+
+<p id="module-EMFieldML.Visualize.Deformation">Coil deformation utilities for electromagnetic field visualization.</p>
+<p>This module provides functions for deforming coils during electromagnetic
+field analysis and visualization.</p>
+<dl class="py function">
+<dt class="sig sig-object py" id="EMFieldML.Visualize.Deformation.change_X_test">
+<span class="sig-prename descclassname"><span class="pre">EMFieldML.Visualize.Deformation.</span></span><span class="sig-name descname"><span class="pre">change_X_test</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">X_test</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">TX_point</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#EMFieldML.Visualize.Deformation.change_X_test" title="Link to this definition">#</a></dt>
+<dd><p>Update X_test data with TX_point coordinates.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="EMFieldML.Visualize.Deformation.change_h1">
+<span class="sig-prename descclassname"><span class="pre">EMFieldML.Visualize.Deformation.</span></span><span class="sig-name descname"><span class="pre">change_h1</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">TX_point</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">RX_point</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">z_move</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">h1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">h1_low</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">h1_middle</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#EMFieldML.Visualize.Deformation.change_h1" title="Link to this definition">#</a></dt>
+<dd><p>Modify height parameter h1 for coil deformation.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="EMFieldML.Visualize.Deformation.change_h2">
+<span class="sig-prename descclassname"><span class="pre">EMFieldML.Visualize.Deformation.</span></span><span class="sig-name descname"><span class="pre">change_h2</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">TX_point</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">RX_point</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">z_move</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">h2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">h2_list</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#EMFieldML.Visualize.Deformation.change_h2" title="Link to this definition">#</a></dt>
+<dd><p>Modify height parameter h2 for coil deformation.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="EMFieldML.Visualize.Deformation.change_h3">
+<span class="sig-prename descclassname"><span class="pre">EMFieldML.Visualize.Deformation.</span></span><span class="sig-name descname"><span class="pre">change_h3</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">TX_point</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">RX_point</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">z_move</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">h3</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">h3_list</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#EMFieldML.Visualize.Deformation.change_h3" title="Link to this definition">#</a></dt>
+<dd><p>Modify height parameter h3 for coil deformation.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="EMFieldML.Visualize.Deformation.change_r1">
+<span class="sig-prename descclassname"><span class="pre">EMFieldML.Visualize.Deformation.</span></span><span class="sig-name descname"><span class="pre">change_r1</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">TX_point</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">RX_point</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y_move</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">r1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">r1_list</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#EMFieldML.Visualize.Deformation.change_r1" title="Link to this definition">#</a></dt>
+<dd><p>Modify radius parameter r1 for coil deformation.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="EMFieldML.Visualize.Deformation.change_r2">
+<span class="sig-prename descclassname"><span class="pre">EMFieldML.Visualize.Deformation.</span></span><span class="sig-name descname"><span class="pre">change_r2</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">TX_point</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">RX_point</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y_move</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">r2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">r3</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">r2_list</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">r2_r3_list</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#EMFieldML.Visualize.Deformation.change_r2" title="Link to this definition">#</a></dt>
+<dd><p>Modify radius parameter r2 for coil deformation.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="EMFieldML.Visualize.Deformation.change_r3">
+<span class="sig-prename descclassname"><span class="pre">EMFieldML.Visualize.Deformation.</span></span><span class="sig-name descname"><span class="pre">change_r3</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">TX_point</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">RX_point</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y_move</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">r2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">r3</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">r3_list</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">r2_r3_list</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#EMFieldML.Visualize.Deformation.change_r3" title="Link to this definition">#</a></dt>
+<dd><p>Modify radius parameter r3 for coil deformation.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="EMFieldML.Visualize.Deformation.change_r4">
+<span class="sig-prename descclassname"><span class="pre">EMFieldML.Visualize.Deformation.</span></span><span class="sig-name descname"><span class="pre">change_r4</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">TX_point</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">RX_point</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y_move</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">r4</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">r4_list</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#EMFieldML.Visualize.Deformation.change_r4" title="Link to this definition">#</a></dt>
+<dd><p>Modify radius parameter r4 for coil deformation.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="EMFieldML.Visualize.Deformation.set_points">
+<span class="sig-prename descclassname"><span class="pre">EMFieldML.Visualize.Deformation.</span></span><span class="sig-name descname"><span class="pre">set_points</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">TX_point</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">TX_edge</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">TX_plane</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">RX_point</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">RX_edge</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">RX_plane</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">points_for_3D_TX</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">points_for_3D_RX</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#EMFieldML.Visualize.Deformation.set_points" title="Link to this definition">#</a></dt>
+<dd><p>Set point coordinates for coil deformation.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="EMFieldML.Visualize.Deformation.prepare_ferrite_move">
+<span class="sig-prename descclassname"><span class="pre">EMFieldML.Visualize.Deformation.</span></span><span class="sig-name descname"><span class="pre">prepare_ferrite_move</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">points_for_3D_TX</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#EMFieldML.Visualize.Deformation.prepare_ferrite_move" title="Link to this definition">#</a></dt>
+<dd><p>Prepare ferrite deformation parameters.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="EMFieldML.Visualize.Deformation.move_out_points">
+<span class="sig-prename descclassname"><span class="pre">EMFieldML.Visualize.Deformation.</span></span><span class="sig-name descname"><span class="pre">move_out_points</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">out_points</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">points_for_3D_TX</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y_move</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">z_move</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">points_for_3D_prediction_move</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">linearblend_skining_weight</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">points_for_3D_RX_original</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#EMFieldML.Visualize.Deformation.move_out_points" title="Link to this definition">#</a></dt>
+<dd><p>Move out points for coil deformation.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="EMFieldML.Visualize.Deformation.calculate_change">
+<span class="sig-prename descclassname"><span class="pre">EMFieldML.Visualize.Deformation.</span></span><span class="sig-name descname"><span class="pre">calculate_change</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">next_point</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#EMFieldML.Visualize.Deformation.calculate_change" title="Link to this definition">#</a></dt>
+<dd><p>Calculate change in point positions for coil deformation.</p>
+</dd></dl>
+
+<p id="module-EMFieldML.Visualize.make_first_grid">First-level grid generation for electromagnetic field visualization.</p>
+<p>This module provides functionality to create the initial grid structure
+for electromagnetic field analysis and visualization.</p>
+<dl class="py class">
+<dt class="sig sig-object py" id="EMFieldML.Visualize.make_first_grid.Point_outside">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">EMFieldML.Visualize.make_first_grid.</span></span><span class="sig-name descname"><span class="pre">Point_outside</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">point</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#EMFieldML.Visualize.make_first_grid.Point_outside" title="Link to this definition">#</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.14)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<p>Information for outside prediction points.</p>
+<p>This class represents prediction points outside the ferrite shield.</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="EMFieldML.Visualize.make_first_grid.Point_outside.xyz">
+<span class="sig-name descname"><span class="pre">xyz</span></span><a class="headerlink" href="#EMFieldML.Visualize.make_first_grid.Point_outside.xyz" title="Link to this definition">#</a></dt>
+<dd><p>Point coordinates</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>ndarray(3)</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="EMFieldML.Visualize.make_first_grid.Point_outside.index">
+<span class="sig-name descname"><span class="pre">index</span></span><a class="headerlink" href="#EMFieldML.Visualize.make_first_grid.Point_outside.index" title="Link to this definition">#</a></dt>
+<dd><p>Index of the corresponding point on the ferrite shield surface</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.14)">int</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="EMFieldML.Visualize.make_first_grid.Point_outside.mode">
+<span class="sig-name descname"><span class="pre">mode</span></span><a class="headerlink" href="#EMFieldML.Visualize.make_first_grid.Point_outside.mode" title="Link to this definition">#</a></dt>
+<dd><p>Point type: 0=prediction, 1=TX, 2=RX</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.14)">int</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="EMFieldML.Visualize.make_first_grid.Point_outside.default_point">
+<span class="sig-name descname"><span class="pre">default_point</span></span><a class="headerlink" href="#EMFieldML.Visualize.make_first_grid.Point_outside.default_point" title="Link to this definition">#</a></dt>
+<dd><p>Original coordinates before movement (used for weight calculation when ferrite shape changes)</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>ndarray(3)</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="EMFieldML.Visualize.make_first_grid.Point_outside.weight">
+<span class="sig-name descname"><span class="pre">weight</span></span><a class="headerlink" href="#EMFieldML.Visualize.make_first_grid.Point_outside.weight" title="Link to this definition">#</a></dt>
+<dd><p>Weights for linear blend skinning with ferrite shield points</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>ndarray(n)</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="EMFieldML.Visualize.make_first_grid.Point_outside.parent">
+<span class="sig-name descname"><span class="pre">parent</span></span><a class="headerlink" href="#EMFieldML.Visualize.make_first_grid.Point_outside.parent" title="Link to this definition">#</a></dt>
+<dd><p>Index of connected points (original points)</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>ndarray(3)</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="EMFieldML.Visualize.make_first_grid.Point_outside.edges">
+<span class="sig-name descname"><span class="pre">edges</span></span><a class="headerlink" href="#EMFieldML.Visualize.make_first_grid.Point_outside.edges" title="Link to this definition">#</a></dt>
+<dd><p>Edge indices extending from this point (for easier search)</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.14)">list</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="EMFieldML.Visualize.make_first_grid.Point_outside.planes">
+<span class="sig-name descname"><span class="pre">planes</span></span><a class="headerlink" href="#EMFieldML.Visualize.make_first_grid.Point_outside.planes" title="Link to this definition">#</a></dt>
+<dd><p>Plane indices this point belongs to (for easier search)</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.14)">list</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="EMFieldML.Visualize.make_first_grid.Point_outside.__init__">
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">point</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#EMFieldML.Visualize.make_first_grid.Point_outside.__init__" title="Link to this definition">#</a></dt>
+<dd><p>Initialize point with coordinates.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="EMFieldML.Visualize.make_first_grid.Point_outside.calculate_weight">
+<span class="sig-name descname"><span class="pre">calculate_weight</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">point</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#EMFieldML.Visualize.make_first_grid.Point_outside.calculate_weight" title="Link to this definition">#</a></dt>
+<dd><p>Calculate weight for linear blend skinning.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="EMFieldML.Visualize.make_first_grid.Point_outside.calculate_nextpoint">
+<span class="sig-name descname"><span class="pre">calculate_nextpoint</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">changes</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#EMFieldML.Visualize.make_first_grid.Point_outside.calculate_nextpoint" title="Link to this definition">#</a></dt>
+<dd><p>Calculate next point position with changes.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="EMFieldML.Visualize.make_first_grid.Edge">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">EMFieldML.Visualize.make_first_grid.</span></span><span class="sig-name descname"><span class="pre">Edge</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">point1_index</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">point2_index</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#EMFieldML.Visualize.make_first_grid.Edge" title="Link to this definition">#</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.14)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<p>Edge class for visualization.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="EMFieldML.Visualize.make_first_grid.Edge.__init__">
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">point1_index</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">point2_index</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#EMFieldML.Visualize.make_first_grid.Edge.__init__" title="Link to this definition">#</a></dt>
+<dd><p>Initialize edge between two points.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="EMFieldML.Visualize.make_first_grid.Edge_outside">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">EMFieldML.Visualize.make_first_grid.</span></span><span class="sig-name descname"><span class="pre">Edge_outside</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">index1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">index2</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#EMFieldML.Visualize.make_first_grid.Edge_outside" title="Link to this definition">#</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.14)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<p>Edge class for outside points in visualization.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="EMFieldML.Visualize.make_first_grid.Edge_outside.__init__">
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">index1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">index2</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#EMFieldML.Visualize.make_first_grid.Edge_outside.__init__" title="Link to this definition">#</a></dt>
+<dd><p>Initialize outside edge between two points.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="EMFieldML.Visualize.make_first_grid.Plane">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">EMFieldML.Visualize.make_first_grid.</span></span><span class="sig-name descname"><span class="pre">Plane</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">edges</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">points_index</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#EMFieldML.Visualize.make_first_grid.Plane" title="Link to this definition">#</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.14)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<p>Plane class for visualization.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="EMFieldML.Visualize.make_first_grid.Plane.__init__">
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">edges</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">points_index</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#EMFieldML.Visualize.make_first_grid.Plane.__init__" title="Link to this definition">#</a></dt>
+<dd><p>Initialize plane with four points.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="EMFieldML.Visualize.make_first_grid.Plane_outside">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">EMFieldML.Visualize.make_first_grid.</span></span><span class="sig-name descname"><span class="pre">Plane_outside</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">index1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">index2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">index3</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">index4</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#EMFieldML.Visualize.make_first_grid.Plane_outside" title="Link to this definition">#</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.14)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<p>Plane class for outside points in visualization.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="EMFieldML.Visualize.make_first_grid.Plane_outside.__init__">
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">index1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">index2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">index3</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">index4</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#EMFieldML.Visualize.make_first_grid.Plane_outside.__init__" title="Link to this definition">#</a></dt>
+<dd><p>Initialize outside plane with four points.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="EMFieldML.Visualize.make_first_grid.Box">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">EMFieldML.Visualize.make_first_grid.</span></span><span class="sig-name descname"><span class="pre">Box</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">points_index</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#EMFieldML.Visualize.make_first_grid.Box" title="Link to this definition">#</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.14)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<p>Box class for visualization.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="EMFieldML.Visualize.make_first_grid.Box.__init__">
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">points_index</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#EMFieldML.Visualize.make_first_grid.Box.__init__" title="Link to this definition">#</a></dt>
+<dd><p>Initialize box with eight corner points.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="EMFieldML.Visualize.make_first_grid.initial_point">
+<span class="sig-prename descclassname"><span class="pre">EMFieldML.Visualize.make_first_grid.</span></span><span class="sig-name descname"><span class="pre">initial_point</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">i</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">data_list</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#EMFieldML.Visualize.make_first_grid.initial_point" title="Link to this definition">#</a></dt>
+<dd><p>Create initial point from data list.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>i</strong> – Point index</p></li>
+<li><p><strong>data_list</strong> – List containing coordinate data</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Initialized point object</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference internal" href="modeling.html#EMFieldML.Modeling.make_first_grid.Point" title="EMFieldML.Modeling.make_first_grid.Point">Point</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="EMFieldML.Visualize.make_first_grid.initial_plane_point">
+<span class="sig-prename descclassname"><span class="pre">EMFieldML.Visualize.make_first_grid.</span></span><span class="sig-name descname"><span class="pre">initial_plane_point</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">i</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">data_list</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#EMFieldML.Visualize.make_first_grid.initial_plane_point" title="Link to this definition">#</a></dt>
+<dd><p>Create initial plane point from data list.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>i</strong> – Point index</p></li>
+<li><p><strong>data_list</strong> – List containing coordinate data</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Initialized point object</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference internal" href="modeling.html#EMFieldML.Modeling.make_first_grid.Point" title="EMFieldML.Modeling.make_first_grid.Point">Point</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="EMFieldML.Visualize.make_first_grid.make_first_point_edge_plane">
+<span class="sig-prename descclassname"><span class="pre">EMFieldML.Visualize.make_first_grid.</span></span><span class="sig-name descname"><span class="pre">make_first_point_edge_plane</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_path</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/pathlib.html#pathlib.Path" title="(in Python v3.14)"><span class="pre">Path</span></a></span></em><span class="sig-paren">)</span><a class="headerlink" href="#EMFieldML.Visualize.make_first_grid.make_first_point_edge_plane" title="Link to this definition">#</a></dt>
+<dd><p>Create first-level grid points, edges, and planes.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="EMFieldML.Visualize.make_first_grid.make_first_out_points">
+<span class="sig-prename descclassname"><span class="pre">EMFieldML.Visualize.make_first_grid.</span></span><span class="sig-name descname"><span class="pre">make_first_out_points</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">points</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">planes</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#EMFieldML.Visualize.make_first_grid.make_first_out_points" title="Link to this definition">#</a></dt>
+<dd><p>Create first-level out points for grid generation.</p>
+</dd></dl>
+
+<p id="module-EMFieldML.Visualize.make_second_grid">Second-level grid generation for electromagnetic field visualization.</p>
+<p>This module provides functionality to create refined grid structures
+for electromagnetic field analysis and visualization.</p>
+<dl class="py function">
+<dt class="sig sig-object py" id="EMFieldML.Visualize.make_second_grid.set_boxes">
+<span class="sig-prename descclassname"><span class="pre">EMFieldML.Visualize.make_second_grid.</span></span><span class="sig-name descname"><span class="pre">set_boxes</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">box</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">out_points</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">edges_outside</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">planes_outside</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#EMFieldML.Visualize.make_second_grid.set_boxes" title="Link to this definition">#</a></dt>
+<dd><p>Set box edges and planes based on predefined patterns.</p>
+<p>the topology of a box. Please verify if these indices are correct for the current
+box structure and update if the topology has changed.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="EMFieldML.Visualize.make_second_grid.make_second_grid">
+<span class="sig-prename descclassname"><span class="pre">EMFieldML.Visualize.make_second_grid.</span></span><span class="sig-name descname"><span class="pre">make_second_grid</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_path</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/pathlib.html#pathlib.Path" title="(in Python v3.14)"><span class="pre">Path</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">points</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.14)"><span class="pre">list</span></a><span class="p"><span class="pre">[</span></span><a class="reference internal" href="modeling.html#EMFieldML.Modeling.make_first_grid.Point" title="EMFieldML.Modeling.make_first_grid.Point"><span class="pre">Point</span></a><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">edges</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.14)"><span class="pre">list</span></a><span class="p"><span class="pre">[</span></span><a class="reference internal" href="#EMFieldML.Visualize.make_first_grid.Edge" title="EMFieldML.Visualize.make_first_grid.Edge"><span class="pre">Edge</span></a><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">planes</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.14)"><span class="pre">list</span></a><span class="p"><span class="pre">[</span></span><a class="reference internal" href="#EMFieldML.Visualize.make_first_grid.Plane" title="EMFieldML.Visualize.make_first_grid.Plane"><span class="pre">Plane</span></a><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#tuple" title="(in Python v3.14)"><span class="pre">tuple</span></a></span></span><a class="headerlink" href="#EMFieldML.Visualize.make_second_grid.make_second_grid" title="Link to this definition">#</a></dt>
+<dd><p>Create second-level grid for electromagnetic field visualization.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="EMFieldML.Visualize.make_second_grid.make_second_out_points">
+<span class="sig-prename descclassname"><span class="pre">EMFieldML.Visualize.make_second_grid.</span></span><span class="sig-name descname"><span class="pre">make_second_out_points</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">out_points</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">boxes</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">edges_outside</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">planes_outside</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">points</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">edges</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">planes</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#EMFieldML.Visualize.make_second_grid.make_second_out_points" title="Link to this definition">#</a></dt>
+<dd><p>Create second-level out points for grid generation.</p>
+</dd></dl>
+
 </section>
 
 
@@ -482,6 +1774,160 @@ document.write(`
             </div>
             
             
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Visualize.Visualize.VisualizationConstants"><code class="docutils literal notranslate"><span class="pre">VisualizationConstants</span></code></a><ul class="visible nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Visualize.Visualize.VisualizationConstants.POINT_SIZE_MIN"><code class="docutils literal notranslate"><span class="pre">VisualizationConstants.POINT_SIZE_MIN</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Visualize.Visualize.VisualizationConstants.POINT_SIZE_MAX"><code class="docutils literal notranslate"><span class="pre">VisualizationConstants.POINT_SIZE_MAX</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Visualize.Visualize.VisualizationConstants.DEFAULT_POINT_SIZE"><code class="docutils literal notranslate"><span class="pre">VisualizationConstants.DEFAULT_POINT_SIZE</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Visualize.Visualize.VisualizationConstants.POSITION_MIN"><code class="docutils literal notranslate"><span class="pre">VisualizationConstants.POSITION_MIN</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Visualize.Visualize.VisualizationConstants.POSITION_MAX"><code class="docutils literal notranslate"><span class="pre">VisualizationConstants.POSITION_MAX</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Visualize.Visualize.VisualizationConstants.H1_MIN"><code class="docutils literal notranslate"><span class="pre">VisualizationConstants.H1_MIN</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Visualize.Visualize.VisualizationConstants.H1_MAX"><code class="docutils literal notranslate"><span class="pre">VisualizationConstants.H1_MAX</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Visualize.Visualize.VisualizationConstants.H2_MIN"><code class="docutils literal notranslate"><span class="pre">VisualizationConstants.H2_MIN</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Visualize.Visualize.VisualizationConstants.H2_MAX"><code class="docutils literal notranslate"><span class="pre">VisualizationConstants.H2_MAX</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Visualize.Visualize.VisualizationConstants.H3_MIN"><code class="docutils literal notranslate"><span class="pre">VisualizationConstants.H3_MIN</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Visualize.Visualize.VisualizationConstants.H3_MAX"><code class="docutils literal notranslate"><span class="pre">VisualizationConstants.H3_MAX</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Visualize.Visualize.VisualizationConstants.R1_MIN"><code class="docutils literal notranslate"><span class="pre">VisualizationConstants.R1_MIN</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Visualize.Visualize.VisualizationConstants.R1_MAX"><code class="docutils literal notranslate"><span class="pre">VisualizationConstants.R1_MAX</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Visualize.Visualize.VisualizationConstants.R2_MIN"><code class="docutils literal notranslate"><span class="pre">VisualizationConstants.R2_MIN</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Visualize.Visualize.VisualizationConstants.R3_MIN"><code class="docutils literal notranslate"><span class="pre">VisualizationConstants.R3_MIN</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Visualize.Visualize.VisualizationConstants.R4_MIN"><code class="docutils literal notranslate"><span class="pre">VisualizationConstants.R4_MIN</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Visualize.Visualize.VisualizationConstants.R4_MAX"><code class="docutils literal notranslate"><span class="pre">VisualizationConstants.R4_MAX</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Visualize.Visualize.VisualizationConstants.R2_R3_MIN_GAP"><code class="docutils literal notranslate"><span class="pre">VisualizationConstants.R2_R3_MIN_GAP</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Visualize.Visualize.VisualizationConstants.MESH_COLOR_MIN"><code class="docutils literal notranslate"><span class="pre">VisualizationConstants.MESH_COLOR_MIN</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Visualize.Visualize.VisualizationConstants.MESH_COLOR_MAX"><code class="docutils literal notranslate"><span class="pre">VisualizationConstants.MESH_COLOR_MAX</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Visualize.Visualize.VisualizationConstants.DEFAULT_TRANSPARENCY"><code class="docutils literal notranslate"><span class="pre">VisualizationConstants.DEFAULT_TRANSPARENCY</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Visualize.Visualize.VisualizationConstants.DEFAULT_COLORMAP"><code class="docutils literal notranslate"><span class="pre">VisualizationConstants.DEFAULT_COLORMAP</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Visualize.Visualize.VisualizationConstants.SMALL_RADIUS"><code class="docutils literal notranslate"><span class="pre">VisualizationConstants.SMALL_RADIUS</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Visualize.Visualize.VisualizationConstants.MEDIUM_RADIUS"><code class="docutils literal notranslate"><span class="pre">VisualizationConstants.MEDIUM_RADIUS</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Visualize.Visualize.VisualizationConstants.STL_Z_OFFSET"><code class="docutils literal notranslate"><span class="pre">VisualizationConstants.STL_Z_OFFSET</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Visualize.Visualize.VisualizationConstants.COLOR_BLACK"><code class="docutils literal notranslate"><span class="pre">VisualizationConstants.COLOR_BLACK</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Visualize.Visualize.VisualizationConstants.COLOR_GREEN"><code class="docutils literal notranslate"><span class="pre">VisualizationConstants.COLOR_GREEN</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Visualize.Visualize.VisualizationConstants.COLOR_LIGHT_BLUE"><code class="docutils literal notranslate"><span class="pre">VisualizationConstants.COLOR_LIGHT_BLUE</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Visualize.Visualize.VisualizationConstants.COLOR_DARK_BLUE"><code class="docutils literal notranslate"><span class="pre">VisualizationConstants.COLOR_DARK_BLUE</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Visualize.Visualize.VisualizationConstants.COLOR_ORANGE"><code class="docutils literal notranslate"><span class="pre">VisualizationConstants.COLOR_ORANGE</span></code></a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Visualize.Visualize.VisualizationUI"><code class="docutils literal notranslate"><span class="pre">VisualizationUI</span></code></a><ul class="visible nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Visualize.Visualize.VisualizationUI.__init__"><code class="docutils literal notranslate"><span class="pre">VisualizationUI.__init__()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Visualize.Visualize.VisualizationUI.render_controls"><code class="docutils literal notranslate"><span class="pre">VisualizationUI.render_controls()</span></code></a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Visualize.Visualize.Visualize"><code class="docutils literal notranslate"><span class="pre">Visualize</span></code></a><ul class="visible nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Visualize.Visualize.Visualize.number"><code class="docutils literal notranslate"><span class="pre">Visualize.number</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Visualize.Visualize.Visualize.ui"><code class="docutils literal notranslate"><span class="pre">Visualize.ui</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Visualize.Visualize.Visualize.point_size"><code class="docutils literal notranslate"><span class="pre">Visualize.point_size</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Visualize.Visualize.Visualize.efficiency"><code class="docutils literal notranslate"><span class="pre">Visualize.efficiency</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Visualize.Visualize.Visualize.values"><code class="docutils literal notranslate"><span class="pre">Visualize.values</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Visualize.Visualize.Visualize.magnetic_vector"><code class="docutils literal notranslate"><span class="pre">Visualize.magnetic_vector</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Visualize.Visualize.Visualize.__init__"><code class="docutils literal notranslate"><span class="pre">Visualize.__init__()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Visualize.Visualize.Visualize.visualize"><code class="docutils literal notranslate"><span class="pre">Visualize.visualize()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Visualize.Visualize.Visualize.callback"><code class="docutils literal notranslate"><span class="pre">Visualize.callback()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Visualize.Visualize.Visualize.make_modeling_visualization"><code class="docutils literal notranslate"><span class="pre">Visualize.make_modeling_visualization()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Visualize.Visualize.Visualize.linearblendskining"><code class="docutils literal notranslate"><span class="pre">Visualize.linearblendskining()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Visualize.Visualize.Visualize.calculate_weight"><code class="docutils literal notranslate"><span class="pre">Visualize.calculate_weight()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Visualize.Visualize.Visualize.make_tetra"><code class="docutils literal notranslate"><span class="pre">Visualize.make_tetra()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Visualize.Visualize.Visualize.convert_to_db"><code class="docutils literal notranslate"><span class="pre">Visualize.convert_to_db()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Visualize.Visualize.Visualize.measure_finish_time"><code class="docutils literal notranslate"><span class="pre">Visualize.measure_finish_time()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Visualize.Visualize.Visualize.update_window"><code class="docutils literal notranslate"><span class="pre">Visualize.update_window()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Visualize.Visualize.Visualize.make_prediction_structure"><code class="docutils literal notranslate"><span class="pre">Visualize.make_prediction_structure()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Visualize.Visualize.Visualize.make_ferrite_shield"><code class="docutils literal notranslate"><span class="pre">Visualize.make_ferrite_shield()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Visualize.Visualize.Visualize.prediction_prepare"><code class="docutils literal notranslate"><span class="pre">Visualize.prediction_prepare()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Visualize.Visualize.Visualize.visualization_prepare"><code class="docutils literal notranslate"><span class="pre">Visualize.visualization_prepare()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Visualize.Visualize.Visualize.update_values_for_move"><code class="docutils literal notranslate"><span class="pre">Visualize.update_values_for_move()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Visualize.Visualize.Visualize.update_values_for_shape"><code class="docutils literal notranslate"><span class="pre">Visualize.update_values_for_shape()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Visualize.Visualize.Visualize.get_values"><code class="docutils literal notranslate"><span class="pre">Visualize.get_values()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Visualize.Visualize.Visualize.get_efficiency"><code class="docutils literal notranslate"><span class="pre">Visualize.get_efficiency()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Visualize.Visualize.Visualize.get_prediction_points"><code class="docutils literal notranslate"><span class="pre">Visualize.get_prediction_points()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Visualize.Visualize.Visualize.test_setup"><code class="docutils literal notranslate"><span class="pre">Visualize.test_setup()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Visualize.Visualize.Visualize.test_predictions"><code class="docutils literal notranslate"><span class="pre">Visualize.test_predictions()</span></code></a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Visualize.Prediction.rbf_kernel"><code class="docutils literal notranslate"><span class="pre">rbf_kernel()</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Visualize.Prediction.mean_function"><code class="docutils literal notranslate"><span class="pre">mean_function()</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Visualize.Prediction.mean_function_one"><code class="docutils literal notranslate"><span class="pre">mean_function_one()</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Visualize.Prediction.calculate_mu_star"><code class="docutils literal notranslate"><span class="pre">calculate_mu_star()</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Visualize.Prediction.calculate_mu_star_one"><code class="docutils literal notranslate"><span class="pre">calculate_mu_star_one()</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Visualize.Prediction.make_y_data"><code class="docutils literal notranslate"><span class="pre">make_y_data()</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Visualize.Prediction.calculate_K_inv_Y_train"><code class="docutils literal notranslate"><span class="pre">calculate_K_inv_Y_train()</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Visualize.Prediction.prediction_prepare"><code class="docutils literal notranslate"><span class="pre">prediction_prepare()</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Visualize.Prediction.prediction_prepare_efficiency"><code class="docutils literal notranslate"><span class="pre">prediction_prepare_efficiency()</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Visualize.Prediction.mu_star"><code class="docutils literal notranslate"><span class="pre">mu_star()</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Visualize.Prediction.mu_star_one"><code class="docutils literal notranslate"><span class="pre">mu_star_one()</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Visualize.Prediction.mu_star_efficiency"><code class="docutils literal notranslate"><span class="pre">mu_star_efficiency()</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Visualize.Prediction.vector"><code class="docutils literal notranslate"><span class="pre">vector()</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Visualize.Prediction.vector_one"><code class="docutils literal notranslate"><span class="pre">vector_one()</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Visualize.Prediction.calculate_error_no_devide"><code class="docutils literal notranslate"><span class="pre">calculate_error_no_devide()</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Visualize.Prediction.calculate_error"><code class="docutils literal notranslate"><span class="pre">calculate_error()</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Visualize.Prediction.calculate_error_square"><code class="docutils literal notranslate"><span class="pre">calculate_error_square()</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Visualize.Prediction.pre_magneticfield"><code class="docutils literal notranslate"><span class="pre">pre_magneticfield()</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Visualize.Prediction.pre_vector"><code class="docutils literal notranslate"><span class="pre">pre_vector()</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Visualize.Deformation.change_X_test"><code class="docutils literal notranslate"><span class="pre">change_X_test()</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Visualize.Deformation.change_h1"><code class="docutils literal notranslate"><span class="pre">change_h1()</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Visualize.Deformation.change_h2"><code class="docutils literal notranslate"><span class="pre">change_h2()</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Visualize.Deformation.change_h3"><code class="docutils literal notranslate"><span class="pre">change_h3()</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Visualize.Deformation.change_r1"><code class="docutils literal notranslate"><span class="pre">change_r1()</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Visualize.Deformation.change_r2"><code class="docutils literal notranslate"><span class="pre">change_r2()</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Visualize.Deformation.change_r3"><code class="docutils literal notranslate"><span class="pre">change_r3()</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Visualize.Deformation.change_r4"><code class="docutils literal notranslate"><span class="pre">change_r4()</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Visualize.Deformation.set_points"><code class="docutils literal notranslate"><span class="pre">set_points()</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Visualize.Deformation.prepare_ferrite_move"><code class="docutils literal notranslate"><span class="pre">prepare_ferrite_move()</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Visualize.Deformation.move_out_points"><code class="docutils literal notranslate"><span class="pre">move_out_points()</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Visualize.Deformation.calculate_change"><code class="docutils literal notranslate"><span class="pre">calculate_change()</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Visualize.make_first_grid.Point_outside"><code class="docutils literal notranslate"><span class="pre">Point_outside</span></code></a><ul class="visible nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Visualize.make_first_grid.Point_outside.xyz"><code class="docutils literal notranslate"><span class="pre">Point_outside.xyz</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Visualize.make_first_grid.Point_outside.index"><code class="docutils literal notranslate"><span class="pre">Point_outside.index</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Visualize.make_first_grid.Point_outside.mode"><code class="docutils literal notranslate"><span class="pre">Point_outside.mode</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Visualize.make_first_grid.Point_outside.default_point"><code class="docutils literal notranslate"><span class="pre">Point_outside.default_point</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Visualize.make_first_grid.Point_outside.weight"><code class="docutils literal notranslate"><span class="pre">Point_outside.weight</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Visualize.make_first_grid.Point_outside.parent"><code class="docutils literal notranslate"><span class="pre">Point_outside.parent</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Visualize.make_first_grid.Point_outside.edges"><code class="docutils literal notranslate"><span class="pre">Point_outside.edges</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Visualize.make_first_grid.Point_outside.planes"><code class="docutils literal notranslate"><span class="pre">Point_outside.planes</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Visualize.make_first_grid.Point_outside.__init__"><code class="docutils literal notranslate"><span class="pre">Point_outside.__init__()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Visualize.make_first_grid.Point_outside.calculate_weight"><code class="docutils literal notranslate"><span class="pre">Point_outside.calculate_weight()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Visualize.make_first_grid.Point_outside.calculate_nextpoint"><code class="docutils literal notranslate"><span class="pre">Point_outside.calculate_nextpoint()</span></code></a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Visualize.make_first_grid.Edge"><code class="docutils literal notranslate"><span class="pre">Edge</span></code></a><ul class="visible nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Visualize.make_first_grid.Edge.__init__"><code class="docutils literal notranslate"><span class="pre">Edge.__init__()</span></code></a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Visualize.make_first_grid.Edge_outside"><code class="docutils literal notranslate"><span class="pre">Edge_outside</span></code></a><ul class="visible nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Visualize.make_first_grid.Edge_outside.__init__"><code class="docutils literal notranslate"><span class="pre">Edge_outside.__init__()</span></code></a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Visualize.make_first_grid.Plane"><code class="docutils literal notranslate"><span class="pre">Plane</span></code></a><ul class="visible nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Visualize.make_first_grid.Plane.__init__"><code class="docutils literal notranslate"><span class="pre">Plane.__init__()</span></code></a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Visualize.make_first_grid.Plane_outside"><code class="docutils literal notranslate"><span class="pre">Plane_outside</span></code></a><ul class="visible nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Visualize.make_first_grid.Plane_outside.__init__"><code class="docutils literal notranslate"><span class="pre">Plane_outside.__init__()</span></code></a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Visualize.make_first_grid.Box"><code class="docutils literal notranslate"><span class="pre">Box</span></code></a><ul class="visible nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Visualize.make_first_grid.Box.__init__"><code class="docutils literal notranslate"><span class="pre">Box.__init__()</span></code></a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Visualize.make_first_grid.initial_point"><code class="docutils literal notranslate"><span class="pre">initial_point()</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Visualize.make_first_grid.initial_plane_point"><code class="docutils literal notranslate"><span class="pre">initial_plane_point()</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Visualize.make_first_grid.make_first_point_edge_plane"><code class="docutils literal notranslate"><span class="pre">make_first_point_edge_plane()</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Visualize.make_first_grid.make_first_out_points"><code class="docutils literal notranslate"><span class="pre">make_first_out_points()</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Visualize.make_second_grid.set_boxes"><code class="docutils literal notranslate"><span class="pre">set_boxes()</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Visualize.make_second_grid.make_second_grid"><code class="docutils literal notranslate"><span class="pre">make_second_grid()</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Visualize.make_second_grid.make_second_out_points"><code class="docutils literal notranslate"><span class="pre">make_second_out_points()</span></code></a></li>
+</ul>
+  </nav></div>
+
+</div></div>
               
             
           </div>

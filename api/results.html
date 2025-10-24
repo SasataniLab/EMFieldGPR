@@ -131,6 +131,10 @@ document.write(`
   
 
   
+    <button class="pst-navbar-icon sidebar-toggle secondary-toggle" aria-label="On this page">
+      <span class="fa-solid fa-outdent"></span>
+    </button>
+  
 </div>
 
     </header>
@@ -417,7 +421,9 @@ document.write(`
   </button>
 `);
 </script>
-
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
 </div></div>
       
     </div>
@@ -433,6 +439,54 @@ document.write(`
     <div id="print-main-content">
         <div id="jb-print-toc">
             
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Results.Results.ResultMaker"><code class="docutils literal notranslate"><span class="pre">ResultMaker</span></code></a><ul class="visible nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Results.Results.ResultMaker.pre_deviation"><code class="docutils literal notranslate"><span class="pre">ResultMaker.pre_deviation()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Results.Results.ResultMaker.pre_magneticfield"><code class="docutils literal notranslate"><span class="pre">ResultMaker.pre_magneticfield()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Results.Results.ResultMaker.make_N_change_deviation"><code class="docutils literal notranslate"><span class="pre">ResultMaker.make_N_change_deviation()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Results.Results.ResultMaker.make_N_change_error"><code class="docutils literal notranslate"><span class="pre">ResultMaker.make_N_change_error()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Results.Results.ResultMaker.sort_N_change_data"><code class="docutils literal notranslate"><span class="pre">ResultMaker.sort_N_change_data()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Results.Results.ResultMaker.cross_validation_pattern"><code class="docutils literal notranslate"><span class="pre">ResultMaker.cross_validation_pattern()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Results.Results.ResultMaker.make_fix_prediction_point"><code class="docutils literal notranslate"><span class="pre">ResultMaker.make_fix_prediction_point()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Results.Results.ResultMaker.sort_list"><code class="docutils literal notranslate"><span class="pre">ResultMaker.sort_list()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Results.Results.ResultMaker.check_time"><code class="docutils literal notranslate"><span class="pre">ResultMaker.check_time()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Results.Results.ResultMaker.measure_simulation_time"><code class="docutils literal notranslate"><span class="pre">ResultMaker.measure_simulation_time()</span></code></a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Results.Graph.GraphMaker"><code class="docutils literal notranslate"><span class="pre">GraphMaker</span></code></a><ul class="visible nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Results.Graph.GraphMaker.n_change_deviation"><code class="docutils literal notranslate"><span class="pre">GraphMaker.n_change_deviation()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Results.Graph.GraphMaker.n_change_error"><code class="docutils literal notranslate"><span class="pre">GraphMaker.n_change_error()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Results.Graph.GraphMaker.active_learning_map"><code class="docutils literal notranslate"><span class="pre">GraphMaker.active_learning_map()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Results.Graph.GraphMaker.magnitude_adaptive"><code class="docutils literal notranslate"><span class="pre">GraphMaker.magnitude_adaptive()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Results.Graph.GraphMaker.vector_adaptive"><code class="docutils literal notranslate"><span class="pre">GraphMaker.vector_adaptive()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Results.Graph.GraphMaker.magnitude_postprocessing_compare"><code class="docutils literal notranslate"><span class="pre">GraphMaker.magnitude_postprocessing_compare()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Results.Graph.GraphMaker.efficiency_postprocessing_compare"><code class="docutils literal notranslate"><span class="pre">GraphMaker.efficiency_postprocessing_compare()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Results.Graph.GraphMaker.error_map"><code class="docutils literal notranslate"><span class="pre">GraphMaker.error_map()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Results.Graph.GraphMaker.magnitude_map_efficiency"><code class="docutils literal notranslate"><span class="pre">GraphMaker.magnitude_map_efficiency()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Results.Graph.GraphMaker.magnitude_map_magnetic"><code class="docutils literal notranslate"><span class="pre">GraphMaker.magnitude_map_magnetic()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Results.Graph.GraphMaker.change_emfield_by_roi_and_movement"><code class="docutils literal notranslate"><span class="pre">GraphMaker.change_emfield_by_roi_and_movement()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Results.Graph.GraphMaker.change_efficiency_by_roi_and_movement"><code class="docutils literal notranslate"><span class="pre">GraphMaker.change_efficiency_by_roi_and_movement()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Results.Graph.GraphMaker.search_near_point"><code class="docutils literal notranslate"><span class="pre">GraphMaker.search_near_point()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Results.Graph.GraphMaker.check_search_point"><code class="docutils literal notranslate"><span class="pre">GraphMaker.check_search_point()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Results.Graph.GraphMaker.change_efficiency_by_double_roi"><code class="docutils literal notranslate"><span class="pre">GraphMaker.change_efficiency_by_double_roi()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Results.Graph.GraphMaker.generate_mycmap"><code class="docutils literal notranslate"><span class="pre">GraphMaker.generate_mycmap()</span></code></a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Results.MagnitudeMapMaker.MakeYData"><code class="docutils literal notranslate"><span class="pre">MakeYData</span></code></a><ul class="visible nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Results.MagnitudeMapMaker.MakeYData.make_ferrite_parameter"><code class="docutils literal notranslate"><span class="pre">MakeYData.make_ferrite_parameter()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Results.MagnitudeMapMaker.MakeYData.make_prediction_point"><code class="docutils literal notranslate"><span class="pre">MakeYData.make_prediction_point()</span></code></a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Results.TestMaker.TestMaker"><code class="docutils literal notranslate"><span class="pre">TestMaker</span></code></a><ul class="visible nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Results.TestMaker.TestMaker.make_test_shield_coordinate"><code class="docutils literal notranslate"><span class="pre">TestMaker.make_test_shield_coordinate()</span></code></a></li>
+</ul>
+</li>
+</ul>
+            </nav>
         </div>
     </div>
 </div>
@@ -445,6 +499,218 @@ document.write(`
   <section id="results-module">
 <h1>Results Module<a class="headerlink" href="#results-module" title="Link to this heading">#</a></h1>
 <p>The results module contains components for generating and analyzing results.</p>
+<p id="module-EMFieldML.Results.Results">Results processing module for EMFieldML.</p>
+<p>This module provides functionality for processing and analyzing results
+from electromagnetic field machine learning models.</p>
+<dl class="py class">
+<dt class="sig sig-object py" id="EMFieldML.Results.Results.ResultMaker">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">EMFieldML.Results.Results.</span></span><span class="sig-name descname"><span class="pre">ResultMaker</span></span><a class="headerlink" href="#EMFieldML.Results.Results.ResultMaker" title="Link to this definition">#</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.14)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<p>Class for processing and analyzing ML model results.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="EMFieldML.Results.Results.ResultMaker.pre_deviation">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">pre_deviation</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_path_y_data</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/pathlib.html#pathlib.Path" title="(in Python v3.14)"><span class="pre">Path</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">input_path_model</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/pathlib.html#pathlib.Path" title="(in Python v3.14)"><span class="pre">Path</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">x_train_data</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v2.3)"><span class="pre">numpy.ndarray</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">test_data_list</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.14)"><span class="pre">list</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.14)"><span class="pre">int</span></a><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#EMFieldML.Results.Results.ResultMaker.pre_deviation" title="Link to this definition">#</a></dt>
+<dd><p>Calculate deviation statistics for test data using trained model.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="EMFieldML.Results.Results.ResultMaker.pre_magneticfield">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">pre_magneticfield</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_path_y_data</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/pathlib.html#pathlib.Path" title="(in Python v3.14)"><span class="pre">Path</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">input_path_model</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/pathlib.html#pathlib.Path" title="(in Python v3.14)"><span class="pre">Path</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">x_train_data</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v2.3)"><span class="pre">numpy.ndarray</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">x_test_data</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v2.3)"><span class="pre">numpy.ndarray</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">y_test_data</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v2.3)"><span class="pre">numpy.ndarray</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">test_data_list</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.14)"><span class="pre">list</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.14)"><span class="pre">int</span></a><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#EMFieldML.Results.Results.ResultMaker.pre_magneticfield" title="Link to this definition">#</a></dt>
+<dd><p>Calculate magnetic field predictions and statistics for test data.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="EMFieldML.Results.Results.ResultMaker.make_N_change_deviation">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">make_N_change_deviation</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">prediction_point_num</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.14)"><span class="pre">int</span></a></span></em><span class="sig-paren">)</span><a class="headerlink" href="#EMFieldML.Results.Results.ResultMaker.make_N_change_deviation" title="Link to this definition">#</a></dt>
+<dd><p>Calculate deviation changes for different N values.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="EMFieldML.Results.Results.ResultMaker.make_N_change_error">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">make_N_change_error</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">prediction_point_num</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.14)"><span class="pre">int</span></a></span></em><span class="sig-paren">)</span><a class="headerlink" href="#EMFieldML.Results.Results.ResultMaker.make_N_change_error" title="Link to this definition">#</a></dt>
+<dd><p>Calculate error changes for different N values.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="EMFieldML.Results.Results.ResultMaker.sort_N_change_data">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">sort_N_change_data</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#EMFieldML.Results.Results.ResultMaker.sort_N_change_data" title="Link to this definition">#</a></dt>
+<dd><p>Sort N change data by deviation values.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="EMFieldML.Results.Results.ResultMaker.cross_validation_pattern">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">cross_validation_pattern</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#EMFieldML.Results.Results.ResultMaker.cross_validation_pattern" title="Link to this definition">#</a></dt>
+<dd><p>Generate cross-validation patterns for model evaluation.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="EMFieldML.Results.Results.ResultMaker.make_fix_prediction_point">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">make_fix_prediction_point</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#EMFieldML.Results.Results.ResultMaker.make_fix_prediction_point" title="Link to this definition">#</a></dt>
+<dd><p>Create fixed prediction points for analysis.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="EMFieldML.Results.Results.ResultMaker.sort_list">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">sort_list</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_path_dir</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/pathlib.html#pathlib.Path" title="(in Python v3.14)"><span class="pre">Path</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">input_path_file</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.14)"><span class="pre">str</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">output_path</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/pathlib.html#pathlib.Path" title="(in Python v3.14)"><span class="pre">Path</span></a></span></em><span class="sig-paren">)</span><a class="headerlink" href="#EMFieldML.Results.Results.ResultMaker.sort_list" title="Link to this definition">#</a></dt>
+<dd><p>Sort a list of data by the first element of each sublist.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="EMFieldML.Results.Results.ResultMaker.check_time">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">check_time</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">file_path</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#EMFieldML.Results.Results.ResultMaker.check_time" title="Link to this definition">#</a></dt>
+<dd><p>Check and parse time information from file.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="EMFieldML.Results.Results.ResultMaker.measure_simulation_time">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">measure_simulation_time</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#EMFieldML.Results.Results.ResultMaker.measure_simulation_time" title="Link to this definition">#</a></dt>
+<dd><p>Measure and record simulation execution time.</p>
+</dd></dl>
+
+</dd></dl>
+
+<p id="module-EMFieldML.Results.Graph">Graph generation and visualization module for EMFieldML results.</p>
+<dl class="py class">
+<dt class="sig sig-object py" id="EMFieldML.Results.Graph.GraphMaker">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">EMFieldML.Results.Graph.</span></span><span class="sig-name descname"><span class="pre">GraphMaker</span></span><a class="headerlink" href="#EMFieldML.Results.Graph.GraphMaker" title="Link to this definition">#</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.14)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<p>Class for generating various graphs and visualizations of EMFieldML results.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="EMFieldML.Results.Graph.GraphMaker.n_change_deviation">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">n_change_deviation</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.14)"><span class="pre">None</span></a></span></span><a class="headerlink" href="#EMFieldML.Results.Graph.GraphMaker.n_change_deviation" title="Link to this definition">#</a></dt>
+<dd><p>Generate deviation graph for N change analysis.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="EMFieldML.Results.Graph.GraphMaker.n_change_error">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">n_change_error</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.14)"><span class="pre">None</span></a></span></span><a class="headerlink" href="#EMFieldML.Results.Graph.GraphMaker.n_change_error" title="Link to this definition">#</a></dt>
+<dd><p>Generate error graph for N change analysis.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="EMFieldML.Results.Graph.GraphMaker.active_learning_map">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">active_learning_map</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_path</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/pathlib.html#pathlib.Path" title="(in Python v3.14)"><span class="pre">Path</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">n_data</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.14)"><span class="pre">int</span></a></span></em><span class="sig-paren">)</span><a class="headerlink" href="#EMFieldML.Results.Graph.GraphMaker.active_learning_map" title="Link to this definition">#</a></dt>
+<dd><p>Generate active learning map visualization.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="EMFieldML.Results.Graph.GraphMaker.magnitude_adaptive">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">magnitude_adaptive</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.14)"><span class="pre">None</span></a></span></span><a class="headerlink" href="#EMFieldML.Results.Graph.GraphMaker.magnitude_adaptive" title="Link to this definition">#</a></dt>
+<dd><p>Generate adaptive magnitude visualization.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="EMFieldML.Results.Graph.GraphMaker.vector_adaptive">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">vector_adaptive</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.14)"><span class="pre">None</span></a></span></span><a class="headerlink" href="#EMFieldML.Results.Graph.GraphMaker.vector_adaptive" title="Link to this definition">#</a></dt>
+<dd><p>Generate adaptive vector visualization.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="EMFieldML.Results.Graph.GraphMaker.magnitude_postprocessing_compare">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">magnitude_postprocessing_compare</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.14)"><span class="pre">None</span></a></span></span><a class="headerlink" href="#EMFieldML.Results.Graph.GraphMaker.magnitude_postprocessing_compare" title="Link to this definition">#</a></dt>
+<dd><p>Compare magnitude postprocessing results.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="EMFieldML.Results.Graph.GraphMaker.efficiency_postprocessing_compare">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">efficiency_postprocessing_compare</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.14)"><span class="pre">None</span></a></span></span><a class="headerlink" href="#EMFieldML.Results.Graph.GraphMaker.efficiency_postprocessing_compare" title="Link to this definition">#</a></dt>
+<dd><p>Compare efficiency postprocessing results.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="EMFieldML.Results.Graph.GraphMaker.error_map">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">error_map</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_path</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/pathlib.html#pathlib.Path" title="(in Python v3.14)"><span class="pre">Path</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">type_error</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.14)"><span class="pre">str</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">vmax</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.14)"><span class="pre">float</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">cmap</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.14)"><span class="pre">str</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'Reds'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#EMFieldML.Results.Graph.GraphMaker.error_map" title="Link to this definition">#</a></dt>
+<dd><p>Generate error map visualization.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="EMFieldML.Results.Graph.GraphMaker.magnitude_map_efficiency">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">magnitude_map_efficiency</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">postprocessing</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.14)"><span class="pre">float</span></a></span></em><span class="sig-paren">)</span><a class="headerlink" href="#EMFieldML.Results.Graph.GraphMaker.magnitude_map_efficiency" title="Link to this definition">#</a></dt>
+<dd><p>Generate magnitude map with efficiency analysis.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="EMFieldML.Results.Graph.GraphMaker.magnitude_map_magnetic">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">magnitude_map_magnetic</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">postprocessing</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.14)"><span class="pre">int</span></a></span></em><span class="sig-paren">)</span><a class="headerlink" href="#EMFieldML.Results.Graph.GraphMaker.magnitude_map_magnetic" title="Link to this definition">#</a></dt>
+<dd><p>Generate magnitude map with magnetic field analysis.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="EMFieldML.Results.Graph.GraphMaker.change_emfield_by_roi_and_movement">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">change_emfield_by_roi_and_movement</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">aimpoint</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">vmax</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">vmin</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">relative_move</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#EMFieldML.Results.Graph.GraphMaker.change_emfield_by_roi_and_movement" title="Link to this definition">#</a></dt>
+<dd><p>Change EM field by ROI and movement analysis.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="EMFieldML.Results.Graph.GraphMaker.change_efficiency_by_roi_and_movement">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">change_efficiency_by_roi_and_movement</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.14)"><span class="pre">None</span></a></span></span><a class="headerlink" href="#EMFieldML.Results.Graph.GraphMaker.change_efficiency_by_roi_and_movement" title="Link to this definition">#</a></dt>
+<dd><p>Change efficiency by ROI and movement analysis.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="EMFieldML.Results.Graph.GraphMaker.search_near_point">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">search_near_point</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">aimpoint</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">points</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">constraints</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#EMFieldML.Results.Graph.GraphMaker.search_near_point" title="Link to this definition">#</a></dt>
+<dd><p>Search for nearest point with constraints.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="EMFieldML.Results.Graph.GraphMaker.check_search_point">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">check_search_point</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">aimpoint</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">searchpoint</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">constraints</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#EMFieldML.Results.Graph.GraphMaker.check_search_point" title="Link to this definition">#</a></dt>
+<dd><p>Check if search point meets constraints.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="EMFieldML.Results.Graph.GraphMaker.change_efficiency_by_double_roi">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">change_efficiency_by_double_roi</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.14)"><span class="pre">None</span></a></span></span><a class="headerlink" href="#EMFieldML.Results.Graph.GraphMaker.change_efficiency_by_double_roi" title="Link to this definition">#</a></dt>
+<dd><p>Change efficiency by double ROI analysis.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="EMFieldML.Results.Graph.GraphMaker.generate_mycmap">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">generate_mycmap</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#EMFieldML.Results.Graph.GraphMaker.generate_mycmap" title="Link to this definition">#</a></dt>
+<dd><p>Generate custom colormap for visualizations.</p>
+</dd></dl>
+
+</dd></dl>
+
+<p id="module-EMFieldML.Results.MagnitudeMapMaker">Magnitude map generation for electromagnetic field visualization.</p>
+<p>This module provides functionality to create magnitude maps and generate
+training data for electromagnetic field prediction models.</p>
+<dl class="py class">
+<dt class="sig sig-object py" id="EMFieldML.Results.MagnitudeMapMaker.MakeYData">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">EMFieldML.Results.MagnitudeMapMaker.</span></span><span class="sig-name descname"><span class="pre">MakeYData</span></span><a class="headerlink" href="#EMFieldML.Results.MagnitudeMapMaker.MakeYData" title="Link to this definition">#</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.14)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<p>Generate Y-data for magnitude map creation and training data preparation.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="EMFieldML.Results.MagnitudeMapMaker.MakeYData.make_ferrite_parameter">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">make_ferrite_parameter</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#EMFieldML.Results.MagnitudeMapMaker.MakeYData.make_ferrite_parameter" title="Link to this definition">#</a></dt>
+<dd><p>Generate ferrite parameter data for magnitude map creation.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="EMFieldML.Results.MagnitudeMapMaker.MakeYData.make_prediction_point">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">make_prediction_point</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#EMFieldML.Results.MagnitudeMapMaker.MakeYData.make_prediction_point" title="Link to this definition">#</a></dt>
+<dd><p>Generate prediction points for magnitude map visualization.</p>
+</dd></dl>
+
+</dd></dl>
+
+<p id="module-EMFieldML.Results.TestMaker">Test data generation for electromagnetic field models.</p>
+<p>This module provides functionality to generate test coordinates and
+validation data for electromagnetic field prediction models.</p>
+<dl class="py class">
+<dt class="sig sig-object py" id="EMFieldML.Results.TestMaker.TestMaker">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">EMFieldML.Results.TestMaker.</span></span><span class="sig-name descname"><span class="pre">TestMaker</span></span><a class="headerlink" href="#EMFieldML.Results.TestMaker.TestMaker" title="Link to this definition">#</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.14)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<p>Generate test coordinates and validation data for electromagnetic field models.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="EMFieldML.Results.TestMaker.TestMaker.make_test_shield_coordinate">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">make_test_shield_coordinate</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#EMFieldML.Results.TestMaker.TestMaker.make_test_shield_coordinate" title="Link to this definition">#</a></dt>
+<dd><p>Generate test shield coordinates for model validation.</p>
+</dd></dl>
+
+</dd></dl>
+
 </section>
 
 
@@ -482,6 +748,61 @@ document.write(`
             </div>
             
             
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Results.Results.ResultMaker"><code class="docutils literal notranslate"><span class="pre">ResultMaker</span></code></a><ul class="visible nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Results.Results.ResultMaker.pre_deviation"><code class="docutils literal notranslate"><span class="pre">ResultMaker.pre_deviation()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Results.Results.ResultMaker.pre_magneticfield"><code class="docutils literal notranslate"><span class="pre">ResultMaker.pre_magneticfield()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Results.Results.ResultMaker.make_N_change_deviation"><code class="docutils literal notranslate"><span class="pre">ResultMaker.make_N_change_deviation()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Results.Results.ResultMaker.make_N_change_error"><code class="docutils literal notranslate"><span class="pre">ResultMaker.make_N_change_error()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Results.Results.ResultMaker.sort_N_change_data"><code class="docutils literal notranslate"><span class="pre">ResultMaker.sort_N_change_data()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Results.Results.ResultMaker.cross_validation_pattern"><code class="docutils literal notranslate"><span class="pre">ResultMaker.cross_validation_pattern()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Results.Results.ResultMaker.make_fix_prediction_point"><code class="docutils literal notranslate"><span class="pre">ResultMaker.make_fix_prediction_point()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Results.Results.ResultMaker.sort_list"><code class="docutils literal notranslate"><span class="pre">ResultMaker.sort_list()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Results.Results.ResultMaker.check_time"><code class="docutils literal notranslate"><span class="pre">ResultMaker.check_time()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Results.Results.ResultMaker.measure_simulation_time"><code class="docutils literal notranslate"><span class="pre">ResultMaker.measure_simulation_time()</span></code></a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Results.Graph.GraphMaker"><code class="docutils literal notranslate"><span class="pre">GraphMaker</span></code></a><ul class="visible nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Results.Graph.GraphMaker.n_change_deviation"><code class="docutils literal notranslate"><span class="pre">GraphMaker.n_change_deviation()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Results.Graph.GraphMaker.n_change_error"><code class="docutils literal notranslate"><span class="pre">GraphMaker.n_change_error()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Results.Graph.GraphMaker.active_learning_map"><code class="docutils literal notranslate"><span class="pre">GraphMaker.active_learning_map()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Results.Graph.GraphMaker.magnitude_adaptive"><code class="docutils literal notranslate"><span class="pre">GraphMaker.magnitude_adaptive()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Results.Graph.GraphMaker.vector_adaptive"><code class="docutils literal notranslate"><span class="pre">GraphMaker.vector_adaptive()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Results.Graph.GraphMaker.magnitude_postprocessing_compare"><code class="docutils literal notranslate"><span class="pre">GraphMaker.magnitude_postprocessing_compare()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Results.Graph.GraphMaker.efficiency_postprocessing_compare"><code class="docutils literal notranslate"><span class="pre">GraphMaker.efficiency_postprocessing_compare()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Results.Graph.GraphMaker.error_map"><code class="docutils literal notranslate"><span class="pre">GraphMaker.error_map()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Results.Graph.GraphMaker.magnitude_map_efficiency"><code class="docutils literal notranslate"><span class="pre">GraphMaker.magnitude_map_efficiency()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Results.Graph.GraphMaker.magnitude_map_magnetic"><code class="docutils literal notranslate"><span class="pre">GraphMaker.magnitude_map_magnetic()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Results.Graph.GraphMaker.change_emfield_by_roi_and_movement"><code class="docutils literal notranslate"><span class="pre">GraphMaker.change_emfield_by_roi_and_movement()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Results.Graph.GraphMaker.change_efficiency_by_roi_and_movement"><code class="docutils literal notranslate"><span class="pre">GraphMaker.change_efficiency_by_roi_and_movement()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Results.Graph.GraphMaker.search_near_point"><code class="docutils literal notranslate"><span class="pre">GraphMaker.search_near_point()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Results.Graph.GraphMaker.check_search_point"><code class="docutils literal notranslate"><span class="pre">GraphMaker.check_search_point()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Results.Graph.GraphMaker.change_efficiency_by_double_roi"><code class="docutils literal notranslate"><span class="pre">GraphMaker.change_efficiency_by_double_roi()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Results.Graph.GraphMaker.generate_mycmap"><code class="docutils literal notranslate"><span class="pre">GraphMaker.generate_mycmap()</span></code></a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Results.MagnitudeMapMaker.MakeYData"><code class="docutils literal notranslate"><span class="pre">MakeYData</span></code></a><ul class="visible nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Results.MagnitudeMapMaker.MakeYData.make_ferrite_parameter"><code class="docutils literal notranslate"><span class="pre">MakeYData.make_ferrite_parameter()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Results.MagnitudeMapMaker.MakeYData.make_prediction_point"><code class="docutils literal notranslate"><span class="pre">MakeYData.make_prediction_point()</span></code></a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Results.TestMaker.TestMaker"><code class="docutils literal notranslate"><span class="pre">TestMaker</span></code></a><ul class="visible nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.Results.TestMaker.TestMaker.make_test_shield_coordinate"><code class="docutils literal notranslate"><span class="pre">TestMaker.make_test_shield_coordinate()</span></code></a></li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+</div></div>
               
             
           </div>

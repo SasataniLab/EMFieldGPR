@@ -468,15 +468,125 @@ document.write(`
 <li class="toctree-l2"><a class="reference internal" href="learning.html#classes">Classes</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="modeling.html">Modeling Module</a></li>
-<li class="toctree-l1"><a class="reference internal" href="visualization.html">Visualization Module</a></li>
-<li class="toctree-l1"><a class="reference internal" href="active_learning.html">Active Learning Module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="modeling.html">Modeling Module</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="modeling.html#EMFieldML.Modeling.make_first_grid.Point"><code class="docutils literal notranslate"><span class="pre">Point</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="modeling.html#EMFieldML.Modeling.make_first_grid.Point_outside"><code class="docutils literal notranslate"><span class="pre">Point_outside</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="modeling.html#EMFieldML.Modeling.make_first_grid.Edge"><code class="docutils literal notranslate"><span class="pre">Edge</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="modeling.html#EMFieldML.Modeling.make_first_grid.Edge_outside"><code class="docutils literal notranslate"><span class="pre">Edge_outside</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="modeling.html#EMFieldML.Modeling.make_first_grid.Plane"><code class="docutils literal notranslate"><span class="pre">Plane</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="modeling.html#EMFieldML.Modeling.make_first_grid.Plane_outside"><code class="docutils literal notranslate"><span class="pre">Plane_outside</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="modeling.html#EMFieldML.Modeling.make_first_grid.Box"><code class="docutils literal notranslate"><span class="pre">Box</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="modeling.html#EMFieldML.Modeling.make_first_grid.initial_point"><code class="docutils literal notranslate"><span class="pre">initial_point()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="modeling.html#EMFieldML.Modeling.make_first_grid.initial_edge"><code class="docutils literal notranslate"><span class="pre">initial_edge()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="modeling.html#EMFieldML.Modeling.make_first_grid.calculate_ray"><code class="docutils literal notranslate"><span class="pre">calculate_ray()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="modeling.html#EMFieldML.Modeling.make_first_grid.initial_edge_point"><code class="docutils literal notranslate"><span class="pre">initial_edge_point()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="modeling.html#EMFieldML.Modeling.make_first_grid.initial_plane_point"><code class="docutils literal notranslate"><span class="pre">initial_plane_point()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="modeling.html#EMFieldML.Modeling.make_first_grid.define_initial_normal"><code class="docutils literal notranslate"><span class="pre">define_initial_normal()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="modeling.html#EMFieldML.Modeling.make_first_grid.calculate_weight"><code class="docutils literal notranslate"><span class="pre">calculate_weight()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="modeling.html#EMFieldML.Modeling.make_first_grid.make_first_point_edge_plane"><code class="docutils literal notranslate"><span class="pre">make_first_point_edge_plane()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="modeling.html#EMFieldML.Modeling.make_first_grid.make_first_out_points"><code class="docutils literal notranslate"><span class="pre">make_first_out_points()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="modeling.html#EMFieldML.Modeling.make_second_grid.calculate_ray"><code class="docutils literal notranslate"><span class="pre">calculate_ray()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="modeling.html#EMFieldML.Modeling.make_second_grid.search_edge_point"><code class="docutils literal notranslate"><span class="pre">search_edge_point()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="modeling.html#EMFieldML.Modeling.make_second_grid.make_points_from_edge"><code class="docutils literal notranslate"><span class="pre">make_points_from_edge()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="modeling.html#EMFieldML.Modeling.make_second_grid.make_points_from_parallel_edge"><code class="docutils literal notranslate"><span class="pre">make_points_from_parallel_edge()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="modeling.html#EMFieldML.Modeling.make_second_grid.check_totu"><code class="docutils literal notranslate"><span class="pre">check_totu()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="modeling.html#EMFieldML.Modeling.make_second_grid.make_points_from_plane"><code class="docutils literal notranslate"><span class="pre">make_points_from_plane()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="modeling.html#EMFieldML.Modeling.make_second_grid.set_boxes"><code class="docutils literal notranslate"><span class="pre">set_boxes()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="modeling.html#EMFieldML.Modeling.make_second_grid.make_second_grid"><code class="docutils literal notranslate"><span class="pre">make_second_grid()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="modeling.html#EMFieldML.Modeling.make_second_grid.make_second_out_points"><code class="docutils literal notranslate"><span class="pre">make_second_out_points()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="modeling.html#EMFieldML.Modeling.PolyCubeMaker.PolyCubeMaker"><code class="docutils literal notranslate"><span class="pre">PolyCubeMaker</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="modeling.html#EMFieldML.Modeling.BVH.Triangle"><code class="docutils literal notranslate"><span class="pre">Triangle</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="modeling.html#EMFieldML.Modeling.BVH.BVHNode"><code class="docutils literal notranslate"><span class="pre">BVHNode</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="modeling.html#EMFieldML.Modeling.BVH.BVHBuilder"><code class="docutils literal notranslate"><span class="pre">BVHBuilder</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="modeling.html#EMFieldML.Modeling.BVH.BVH"><code class="docutils literal notranslate"><span class="pre">BVH()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="modeling.html#EMFieldML.Modeling.RayIntersect.Ray"><code class="docutils literal notranslate"><span class="pre">Ray</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="modeling.html#EMFieldML.Modeling.RayIntersect.IntersectInformation"><code class="docutils literal notranslate"><span class="pre">IntersectInformation</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="modeling.html#EMFieldML.Modeling.RayIntersect.IntersectAABBvsRay"><code class="docutils literal notranslate"><span class="pre">IntersectAABBvsRay()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="modeling.html#EMFieldML.Modeling.RayIntersect.ray_intersects_triangle"><code class="docutils literal notranslate"><span class="pre">ray_intersects_triangle()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="modeling.html#EMFieldML.Modeling.RayIntersect.Intersect"><code class="docutils literal notranslate"><span class="pre">Intersect()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="modeling.html#EMFieldML.Modeling.RayIntersect.Intersect_all"><code class="docutils literal notranslate"><span class="pre">Intersect_all()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="modeling.html#EMFieldML.Modeling.RayIntersect.calculate_point_ray_hit"><code class="docutils literal notranslate"><span class="pre">calculate_point_ray_hit()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="modeling.html#EMFieldML.Modeling.RayIntersect.calculate_point_ray_hit_all"><code class="docutils literal notranslate"><span class="pre">calculate_point_ray_hit_all()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="modeling.html#EMFieldML.Modeling.RayIntersect.judge_in_out_for_onevector"><code class="docutils literal notranslate"><span class="pre">judge_in_out_for_onevector()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="modeling.html#EMFieldML.Modeling.RayIntersect.judge_in_out"><code class="docutils literal notranslate"><span class="pre">judge_in_out()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="modeling.html#EMFieldML.Modeling.calculate_plane_point_distance.distance_from_plane"><code class="docutils literal notranslate"><span class="pre">distance_from_plane()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="modeling.html#EMFieldML.Modeling.calculate_plane_point_distance.make_plane_from_edge"><code class="docutils literal notranslate"><span class="pre">make_plane_from_edge()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="modeling.html#EMFieldML.Modeling.calculate_plane_point_distance.search_near_points_from_plane"><code class="docutils literal notranslate"><span class="pre">search_near_points_from_plane()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="visualization.html">Visualization Module</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="visualization.html#EMFieldML.Visualize.Visualize.VisualizationConstants"><code class="docutils literal notranslate"><span class="pre">VisualizationConstants</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="visualization.html#EMFieldML.Visualize.Visualize.VisualizationUI"><code class="docutils literal notranslate"><span class="pre">VisualizationUI</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="visualization.html#EMFieldML.Visualize.Visualize.Visualize"><code class="docutils literal notranslate"><span class="pre">Visualize</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="visualization.html#EMFieldML.Visualize.Prediction.rbf_kernel"><code class="docutils literal notranslate"><span class="pre">rbf_kernel()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="visualization.html#EMFieldML.Visualize.Prediction.mean_function"><code class="docutils literal notranslate"><span class="pre">mean_function()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="visualization.html#EMFieldML.Visualize.Prediction.mean_function_one"><code class="docutils literal notranslate"><span class="pre">mean_function_one()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="visualization.html#EMFieldML.Visualize.Prediction.calculate_mu_star"><code class="docutils literal notranslate"><span class="pre">calculate_mu_star()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="visualization.html#EMFieldML.Visualize.Prediction.calculate_mu_star_one"><code class="docutils literal notranslate"><span class="pre">calculate_mu_star_one()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="visualization.html#EMFieldML.Visualize.Prediction.make_y_data"><code class="docutils literal notranslate"><span class="pre">make_y_data()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="visualization.html#EMFieldML.Visualize.Prediction.calculate_K_inv_Y_train"><code class="docutils literal notranslate"><span class="pre">calculate_K_inv_Y_train()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="visualization.html#EMFieldML.Visualize.Prediction.prediction_prepare"><code class="docutils literal notranslate"><span class="pre">prediction_prepare()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="visualization.html#EMFieldML.Visualize.Prediction.prediction_prepare_efficiency"><code class="docutils literal notranslate"><span class="pre">prediction_prepare_efficiency()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="visualization.html#EMFieldML.Visualize.Prediction.mu_star"><code class="docutils literal notranslate"><span class="pre">mu_star()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="visualization.html#EMFieldML.Visualize.Prediction.mu_star_one"><code class="docutils literal notranslate"><span class="pre">mu_star_one()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="visualization.html#EMFieldML.Visualize.Prediction.mu_star_efficiency"><code class="docutils literal notranslate"><span class="pre">mu_star_efficiency()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="visualization.html#EMFieldML.Visualize.Prediction.vector"><code class="docutils literal notranslate"><span class="pre">vector()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="visualization.html#EMFieldML.Visualize.Prediction.vector_one"><code class="docutils literal notranslate"><span class="pre">vector_one()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="visualization.html#EMFieldML.Visualize.Prediction.calculate_error_no_devide"><code class="docutils literal notranslate"><span class="pre">calculate_error_no_devide()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="visualization.html#EMFieldML.Visualize.Prediction.calculate_error"><code class="docutils literal notranslate"><span class="pre">calculate_error()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="visualization.html#EMFieldML.Visualize.Prediction.calculate_error_square"><code class="docutils literal notranslate"><span class="pre">calculate_error_square()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="visualization.html#EMFieldML.Visualize.Prediction.pre_magneticfield"><code class="docutils literal notranslate"><span class="pre">pre_magneticfield()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="visualization.html#EMFieldML.Visualize.Prediction.pre_vector"><code class="docutils literal notranslate"><span class="pre">pre_vector()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="visualization.html#EMFieldML.Visualize.Deformation.change_X_test"><code class="docutils literal notranslate"><span class="pre">change_X_test()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="visualization.html#EMFieldML.Visualize.Deformation.change_h1"><code class="docutils literal notranslate"><span class="pre">change_h1()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="visualization.html#EMFieldML.Visualize.Deformation.change_h2"><code class="docutils literal notranslate"><span class="pre">change_h2()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="visualization.html#EMFieldML.Visualize.Deformation.change_h3"><code class="docutils literal notranslate"><span class="pre">change_h3()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="visualization.html#EMFieldML.Visualize.Deformation.change_r1"><code class="docutils literal notranslate"><span class="pre">change_r1()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="visualization.html#EMFieldML.Visualize.Deformation.change_r2"><code class="docutils literal notranslate"><span class="pre">change_r2()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="visualization.html#EMFieldML.Visualize.Deformation.change_r3"><code class="docutils literal notranslate"><span class="pre">change_r3()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="visualization.html#EMFieldML.Visualize.Deformation.change_r4"><code class="docutils literal notranslate"><span class="pre">change_r4()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="visualization.html#EMFieldML.Visualize.Deformation.set_points"><code class="docutils literal notranslate"><span class="pre">set_points()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="visualization.html#EMFieldML.Visualize.Deformation.prepare_ferrite_move"><code class="docutils literal notranslate"><span class="pre">prepare_ferrite_move()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="visualization.html#EMFieldML.Visualize.Deformation.move_out_points"><code class="docutils literal notranslate"><span class="pre">move_out_points()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="visualization.html#EMFieldML.Visualize.Deformation.calculate_change"><code class="docutils literal notranslate"><span class="pre">calculate_change()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="visualization.html#EMFieldML.Visualize.make_first_grid.Point_outside"><code class="docutils literal notranslate"><span class="pre">Point_outside</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="visualization.html#EMFieldML.Visualize.make_first_grid.Edge"><code class="docutils literal notranslate"><span class="pre">Edge</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="visualization.html#EMFieldML.Visualize.make_first_grid.Edge_outside"><code class="docutils literal notranslate"><span class="pre">Edge_outside</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="visualization.html#EMFieldML.Visualize.make_first_grid.Plane"><code class="docutils literal notranslate"><span class="pre">Plane</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="visualization.html#EMFieldML.Visualize.make_first_grid.Plane_outside"><code class="docutils literal notranslate"><span class="pre">Plane_outside</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="visualization.html#EMFieldML.Visualize.make_first_grid.Box"><code class="docutils literal notranslate"><span class="pre">Box</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="visualization.html#EMFieldML.Visualize.make_first_grid.initial_point"><code class="docutils literal notranslate"><span class="pre">initial_point()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="visualization.html#EMFieldML.Visualize.make_first_grid.initial_plane_point"><code class="docutils literal notranslate"><span class="pre">initial_plane_point()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="visualization.html#EMFieldML.Visualize.make_first_grid.make_first_point_edge_plane"><code class="docutils literal notranslate"><span class="pre">make_first_point_edge_plane()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="visualization.html#EMFieldML.Visualize.make_first_grid.make_first_out_points"><code class="docutils literal notranslate"><span class="pre">make_first_out_points()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="visualization.html#EMFieldML.Visualize.make_second_grid.set_boxes"><code class="docutils literal notranslate"><span class="pre">set_boxes()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="visualization.html#EMFieldML.Visualize.make_second_grid.make_second_grid"><code class="docutils literal notranslate"><span class="pre">make_second_grid()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="visualization.html#EMFieldML.Visualize.make_second_grid.make_second_out_points"><code class="docutils literal notranslate"><span class="pre">make_second_out_points()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="active_learning.html">Active Learning Module</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="active_learning.html#EMFieldML.ActiveLearning.ActiveLearning.ActiveLearning"><code class="docutils literal notranslate"><span class="pre">ActiveLearning</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="active_learning.html#EMFieldML.ActiveLearning.Decide6points.Decide6points"><code class="docutils literal notranslate"><span class="pre">Decide6points</span></code></a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="feko.html">FEKO Integration Module</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="feko.html#EMFieldML.FEKO.FEKORunner.FekoRunner"><code class="docutils literal notranslate"><span class="pre">FekoRunner</span></code></a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="utils.html">Utilities Module</a></li>
-<li class="toctree-l1"><a class="reference internal" href="results.html">Results Module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="utils.html">Utilities Module</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="utils.html#EMFieldML.Utils.DataSelect.DataSelect"><code class="docutils literal notranslate"><span class="pre">DataSelect</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="utils.html#EMFieldML.Utils.FloatAssert.FloatAssert"><code class="docutils literal notranslate"><span class="pre">FloatAssert</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="utils.html#EMFieldML.Utils.logger.Logger"><code class="docutils literal notranslate"><span class="pre">Logger</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="utils.html#EMFieldML.Utils.ShieldModeler.ShieldModeler"><code class="docutils literal notranslate"><span class="pre">ShieldModeler</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="results.html">Results Module</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="results.html#EMFieldML.Results.Results.ResultMaker"><code class="docutils literal notranslate"><span class="pre">ResultMaker</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="results.html#EMFieldML.Results.Graph.GraphMaker"><code class="docutils literal notranslate"><span class="pre">GraphMaker</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="results.html#EMFieldML.Results.MagnitudeMapMaker.MakeYData"><code class="docutils literal notranslate"><span class="pre">MakeYData</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="results.html#EMFieldML.Results.TestMaker.TestMaker"><code class="docutils literal notranslate"><span class="pre">TestMaker</span></code></a></li>
+</ul>
+</li>
 </ul>
 </div>
 </section>

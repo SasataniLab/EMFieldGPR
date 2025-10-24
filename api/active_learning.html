@@ -131,6 +131,10 @@ document.write(`
   
 
   
+    <button class="pst-navbar-icon sidebar-toggle secondary-toggle" aria-label="On this page">
+      <span class="fa-solid fa-outdent"></span>
+    </button>
+  
 </div>
 
     </header>
@@ -417,7 +421,9 @@ document.write(`
   </button>
 `);
 </script>
-
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
 </div></div>
       
     </div>
@@ -433,6 +439,28 @@ document.write(`
     <div id="print-main-content">
         <div id="jb-print-toc">
             
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.ActiveLearning.ActiveLearning.ActiveLearning"><code class="docutils literal notranslate"><span class="pre">ActiveLearning</span></code></a><ul class="visible nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.ActiveLearning.ActiveLearning.ActiveLearning.pre_deviation"><code class="docutils literal notranslate"><span class="pre">ActiveLearning.pre_deviation()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.ActiveLearning.ActiveLearning.ActiveLearning.active_learning"><code class="docutils literal notranslate"><span class="pre">ActiveLearning.active_learning()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.ActiveLearning.ActiveLearning.ActiveLearning.uncertainly_sampling"><code class="docutils literal notranslate"><span class="pre">ActiveLearning.uncertainly_sampling()</span></code></a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.ActiveLearning.Decide6points.Decide6points"><code class="docutils literal notranslate"><span class="pre">Decide6points</span></code></a><ul class="visible nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.ActiveLearning.Decide6points.Decide6points.get_pattern"><code class="docutils literal notranslate"><span class="pre">Decide6points.get_pattern()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.ActiveLearning.Decide6points.Decide6points.make_pattern_list"><code class="docutils literal notranslate"><span class="pre">Decide6points.make_pattern_list()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.ActiveLearning.Decide6points.Decide6points.make_learning_model_all"><code class="docutils literal notranslate"><span class="pre">Decide6points.make_learning_model_all()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.ActiveLearning.Decide6points.Decide6points.pre_deviation"><code class="docutils literal notranslate"><span class="pre">Decide6points.pre_deviation()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.ActiveLearning.Decide6points.Decide6points.predict_deviation_all"><code class="docutils literal notranslate"><span class="pre">Decide6points.predict_deviation_all()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.ActiveLearning.Decide6points.Decide6points.check_deviation"><code class="docutils literal notranslate"><span class="pre">Decide6points.check_deviation()</span></code></a></li>
+</ul>
+</li>
+</ul>
+            </nav>
         </div>
     </div>
 </div>
@@ -445,6 +473,145 @@ document.write(`
   <section id="active-learning-module">
 <h1>Active Learning Module<a class="headerlink" href="#active-learning-module" title="Link to this heading">#</a></h1>
 <p>The active learning module contains components for intelligent data point selection.</p>
+<p id="module-EMFieldML.ActiveLearning.ActiveLearning">Active learning module for electromagnetic field optimization.</p>
+<p>This module implements active learning strategies to efficiently select
+the most informative data points for training electromagnetic field
+prediction models.</p>
+<dl class="py class">
+<dt class="sig sig-object py" id="EMFieldML.ActiveLearning.ActiveLearning.ActiveLearning">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">EMFieldML.ActiveLearning.ActiveLearning.</span></span><span class="sig-name descname"><span class="pre">ActiveLearning</span></span><a class="headerlink" href="#EMFieldML.ActiveLearning.ActiveLearning.ActiveLearning" title="Link to this definition">#</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.14)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<p>Active learning strategies for electromagnetic field model optimization.</p>
+<p>This class implements methods to select the most informative data points
+for training, improving model performance with minimal data.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="EMFieldML.ActiveLearning.ActiveLearning.ActiveLearning.pre_deviation">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">pre_deviation</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_path_y_data</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/pathlib.html#pathlib.Path" title="(in Python v3.14)"><span class="pre">Path</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">input_path_model</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/pathlib.html#pathlib.Path" title="(in Python v3.14)"><span class="pre">Path</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">x_train_data</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v2.3)"><span class="pre">numpy.ndarray</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">test_data_list</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.14)"><span class="pre">list</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.14)"><span class="pre">int</span></a><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">point_index</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.14)"><span class="pre">int</span></a></span></em><span class="sig-paren">)</span><a class="headerlink" href="#EMFieldML.ActiveLearning.ActiveLearning.ActiveLearning.pre_deviation" title="Link to this definition">#</a></dt>
+<dd><p>Calculate deviation for active learning point selection.</p>
+<p>Identify and select test data samples that show a large variance
+with respect to the current model’s predictions.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>input_path_y_data</strong> – Path to training target data</p></li>
+<li><p><strong>input_path_model</strong> – Path to trained model file</p></li>
+<li><p><strong>x_train_data</strong> – Training input features</p></li>
+<li><p><strong>test_data_list</strong> – List of test data indices</p></li>
+<li><p><strong>point_index</strong> – Index of prediction point</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Average and maximum deviation values</p>
+</dd>
+</dl>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This function corresponds to 5 steps in Figure 5a of the paper.</p>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="EMFieldML.ActiveLearning.ActiveLearning.ActiveLearning.active_learning">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">active_learning</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">X_test_list</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">predict_point_list</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#EMFieldML.ActiveLearning.ActiveLearning.ActiveLearning.active_learning" title="Link to this definition">#</a></dt>
+<dd><p>Perform active learning process.</p>
+<p>Active learning iteratively selects instances from the test set that
+have high prediction uncertainty for the current model. These difficult
+cases are then used to retrain the model. This active learning approach
+enables the efficient creation of a robust model, particularly in
+scenarios where generating a large and diverse training dataset is difficult.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>X_test_list</strong> – List of test data points</p></li>
+<li><p><strong>predict_point_list</strong> – List of points to predict</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>List of selected data points for training</p>
+</dd>
+</dl>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This function corresponds to Figure 5a in the paper.</p>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="EMFieldML.ActiveLearning.ActiveLearning.ActiveLearning.uncertainly_sampling">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">uncertainly_sampling</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#EMFieldML.ActiveLearning.ActiveLearning.ActiveLearning.uncertainly_sampling" title="Link to this definition">#</a></dt>
+<dd><p>Perform uncertainty sampling for active learning.</p>
+<p>Iteratively selects data points with high prediction uncertainty,
+runs simulations for these points, and updates the training dataset.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This function corresponds to step 6 in Figure 5a of the paper.</p>
+</div>
+</dd></dl>
+
+</dd></dl>
+
+<p id="module-EMFieldML.ActiveLearning.Decide6points">Module for deciding 6 points in active learning.</p>
+<dl class="py class">
+<dt class="sig sig-object py" id="EMFieldML.ActiveLearning.Decide6points.Decide6points">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">EMFieldML.ActiveLearning.Decide6points.</span></span><span class="sig-name descname"><span class="pre">Decide6points</span></span><a class="headerlink" href="#EMFieldML.ActiveLearning.Decide6points.Decide6points" title="Link to this definition">#</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.14)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<p>Class for deciding 6 points in active learning process.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="EMFieldML.ActiveLearning.Decide6points.Decide6points.get_pattern">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">get_pattern</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">i</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.14)"><span class="pre">int</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">j</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.14)"><span class="pre">int</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">k</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.14)"><span class="pre">int</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.14)"><span class="pre">int</span></a></span></span><a class="headerlink" href="#EMFieldML.ActiveLearning.Decide6points.Decide6points.get_pattern" title="Link to this definition">#</a></dt>
+<dd><p>Divide the entire space into 27 blocks.
+i corresponds to x, j corresponds to y, and k corresponds to z.
+The if statements are complex to account for overlapping regions.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>i</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.14)"><em>int</em></a>) – i corresponds to x</p></li>
+<li><p><strong>j</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.14)"><em>int</em></a>) – j corresponds to y</p></li>
+<li><p><strong>k</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.14)"><em>int</em></a>) – k corresponds to z</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>The index of the block in which the point (i, j, k) is located.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.14)">int</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="EMFieldML.ActiveLearning.Decide6points.Decide6points.make_pattern_list">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">make_pattern_list</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.14)"><span class="pre">None</span></a></span></span><a class="headerlink" href="#EMFieldML.ActiveLearning.Decide6points.Decide6points.make_pattern_list" title="Link to this definition">#</a></dt>
+<dd><p>Assign each point to a block one by one.
+Exclude those that overlap with the ferrite shield.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="EMFieldML.ActiveLearning.Decide6points.Decide6points.make_learning_model_all">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">make_learning_model_all</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.14)"><span class="pre">None</span></a></span></span><a class="headerlink" href="#EMFieldML.ActiveLearning.Decide6points.Decide6points.make_learning_model_all" title="Link to this definition">#</a></dt>
+<dd><p>Create learning models for all patterns.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="EMFieldML.ActiveLearning.Decide6points.Decide6points.pre_deviation">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">pre_deviation</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_path_y_data</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/pathlib.html#pathlib.Path" title="(in Python v3.14)"><span class="pre">Path</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">input_path_model</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/pathlib.html#pathlib.Path" title="(in Python v3.14)"><span class="pre">Path</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">x_train_data</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v2.3)"><span class="pre">numpy.ndarray</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">init_test_data_list</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.14)"><span class="pre">list</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.14)"><span class="pre">int</span></a><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#EMFieldML.ActiveLearning.Decide6points.Decide6points.pre_deviation" title="Link to this definition">#</a></dt>
+<dd><p>Calculate pre-deviation for given data.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="EMFieldML.ActiveLearning.Decide6points.Decide6points.predict_deviation_all">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">predict_deviation_all</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.14)"><span class="pre">None</span></a></span></span><a class="headerlink" href="#EMFieldML.ActiveLearning.Decide6points.Decide6points.predict_deviation_all" title="Link to this definition">#</a></dt>
+<dd><p>Predict deviation for all patterns.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="EMFieldML.ActiveLearning.Decide6points.Decide6points.check_deviation">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">check_deviation</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.14)"><span class="pre">None</span></a></span></span><a class="headerlink" href="#EMFieldML.ActiveLearning.Decide6points.Decide6points.check_deviation" title="Link to this definition">#</a></dt>
+<dd><p>Check deviation values.</p>
+</dd></dl>
+
+</dd></dl>
+
 </section>
 
 
@@ -482,6 +649,35 @@ document.write(`
             </div>
             
             
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.ActiveLearning.ActiveLearning.ActiveLearning"><code class="docutils literal notranslate"><span class="pre">ActiveLearning</span></code></a><ul class="visible nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.ActiveLearning.ActiveLearning.ActiveLearning.pre_deviation"><code class="docutils literal notranslate"><span class="pre">ActiveLearning.pre_deviation()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.ActiveLearning.ActiveLearning.ActiveLearning.active_learning"><code class="docutils literal notranslate"><span class="pre">ActiveLearning.active_learning()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.ActiveLearning.ActiveLearning.ActiveLearning.uncertainly_sampling"><code class="docutils literal notranslate"><span class="pre">ActiveLearning.uncertainly_sampling()</span></code></a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.ActiveLearning.Decide6points.Decide6points"><code class="docutils literal notranslate"><span class="pre">Decide6points</span></code></a><ul class="visible nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.ActiveLearning.Decide6points.Decide6points.get_pattern"><code class="docutils literal notranslate"><span class="pre">Decide6points.get_pattern()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.ActiveLearning.Decide6points.Decide6points.make_pattern_list"><code class="docutils literal notranslate"><span class="pre">Decide6points.make_pattern_list()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.ActiveLearning.Decide6points.Decide6points.make_learning_model_all"><code class="docutils literal notranslate"><span class="pre">Decide6points.make_learning_model_all()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.ActiveLearning.Decide6points.Decide6points.pre_deviation"><code class="docutils literal notranslate"><span class="pre">Decide6points.pre_deviation()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.ActiveLearning.Decide6points.Decide6points.predict_deviation_all"><code class="docutils literal notranslate"><span class="pre">Decide6points.predict_deviation_all()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#EMFieldML.ActiveLearning.Decide6points.Decide6points.check_deviation"><code class="docutils literal notranslate"><span class="pre">Decide6points.check_deviation()</span></code></a></li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+</div></div>
               
             
           </div>
