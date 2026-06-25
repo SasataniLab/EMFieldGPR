@@ -271,7 +271,22 @@ def mu_star_efficiency(
         config.prepocessing_value_efficiency
     )
     var_star = (k_star_star - k_star.T @ K_inv @ k_star) ** (1 / 2)
-    return mu_star, var_star
+
+    pred_actual = float(np.asarray(mu_star).flatten()[0])
+    sigma_actual = float(np.asarray(var_star).flatten()[0])
+    
+    low_actual  = pred_actual - sigma_actual
+    high_actual = pred_actual + sigma_actual
+    
+    low_actual  = np.maximum(0.0, low_actual)
+    high_actual = np.minimum(1.0, high_actual)
+
+    if mu_star[0][0] < 0.0:
+        mu_star[0][0] = 0.0
+    elif mu_star[0][0] > 1.0:
+        mu_star[0][0] = 1.0
+    
+    return mu_star, low_actual, high_actual
 
 
 def vector(

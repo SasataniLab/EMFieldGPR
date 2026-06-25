@@ -106,9 +106,9 @@ class VisualizationUI:
 
         # Display efficiency
         psim.TextUnformatted(
-            f"Efficiency : {self.visualizer.efficiency[0][0]*config.convert_efficiency:.3f} ± "
-            f"{abs(self.visualizer.var_efficiency[0][0])*config.convert_efficiency:.3f} %",
+            f"Efficiency : {self.visualizer.efficiency[0][0]*config.convert_efficiency:.3f} %  "
         )
+        psim.TextUnformatted(f"Range: [{abs(self.visualizer.lower_bound_efficiency)*config.convert_efficiency:.1f}% ~ {abs(self.visualizer.upper_bound_efficiency)*config.convert_efficiency:.1f}%] (95% confidence)")
         psim.Separator()
 
         # Point size control
@@ -295,7 +295,8 @@ class Visualize:
         self.values = None
         self.db_values = None
         self.efficiency = None
-        self.var_efficiency = None
+        self.lower_bound_efficiency = None
+        self.upper_bound_efficiency = None
         self.magnetic_vector = None
 
         # Training data and models
@@ -1161,7 +1162,7 @@ class Visualize:
             )[0]
 
             # Predict efficiency
-            self.efficiency, self.var_efficiency = Prediction.mu_star_efficiency(
+            self.efficiency, self.lower_bound_efficiency, self.upper_bound_efficiency = Prediction.mu_star_efficiency(
                 self.X_train_efficiency,
                 self.X_test,
                 self.K_inv_Y_train_efficiency,
@@ -1430,7 +1431,7 @@ class Visualize:
         ).reshape(-1)
         self.dBvalues = Visualize.convert_to_db(self.values)
 
-        self.efficiency, self.var_efficiency = Prediction.mu_star_efficiency(
+        self.efficiency, self.lower_bound_efficiency, self.upper_bound_efficiency = Prediction.mu_star_efficiency(
             self.X_train_efficiency,
             self.X_test,
             self.K_inv_Y_train_efficiency,
@@ -1559,7 +1560,7 @@ class Visualize:
             self.mean_constant_mag,
         ).reshape(-1)
         self.dBvalues = Visualize.convert_to_db(self.values)
-        self.efficiency, self.var_efficiency = Prediction.mu_star_efficiency(
+        self.efficiency, self.lower_bound_efficiency, self.upper_bound_efficiency = Prediction.mu_star_efficiency(
             self.X_train_efficiency,
             self.X_test,
             self.K_inv_Y_train_efficiency,
