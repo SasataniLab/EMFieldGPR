@@ -108,7 +108,7 @@ class VisualizationUI:
         psim.TextUnformatted(
             f"Efficiency : {self.visualizer.efficiency[0][0]*config.convert_efficiency:.3f} %  "
         )
-        psim.TextUnformatted(f"Range: [{abs(self.visualizer.lower_bound_efficiency)*config.convert_efficiency:.1f}% ~ {abs(self.visualizer.upper_bound_efficiency)*config.convert_efficiency:.1f}%] (95% confidence)")
+        psim.TextUnformatted(f"Range: [{abs(self.visualizer.lower_bound_efficiency)*config.convert_efficiency:.1f}% ~ {abs(self.visualizer.upper_bound_efficiency)*config.convert_efficiency:.1f}%]")
         psim.Separator()
 
         # Point size control
