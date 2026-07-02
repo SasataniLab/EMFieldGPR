@@ -264,9 +264,6 @@ def mu_star_efficiency(
 ):
     """Calculate mu_star for efficiency prediction."""
     k_star = rbf_kernel(X_train, X_test, lengthscale, scale)
-    k_star_star = rbf_kernel(X_test, X_test, lengthscale, scale) + noise * np.eye(
-        len(X_test)
-    )
     mu_star = calculate_mu_star(X_test, k_star, K_inv_Y_train, mean_constant) ** (
         config.prepocessing_value_efficiency
     )

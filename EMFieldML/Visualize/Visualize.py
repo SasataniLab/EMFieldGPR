@@ -1159,9 +1159,7 @@ class Visualize:
             )[0]
 
             # Predict efficiency
-            (
-                self.efficiency
-            ) = Prediction.mu_star_efficiency(
+            (self.efficiency) = Prediction.mu_star_efficiency(
                 self.X_train_efficiency,
                 self.X_test,
                 self.K_inv_Y_train_efficiency,
@@ -1430,17 +1428,15 @@ class Visualize:
         ).reshape(-1)
         self.dBvalues = Visualize.convert_to_db(self.values)
 
-        self.efficiency = (
-            Prediction.mu_star_efficiency(
-                self.X_train_efficiency,
-                self.X_test,
-                self.K_inv_Y_train_efficiency,
-                self.lengthscale_efficiency,
-                self.scale_efficiency,
-                self.K_inv_efficiency,
-                self.mean_constant_efficiency,
-                self.noise_efficiency,
-            )
+        self.efficiency = Prediction.mu_star_efficiency(
+            self.X_train_efficiency,
+            self.X_test,
+            self.K_inv_Y_train_efficiency,
+            self.lengthscale_efficiency,
+            self.scale_efficiency,
+            self.K_inv_efficiency,
+            self.mean_constant_efficiency,
+            self.noise_efficiency,
         )
 
         # Mark vector cache as needing update
@@ -1561,17 +1557,15 @@ class Visualize:
             self.mean_constant_mag,
         ).reshape(-1)
         self.dBvalues = Visualize.convert_to_db(self.values)
-        self.efficiency = (
-            Prediction.mu_star_efficiency(
-                self.X_train_efficiency,
-                self.X_test,
-                self.K_inv_Y_train_efficiency,
-                self.lengthscale_efficiency,
-                self.scale_efficiency,
-                self.K_inv_efficiency,
-                self.mean_constant_efficiency,
-                self.noise_efficiency,
-            )
+        self.efficiency = Prediction.mu_star_efficiency(
+            self.X_train_efficiency,
+            self.X_test,
+            self.K_inv_Y_train_efficiency,
+            self.lengthscale_efficiency,
+            self.scale_efficiency,
+            self.K_inv_efficiency,
+            self.mean_constant_efficiency,
+            self.noise_efficiency,
         )
 
         # Mark vector cache as needing update
