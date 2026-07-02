@@ -108,9 +108,6 @@ class VisualizationUI:
         psim.TextUnformatted(
             f"Efficiency : {self.visualizer.efficiency[0][0]*config.convert_efficiency:.3f} %  "
         )
-        psim.TextUnformatted(
-            f"Range: [{abs(self.visualizer.lower_bound_efficiency)*config.convert_efficiency:.1f}% ~ {abs(self.visualizer.upper_bound_efficiency)*config.convert_efficiency:.1f}%]"
-        )
         psim.Separator()
 
         # Point size control
@@ -297,8 +294,6 @@ class Visualize:
         self.values = None
         self.db_values = None
         self.efficiency = None
-        self.lower_bound_efficiency = None
-        self.upper_bound_efficiency = None
         self.magnetic_vector = None
 
         # Training data and models
@@ -1165,9 +1160,7 @@ class Visualize:
 
             # Predict efficiency
             (
-                self.efficiency,
-                self.lower_bound_efficiency,
-                self.upper_bound_efficiency,
+                self.efficiency
             ) = Prediction.mu_star_efficiency(
                 self.X_train_efficiency,
                 self.X_test,
@@ -1437,7 +1430,7 @@ class Visualize:
         ).reshape(-1)
         self.dBvalues = Visualize.convert_to_db(self.values)
 
-        self.efficiency, self.lower_bound_efficiency, self.upper_bound_efficiency = (
+        self.efficiency = (
             Prediction.mu_star_efficiency(
                 self.X_train_efficiency,
                 self.X_test,
@@ -1568,7 +1561,7 @@ class Visualize:
             self.mean_constant_mag,
         ).reshape(-1)
         self.dBvalues = Visualize.convert_to_db(self.values)
-        self.efficiency, self.lower_bound_efficiency, self.upper_bound_efficiency = (
+        self.efficiency = (
             Prediction.mu_star_efficiency(
                 self.X_train_efficiency,
                 self.X_test,
